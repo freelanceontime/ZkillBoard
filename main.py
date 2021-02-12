@@ -594,7 +594,7 @@ class NotByShipC(Frame):
         FilterNowC.grid(row=9, column=0, padx=10, pady=10)  
 
         back = Button(self, width=20, text="Back", command=lambda:controller.show_frame(Constelation))
-        back.grid(row=10, column=0, padx=10, pady=10)
+        back.grid(row=11, column=0, padx=10, pady=10)
 
 class ChooseShipR(Frame):
     def __init__(self, parent, controller):
@@ -903,7 +903,7 @@ class ChooseShipR(Frame):
         FilterNowC.grid(row=10, column=0, padx=10, pady=10)  
 
         back = Button(self, width=20, text="Back", command=lambda:controller.show_frame(Region))
-        back.grid(row=11, column=0, padx=10, pady=10)
+        back.grid(row=12, column=0, padx=10, pady=10)
 
 class ChooseShipC(Frame):
     def __init__(self, parent, controller):
@@ -1138,7 +1138,7 @@ class ChooseShipC(Frame):
         FilterNowC.grid(row=10, column=0, padx=10, pady=10)  
 
         back = Button(self, width=20, text="Back", command=lambda:controller.show_frame(Constelation))
-        back.grid(row=11, column=0, padx=10, pady=10)
+        back.grid(row=12, column=0, padx=10, pady=10)
 
 #-----------Remove JumpRange Filter-------
 
