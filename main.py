@@ -1576,9 +1576,6 @@ class ChooseShipRNoJump(Frame):
         label = Label(self, wraplengt=250, text="Please Select the Region")
         label.grid(row=2, column=0, padx=10, pady=10)
 
-        label = Label(self, wraplengt=250, text="Please Select the Ship Group")
-        label.grid(row=3, column=0, padx=10, pady=10)
-
         optionR = [
             "Please Select             ",
             "Aridia",
@@ -1653,10 +1650,7 @@ class ChooseShipRNoJump(Frame):
 
         drop3 = OptionMenu(self, clickedRSR, *optionR)
         drop3.config(width=18)
-        drop3.grid(row=4, column=0, padx=10, pady=10)
-
-        # inputRS = Entry(self, font=('Helvetica',10))
-        # inputRS.grid(row=3, column=0, padx=10, pady=10) 
+        drop3.grid(row=3, column=0, padx=10, pady=10)
 
         options = [
             "Please Select             ",
@@ -1675,6 +1669,9 @@ class ChooseShipRNoJump(Frame):
 
         clickedRS = StringVar()
         clickedRS.set(options[0])
+
+        label = Label(self, wraplengt=250, text="Please Select the Ship Group")
+        label.grid(row=4, column=0, padx=10, pady=10)
 
         drop = OptionMenu(self, clickedRS, *options)
         drop.config(width=18)
@@ -1819,18 +1816,6 @@ class ChooseShipCNoJump(Frame):
 
         inputCS = Entry(self, font=('Helvetica',10))
         inputCS.grid(row=3, column=0, padx=10, pady=10)
-
-        label = Label(self, wraplengt=250, text="Please Input your Current System e.g 'Y9G-KS")
-        label.grid(row=4, column=0, padx=10, pady=10)
-
-        systempCS = Entry(self, font=('Helvetica',10))
-        systempCS.grid(row=5, column=0, padx=10, pady=10)
-
-        label = Label(self, wraplengt=250, text="Please Input Max Jump that you want all Kills which are found outside of it to be ignored")
-        label.grid(row=6, column=0, padx=10, pady=10)  
-
-        jumpsCS = Entry(self, font=('Helvetica',10))
-        jumpsCS.grid(row=7, column=0, padx=10, pady=10)
 
         options = [
             "Please Select             ",
@@ -83083,7 +83068,8 @@ class JumpRanges(Frame):
                     from bs4 import BeautifulSoup
                     soup = BeautifulSoup(page.content, 'html.parser', on_duplicate_attribute='ignore')
 
-                    element = soup.find_all('a', string=inputJRT.get())
+                    start = soup.find('div', id='jb_maps').parent
+                    element = start.find_all('a', string=inputJRT.get())
                     pagecontents = str(element)
 
                     fullstring = pagecontents
@@ -83093,7 +83079,7 @@ class JumpRanges(Frame):
 
                 except ValueError:
                     print ("Not found!")
-                    messagebox.showerror("Oops", "Not In Range!\n Or you Spelt the System Name incorrectly")
+                    messagebox.showerror("Oops", "Not In Range!")
                     break
                 else:
                     print ("Found!")
