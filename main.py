@@ -83239,6 +83239,9 @@ class CharacterAssociation(Frame):
 
                     killsC2 = []
                     pageNo2 = 1
+
+                    print(killsC1)
+
                     for x in range(0, 5):
                         url2New = "https://zkillboard.com" + characterID2 + '.' + '/page/' + str(pageNo2)
                         print(url2New)
@@ -83249,11 +83252,12 @@ class CharacterAssociation(Frame):
                         pageNo2 = pageNo2 + 1
 
                         #start2 = soupCCompare2.find('tbody', id='killmailstobdy').parent
-                        killsC2 = []
                         for a in soupCCompare2.find_all('a', href=True):
                             if a['href'].startswith('/kill/'):
                                 killsC2f = a['href']
                                 killsC2.append(killsC2f)
+
+                    print(killsC2)
 
                     Cmatches = list(set(killsC1).intersection(set(killsC2)))
                     print(Cmatches)
