@@ -31,7 +31,7 @@ class App(Tk):
 
         self.frames = {}
 
-        for F in (NotByShipRNoJump, NotByShipCNoJump, ChooseShipRNoJump, ChooseShipCNoJump, StartPage, LiveFeed, ManualSearch, Region, Constelation, NotByShipR, ChooseShipR, NotByShipC, ChooseShipC, allKillsPage, allLossesPage, allSoloKillsPage, allSoloDeathsPage, allPage, allKillsCharacter, allLossesCharacter, allSoloKillsCharacter, allSoloDeathsCharacter, allCharacter, allKillsCorp, allLossesCorp, allSoloKillsCorp, allSoloDeathsCorp, allCorp, allKillsAlliance, allLossesAlliance, allSoloKillsAlliance, allSoloDeathsAlliance, allAlliance, allKillsRegion, allLossesRegion, allSoloKillsRegion, allSoloDeathsRegion, allRegion, allKillsCharacterSysFilter, allLossesCharacterSysFilter, allSoloKillsCharacterSysFilter, allSoloDeathsCharacterSysFilter, allCharacterSysFilter, allKillsCharacterReg, allLossesCharacterReg, allSoloKillsCharacterReg, allSoloDeathsCharacterReg, allCharacterReg, allKillsCharacterCon, allLossesCharacterCon, allSoloKillsCharacterCon, allSoloDeathsCharacterCon, allCharacterCon, allKillsCharacterAll, allLossesCharacterAll, allSoloKillsCharacterAll, allSoloDeathsCharacterAll, allCharacterAll, allKillsCharacterSysShip, allLossesCharacterSysShip, allSoloKillsCharacterSysShip, allSoloDeathsCharacterSysShip, allCharacterSysShip, allKillsCharacterSysNoShip, allLossesCharacterSysNoShip, allSoloKillsCharacterSysNoShip, allSoloDeathsCharacterSysNoShip, allCharacterSysNoShip, allKillsCharacterAllShip, allLossesCharacterAllShip, allSoloKillsCharacterAllShip, allSoloDeathsCharacterAllShip, allCharacterAllShip, allKillsCharacterAllNoShip, allLossesCharacterAllNoShip, allSoloKillsCharacterAllNoShip, allSoloDeathsCharacterAllNoShip, allCharacterAllNoShip, allKillsCharacterConNoShip, allLossesCharacterConNoShip, allSoloKillsCharacterConNoShip, allSoloDeathsCharacterConNoShip, allCharacterConNoShip, allKillsCharacterConShip, allLossesCharacterConShip, allSoloKillsCharacterConShip, allSoloDeathsCharacterConShip, allCharacterConShip, allKillsCharacterRegNoShip, allLossesCharacterRegNoShip, allSoloKillsCharacterRegNoShip, allSoloDeathsCharacterRegNoShip, allCharacterRegNoShip, allKillsCharacterRegShip, allLossesCharacterRegShip, allSoloKillsCharacterRegShip, allSoloDeathsCharacterRegShip, allCharacterRegShip, allKillsRegionNoShip, allLossesRegionNoShip, allSoloKillsRegionNoShip, allSoloDeathsRegionNoShip, allRegionNoShip, allKillsRegionShip, allLossesRegionShip, allSoloKillsRegionShip, allSoloDeathsRegionShip, allRegionShip, allKillsAllianceShip, allLossesAllianceShip, allSoloKillsAllianceShip, allSoloDeathsAllianceShip, allAllianceShip, allKillsAllianceNoShip, allLossesAllianceNoShip, allSoloKillsAllianceNoShip, allSoloDeathsAllianceNoShip, allAllianceNoShip, allKillsCorpShip, allLossesCorpShip, allSoloKillsCorpShip, allSoloDeathsCorpShip, allCorpShip, allKillsCorpNoShip, allLossesCorpNoShip, allSoloKillsCorpNoShip, allSoloDeathsCorpNoShip, allCorpNoShip, allKillsShip, allKillsShipRegShip, allKillsShipSysShip, allKillsShipConShip, allKillsShipAllShip, allLossesShip, allLossesShipRegShip, allLossesShipSysShip, allLossesShipConShip, allLossesShipAllShip, allSoloKillsShip, allSoloKillsShipRegShip, allSoloKillsShipSysShip, allSoloKillsShipConShip, allSoloKillsShipAllShip, allSoloDeathsShip, allSoloDeathsShipRegShip, allSoloDeathsShipSysShip, allSoloDeathsShipConShip, allSoloDeathsShipAllShip, allShip, allShipRegShip, allShipSysShip, allShipConShip, allShipAllShip, JumpRanges):
+        for F in (CharacterAssociation, NotByShipRNoJump, NotByShipCNoJump, ChooseShipRNoJump, ChooseShipCNoJump, StartPage, LiveFeed, ManualSearch, Region, Constelation, NotByShipR, ChooseShipR, NotByShipC, ChooseShipC, allKillsPage, allLossesPage, allSoloKillsPage, allSoloDeathsPage, allPage, allKillsCharacter, allLossesCharacter, allSoloKillsCharacter, allSoloDeathsCharacter, allCharacter, allKillsCorp, allLossesCorp, allSoloKillsCorp, allSoloDeathsCorp, allCorp, allKillsAlliance, allLossesAlliance, allSoloKillsAlliance, allSoloDeathsAlliance, allAlliance, allKillsRegion, allLossesRegion, allSoloKillsRegion, allSoloDeathsRegion, allRegion, allKillsCharacterSysFilter, allLossesCharacterSysFilter, allSoloKillsCharacterSysFilter, allSoloDeathsCharacterSysFilter, allCharacterSysFilter, allKillsCharacterReg, allLossesCharacterReg, allSoloKillsCharacterReg, allSoloDeathsCharacterReg, allCharacterReg, allKillsCharacterCon, allLossesCharacterCon, allSoloKillsCharacterCon, allSoloDeathsCharacterCon, allCharacterCon, allKillsCharacterAll, allLossesCharacterAll, allSoloKillsCharacterAll, allSoloDeathsCharacterAll, allCharacterAll, allKillsCharacterSysShip, allLossesCharacterSysShip, allSoloKillsCharacterSysShip, allSoloDeathsCharacterSysShip, allCharacterSysShip, allKillsCharacterSysNoShip, allLossesCharacterSysNoShip, allSoloKillsCharacterSysNoShip, allSoloDeathsCharacterSysNoShip, allCharacterSysNoShip, allKillsCharacterAllShip, allLossesCharacterAllShip, allSoloKillsCharacterAllShip, allSoloDeathsCharacterAllShip, allCharacterAllShip, allKillsCharacterAllNoShip, allLossesCharacterAllNoShip, allSoloKillsCharacterAllNoShip, allSoloDeathsCharacterAllNoShip, allCharacterAllNoShip, allKillsCharacterConNoShip, allLossesCharacterConNoShip, allSoloKillsCharacterConNoShip, allSoloDeathsCharacterConNoShip, allCharacterConNoShip, allKillsCharacterConShip, allLossesCharacterConShip, allSoloKillsCharacterConShip, allSoloDeathsCharacterConShip, allCharacterConShip, allKillsCharacterRegNoShip, allLossesCharacterRegNoShip, allSoloKillsCharacterRegNoShip, allSoloDeathsCharacterRegNoShip, allCharacterRegNoShip, allKillsCharacterRegShip, allLossesCharacterRegShip, allSoloKillsCharacterRegShip, allSoloDeathsCharacterRegShip, allCharacterRegShip, allKillsRegionNoShip, allLossesRegionNoShip, allSoloKillsRegionNoShip, allSoloDeathsRegionNoShip, allRegionNoShip, allKillsRegionShip, allLossesRegionShip, allSoloKillsRegionShip, allSoloDeathsRegionShip, allRegionShip, allKillsAllianceShip, allLossesAllianceShip, allSoloKillsAllianceShip, allSoloDeathsAllianceShip, allAllianceShip, allKillsAllianceNoShip, allLossesAllianceNoShip, allSoloKillsAllianceNoShip, allSoloDeathsAllianceNoShip, allAllianceNoShip, allKillsCorpShip, allLossesCorpShip, allSoloKillsCorpShip, allSoloDeathsCorpShip, allCorpShip, allKillsCorpNoShip, allLossesCorpNoShip, allSoloKillsCorpNoShip, allSoloDeathsCorpNoShip, allCorpNoShip, allKillsShip, allKillsShipRegShip, allKillsShipSysShip, allKillsShipConShip, allKillsShipAllShip, allLossesShip, allLossesShipRegShip, allLossesShipSysShip, allLossesShipConShip, allLossesShipAllShip, allSoloKillsShip, allSoloKillsShipRegShip, allSoloKillsShipSysShip, allSoloKillsShipConShip, allSoloKillsShipAllShip, allSoloDeathsShip, allSoloDeathsShipRegShip, allSoloDeathsShipSysShip, allSoloDeathsShipConShip, allSoloDeathsShipAllShip, allShip, allShipRegShip, allShipSysShip, allShipConShip, allShipAllShip, JumpRanges):
             frame = F(container, self)
             self.frames[F] = frame
             frame.grid(row=0, column=0, sticky="nsew")
@@ -60,11 +60,14 @@ class StartPage(Frame):
         jumpRanges = Button(self, width=20, text="Jump Ranges", command=lambda:controller.show_frame(JumpRanges))
         jumpRanges.grid(row=4, column=0, padx=10, pady=10)
 
+        Character = Button(self, width=20, text="Character Association", command=lambda:controller.show_frame(CharacterAssociation))
+        Character.grid(row=5, column=0, padx=10, pady=10)
+
         label = Label(self, wraplengt=250, text="This Application is intended to Filter the Zkillboard To help Hunters or Campers have the Information they need quickly. The LIVE FEED will watch the killboard for you by your filtered perameters and then launch the browser when a kill happens. (Delay approapriate to that of Zkill)")
-        label.grid(row=5, column=0, padx=10, pady=10)
+        label.grid(row=6, column=0, padx=10, pady=10)
 
         label = Label(self, wraplengt=250, text="Please Note: The Live Feed will behave like the Application has stopped responding while it searches for the Kills")
-        label.grid(row=6, column=0, padx=10, pady=10)
+        label.grid(row=7, column=0, padx=10, pady=10)
 
 class LiveFeed(Frame):
     def __init__(self, parent, controller):
@@ -295,7 +298,7 @@ class NotByShipR(Frame):
                     continue
                 elif jumps >= chosenjumps:
                     jumpschosen = str(chosenjumps)
-                    print("The Kill is less than " + jumpschosen + " jumps from " + systemp)
+                    print("The Kill is More than " + jumpschosen + " jumps from " + systemp)
                     continue
                 else:
                     print("New Kill-Mail Reported")
@@ -555,7 +558,7 @@ class NotByShipC(Frame):
                     continue
                 elif jumps >= chosenjumps:
                     jumpschosen = str(chosenjumps)
-                    print("The Kill is less than " + jumpschosen + " jumps from " + systemp)
+                    print("The Kill is More than " + jumpschosen + " jumps from " + systemp)
                     continue
                 else:
                     print("New Kill-Mail Reported")
@@ -769,7 +772,7 @@ class ChooseShipR(Frame):
                     continue
                 elif jumps >= chosenjumps:
                     jumpschosen = str(chosenjumps)
-                    print("The Kill is less than " + jumpschosen + " jumps from " + systemp)
+                    print("The Kill is More than " + jumpschosen + " jumps from " + systemp)
                     continue
                 else:
                     print("New Kill-Mail Reported")
@@ -1077,7 +1080,7 @@ class ChooseShipC(Frame):
                     continue
                 elif jumps >= chosenjumps:
                     jumpschosen = str(chosenjumps)
-                    print("The Kill is less than " + jumpschosen + " jumps from " + systemp)
+                    print("The Kill is More than " + jumpschosen + " jumps from " + systemp)
                     continue
                 else:
                     print("New Kill-Mail Reported")
@@ -83127,7 +83130,7 @@ class JumpRanges(Frame):
         drop2.config(width=18)
         drop2.grid(row=5, column=0, padx=10, pady=10)
 
-        label = Label(self, wraplengt=250, text="Please Input The 'From' Location")
+        label = Label(self, wraplength=250, text="Please Input The 'From' Location")
         label.grid(row=6, column=0, padx=10, pady=10)
 
         inputJRF = Entry(self, font=('Helvetica',10))
@@ -83145,6 +83148,153 @@ class JumpRanges(Frame):
         back = Button(self, width=20, text="Back", command=lambda:controller.show_frame(StartPage))
         back.grid(row=11, column=0, padx=10, pady=10)
 
+#----------Kill Look up-------------------
+
+class CharacterAssociation(Frame):
+    def __init__(self, parent, controller):
+        Frame.__init__(self, parent)
+
+        def myClickRNS():
+            error = 0
+
+            while error == 0:
+                try:
+                    character = inputCC1.get()                        
+                    url = "https://zkillboard.com/character/" + character
+                    print(url)
+
+                    page = requests.get(url)
+                    from bs4 import BeautifulSoup
+                    soup = BeautifulSoup(page.content, 'html.parser', on_duplicate_attribute='ignore')
+
+                    element = soup.find_all('a')[39]
+                    characterID = (element.get('href'))
+
+                    print(characterID)
+
+                    filter = characterID
+
+                    fullstring = characterID
+                    substring = "character"
+
+                    fullstring.index(substring)
+
+                except ValueError:
+                    print ("Not found!")
+                    messagebox.showerror("Oops", "Could Not Find that Character")
+                    break
+                else:
+                    print ("Found!")
+                    break
+
+            while error == 0:
+                try:
+                    character2 = inputCC2.get()                        
+                    url2 = "https://zkillboard.com/character/" + character2
+                    print(url2)
+
+                    page2 = requests.get(url2)
+                    from bs4 import BeautifulSoup
+                    soup2 = BeautifulSoup(page2.content, 'html.parser', on_duplicate_attribute='ignore')
+
+                    element2 = soup2.find_all('a')[39]
+                    characterID2 = (element2.get('href'))
+
+                    print(characterID2)
+
+                    filter = characterID2
+
+                    fullstring2 = characterID2
+                    substring = "character"
+
+                    fullstring.index(substring)
+
+                except ValueError:
+                    print ("Not found!")
+                    messagebox.showerror("Oops", "Could Not Find that Character")
+                    break
+                else:
+                    print ("Found!")
+                    break
+
+            while error == 0:
+                try:
+                    killsC1 = []
+                    pageNo1 = 1
+                    for x in range(0, 5):
+                        urlNew = "https://zkillboard.com" + characterID + '.' + '/page/' + str(pageNo1)
+                        print(urlNew)
+
+                        pageCCompare = requests.get(urlNew)
+                        from bs4 import BeautifulSoup
+                        soupCCompare = BeautifulSoup(pageCCompare.content, 'html.parser', on_duplicate_attribute='ignore')
+
+                        pageNo1 = pageNo1 + 1
+
+                        #start = soupCCompare.find('tbody', id='killmailstobdy').parent
+                        for a in soupCCompare.find_all('a', href=True):
+                            if a['href'].startswith('/kill/'):
+                                killsC1f = a['href']
+                                killsC1.append(killsC1f)
+
+                    killsC2 = []
+                    pageNo2 = 1
+                    for x in range(0, 5):
+                        url2New = "https://zkillboard.com" + characterID2 + '.' + '/page/' + str(pageNo2)
+                        print(url2New)
+                        pageCCompare2 = requests.get(url2New)
+                        from bs4 import BeautifulSoup
+                        soupCCompare2 = BeautifulSoup(pageCCompare2.content, 'html.parser', on_duplicate_attribute='ignore')
+
+                        pageNo2 = pageNo2 + 1
+
+                        #start2 = soupCCompare2.find('tbody', id='killmailstobdy').parent
+                        killsC2 = []
+                        for a in soupCCompare2.find_all('a', href=True):
+                            if a['href'].startswith('/kill/'):
+                                killsC2f = a['href']
+                                killsC2.append(killsC2f)
+
+                    Cmatches = list(set(killsC1).intersection(set(killsC2)))
+                    print(Cmatches)
+
+                except ValueError:
+                    print ("Not found!")
+                    messagebox.showerror("Oops", "Could Not Find that Character")
+                    break
+                else:
+                    print ("Found!")
+                    break
+            
+            if not Cmatches:
+                messagebox.showerror("Nope", "No Association Found in the last 250 Kills")
+            else:
+                killlatest = Cmatches[0]
+                url = "https://zkillboard.com" + killlatest
+                webbrowser.open_new(url)
+
+        label = Label(self, width=50, text="Character Association")
+        label.grid(row=5, column=0, padx=10, pady=10)
+
+        label = Label(self, text="Please Input The First Character Name")
+        label.grid(row=6, column=0, padx=10, pady=10)
+
+        inputCC1 = Entry(self, font=('Helvetica',10))
+        inputCC1.grid(row=7, column=0, padx=10, pady=0) 
+
+        label = Label(self, text="Please Input The Second Character name")
+        label.grid(row=8, column=0, padx=10, pady=0)
+
+        inputCC2 = Entry(self, font=('Helvetica',10))
+        inputCC2.grid(row=9, column=0, padx=10, pady=0) 
+
+        FilterNowC = Button(self,  width=20, text="Submit", command=myClickRNS)
+        FilterNowC.grid(row=10, column=0, padx=10, pady=10)  
+
+        back = Button(self, width=20, text="Back", command=lambda:controller.show_frame(StartPage))
+        back.grid(row=11, column=0, padx=10, pady=10)
+
+#-------Update the drop down for region-------
 
 app = App()
 app.mainloop()
