@@ -83222,7 +83222,7 @@ class CharacterAssociation(Frame):
                     killsC1 = []
                     pageNo1 = 1
                     for x in range(0, 5):
-                        urlNew = "https://zkillboard.com" + characterID + '.' + '/page/' + str(pageNo1)
+                        urlNew = "https://zkillboard.com" + characterID + '.' + '/kills/' + '.' + '/page/' + str(pageNo1)
                         print(urlNew)
 
                         pageCCompare = requests.get(urlNew)
@@ -83243,7 +83243,7 @@ class CharacterAssociation(Frame):
                     print(killsC1)
 
                     for x in range(0, 5):
-                        url2New = "https://zkillboard.com" + characterID2 + '.' + '/page/' + str(pageNo2)
+                        url2New = "https://zkillboard.com" + characterID2 + '.' + '/kills/' + '.' + '/page/' + str(pageNo2)
                         print(url2New)
                         pageCCompare2 = requests.get(url2New)
                         from bs4 import BeautifulSoup
