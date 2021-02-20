@@ -2415,7 +2415,9 @@ class allKillsCorpShip(Frame):
         ]
 
         option40 = [  
-            "Please Select             ",          
+            "Please Select             ", 
+            "Tiamat",
+            "Hydra",      
             "Adrestia",
             "Aliastra Catalyst",
             "Caedes",
@@ -3967,9 +3969,10 @@ class allKillsAllianceShip(Frame):
         ]
 
         option40 = [  
-            "Please Select             ",          
+            "Please Select             ", 
+            "Tiamat",
+            "Hydra",      
             "Adrestia",
-            "Aliastra Catalyst",
             "Caedes",
             "Cambion",
             "Chameleon",
@@ -5517,9 +5520,10 @@ class allKillsRegionShip(Frame):
         ]
 
         option40 = [  
-            "Please Select             ",          
+            "Please Select             ", 
+            "Tiamat",
+            "Hydra",      
             "Adrestia",
-            "Aliastra Catalyst",
             "Caedes",
             "Cambion",
             "Chameleon",
@@ -7122,9 +7126,10 @@ class allKillsCharacterRegShip(Frame):
         ]
 
         option40 = [  
-            "Please Select             ",          
+            "Please Select             ", 
+            "Tiamat",
+            "Hydra",      
             "Adrestia",
-            "Aliastra Catalyst",
             "Caedes",
             "Cambion",
             "Chameleon",
@@ -8742,9 +8747,10 @@ class allKillsCharacterConShip(Frame):
         ]
 
         option40 = [  
-            "Please Select             ",          
+            "Please Select             ", 
+            "Tiamat",
+            "Hydra",      
             "Adrestia",
-            "Aliastra Catalyst",
             "Caedes",
             "Cambion",
             "Chameleon",
@@ -10324,9 +10330,10 @@ class allKillsCharacterAllShip(Frame):
         ]
 
         option40 = [  
-            "Please Select             ",          
+            "Please Select             ", 
+            "Tiamat",
+            "Hydra",      
             "Adrestia",
-            "Aliastra Catalyst",
             "Caedes",
             "Cambion",
             "Chameleon",
@@ -11796,9 +11803,10 @@ class allKillsCharacterSysShip(Frame):
         ]
 
         option40 = [  
-            "Please Select             ",          
+            "Please Select             ", 
+            "Tiamat",
+            "Hydra",      
             "Adrestia",
-            "Aliastra Catalyst",
             "Caedes",
             "Cambion",
             "Chameleon",
@@ -13424,9 +13432,10 @@ class allKillsShipSysShip(Frame):
         ]
 
         option40 = [  
-            "Please Select             ",          
+            "Please Select             ", 
+            "Tiamat",
+            "Hydra",      
             "Adrestia",
-            "Aliastra Catalyst",
             "Caedes",
             "Cambion",
             "Chameleon",
@@ -14899,9 +14908,10 @@ class allKillsShipRegShip(Frame):
 
 
         option40 = [  
-            "Please Select             ",          
+            "Please Select             ", 
+            "Tiamat",
+            "Hydra",      
             "Adrestia",
-            "Aliastra Catalyst",
             "Caedes",
             "Cambion",
             "Chameleon",
@@ -16373,9 +16383,10 @@ class allKillsShipConShip(Frame):
 
 
         option40 = [  
-            "Please Select             ",          
+            "Please Select             ", 
+            "Tiamat",
+            "Hydra",      
             "Adrestia",
-            "Aliastra Catalyst",
             "Caedes",
             "Cambion",
             "Chameleon",
@@ -17849,9 +17860,10 @@ class allKillsShipAllShip(Frame):
 
 
         option40 = [  
-            "Please Select             ",          
+            "Please Select             ", 
+            "Tiamat",
+            "Hydra",      
             "Adrestia",
-            "Aliastra Catalyst",
             "Caedes",
             "Cambion",
             "Chameleon",
