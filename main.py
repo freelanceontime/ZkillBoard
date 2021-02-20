@@ -63,10 +63,10 @@ class StartPage(Frame):
         Character = Button(self, width=20, text="Character Association", command=lambda:controller.show_frame(CharacterAssociation))
         Character.grid(row=5, column=0, padx=10, pady=10)
 
-        label = Label(self, wraplengt=250, text="This Application is intended to Filter the Zkillboard To help Hunters or Campers have the Information they need quickly. The LIVE FEED will watch the killboard for you by your filtered perameters and then launch the browser when a kill happens. (Delay approapriate to that of Zkill)")
+        label = Label(self, wraplength=250, text="This Application is intended to Filter the Zkillboard To help Hunters or Campers have the Information they need quickly. The LIVE FEED will watch the killboard for you by your filtered perameters and then launch the browser when a kill happens. (Delay approapriate to that of Zkill)")
         label.grid(row=6, column=0, padx=10, pady=10)
 
-        label = Label(self, wraplengt=250, text="Please Note: The Live Feed will behave like the Application has stopped responding while it searches for the Kills")
+        label = Label(self, wraplength=250, text="Please Note: The Live Feed will behave like the Application has stopped responding while it searches for the Kills")
         label.grid(row=7, column=0, padx=10, pady=10)
 
 class LiveFeed(Frame):
@@ -94,7 +94,7 @@ class ManualSearch(Frame):
         label = Label(self, width=50, text="Kill Types -")
         label.grid(row=1, column=0, padx=10, pady=10)
 
-        label = Label(self, wraplengt=250, text="Please Choose One of the Following Kill Types")
+        label = Label(self, wraplength=250, text="Please Choose One of the Following Kill Types")
         label.grid(row=2, column=0, padx=10, pady=10)
 
         allKills = Button(self, width=20, text="All Kills Only", command=lambda:controller.show_frame(allKillsPage))
@@ -315,7 +315,7 @@ class NotByShipR(Frame):
         WithoutJ = Button(self, width=20, text="Without Jump Range", command=lambda:controller.show_frame(NotByShipRNoJump))
         WithoutJ.grid(row=2, column=0, padx=10, pady=10)
 
-        label = Label(self, wraplengt=250, text="Please Select the Region")
+        label = Label(self, wraplength=250, text="Please Select the Region")
         label.grid(row=3, column=0, padx=10, pady=10)
 
         
@@ -395,13 +395,13 @@ class NotByShipR(Frame):
         drop3.config(width=18)
         drop3.grid(row=4, column=0, padx=10, pady=10)
 
-        label = Label(self, wraplengt=250, text="Please Input your Current System e.g 'Y9G-KS'")
+        label = Label(self, wraplength=250, text="Please Input your Current System e.g 'Y9G-KS'")
         label.grid(row=5, column=0, padx=10, pady=10)
 
         systempC = Entry(self, font=('Helvetica',10))
         systempC.grid(row=6, column=0, padx=10, pady=10)
 
-        label = Label(self, wraplengt=250, text="Please Input Max Jump that you want all Kills which are found outside of it to be ignored")
+        label = Label(self, wraplength=250, text="Please Input Max Jump that you want all Kills which are found outside of it to be ignored")
         label.grid(row=7, column=0, padx=10, pady=10)
 
         jumpsC = Entry(self, font=('Helvetica',10))
@@ -575,19 +575,19 @@ class NotByShipC(Frame):
         WithoutJ = Button(self, width=20, text="Without Jump Range", command=lambda:controller.show_frame(NotByShipCNoJump))
         WithoutJ.grid(row=2, column=0, padx=10, pady=10)
 
-        label = Label(self, wraplengt=250, text="Please Input the Constelation e.g '49A-BZ'")
+        label = Label(self, wraplength=250, text="Please Input the Constelation e.g '49A-BZ'")
         label.grid(row=3, column=0, padx=10, pady=10)
 
         inputC = Entry(self, font=('Helvetica',10))
         inputC.grid(row=4, column=0, padx=10, pady=10) 
 
-        label = Label(self, wraplengt=250, text="Please Input your Current System e.g 'Y9G-KS")
+        label = Label(self, wraplength=250, text="Please Input your Current System e.g 'Y9G-KS")
         label.grid(row=5, column=0, padx=10, pady=10)
 
         systempC = Entry(self, font=('Helvetica',10))
         systempC.grid(row=6, column=0, padx=10, pady=10)
 
-        label = Label(self, wraplengt=250, text="Please Input Max Jump that you want all Kills which are found outside of it to be ignored")
+        label = Label(self, wraplength=250, text="Please Input Max Jump that you want all Kills which are found outside of it to be ignored")
         label.grid(row=7, column=0, padx=10, pady=10)  
 
         jumpsC = Entry(self, font=('Helvetica',10))
@@ -789,7 +789,7 @@ class ChooseShipR(Frame):
         WithoutJ = Button(self, width=20, text="Without Jump Range", command=lambda:controller.show_frame(ChooseShipRNoJump))
         WithoutJ.grid(row=2, column=0, padx=10, pady=10)
         
-        label = Label(self, wraplengt=250, text="Please Select the Region")
+        label = Label(self, wraplength=250, text="Please Select the Region")
         label.grid(row=3, column=0, padx=10, pady=10)
 
         optionR = [
@@ -868,13 +868,13 @@ class ChooseShipR(Frame):
         drop3.config(width=18)
         drop3.grid(row=4, column=0, padx=10, pady=10)
 
-        label = Label(self, wraplengt=250, text="Please Input your Current System e.g 'Y9G-KS")
+        label = Label(self, wraplength=250, text="Please Input your Current System e.g 'Y9G-KS")
         label.grid(row=5, column=0, padx=10, pady=10)
 
         systempRS = Entry(self, font=('Helvetica',10))
         systempRS.grid(row=6, column=0, padx=10, pady=10)
 
-        label = Label(self, wraplengt=250, text="Please Input Max Jump that you want all Kills which are found outside of it to be ignored")
+        label = Label(self, wraplength=250, text="Please Input Max Jump that you want all Kills which are found outside of it to be ignored")
         label.grid(row=7, column=0, padx=10, pady=10)  
 
         jumpsRS = Entry(self, font=('Helvetica',10))
@@ -1097,19 +1097,19 @@ class ChooseShipC(Frame):
         WithoutJ = Button(self, width=20, text="Without Jump Range", command=lambda:controller.show_frame(ChooseShipCNoJump))
         WithoutJ.grid(row=2, column=0, padx=10, pady=10)
 
-        label = Label(self, wraplengt=250, text="Please Input the Constelation e.g 'Z-6NQ6'")
+        label = Label(self, wraplength=250, text="Please Input the Constelation e.g 'Z-6NQ6'")
         label.grid(row=3, column=0, padx=10, pady=10)
 
         inputCS = Entry(self, font=('Helvetica',10))
         inputCS.grid(row=4, column=0, padx=10, pady=10)
 
-        label = Label(self, wraplengt=250, text="Please Input your Current System e.g 'Y9G-KS")
+        label = Label(self, wraplength=250, text="Please Input your Current System e.g 'Y9G-KS")
         label.grid(row=5, column=0, padx=10, pady=10)
 
         systempCS = Entry(self, font=('Helvetica',10))
         systempCS.grid(row=6, column=0, padx=10, pady=10)
 
-        label = Label(self, wraplengt=250, text="Please Input Max Jump that you want all Kills which are found outside of it to be ignored")
+        label = Label(self, wraplength=250, text="Please Input Max Jump that you want all Kills which are found outside of it to be ignored")
         label.grid(row=7, column=0, padx=10, pady=10)  
 
         jumpsCS = Entry(self, font=('Helvetica',10))
@@ -1247,7 +1247,7 @@ class NotByShipRNoJump(Frame):
         label = Label(self, width=50, text="Region ---")
         label.grid(row=1, column=0, padx=10, pady=10)
 
-        label = Label(self, wraplengt=250, text="Please Select the Region")
+        label = Label(self, wraplength=250, text="Please Select the Region")
         label.grid(row=2, column=0, padx=10, pady=10)
 
         
@@ -1435,7 +1435,7 @@ class NotByShipCNoJump(Frame):
         label = Label(self, width=50, text="Constelation ---")
         label.grid(row=1, column=0, padx=10, pady=10)
 
-        label = Label(self, wraplengt=250, text="Please Input the Constelation e.g '49A-BZ'")
+        label = Label(self, wraplength=250, text="Please Input the Constelation e.g '49A-BZ'")
         label.grid(row=2, column=0, padx=10, pady=10)
 
         inputC = Entry(self, font=('Helvetica',10))
@@ -1576,7 +1576,7 @@ class ChooseShipRNoJump(Frame):
         label = Label(self, width=50, text="Region with Ship ---")
         label.grid(row=1, column=0, padx=10, pady=10)
         
-        label = Label(self, wraplengt=250, text="Please Select the Region")
+        label = Label(self, wraplength=250, text="Please Select the Region")
         label.grid(row=2, column=0, padx=10, pady=10)
 
         optionR = [
@@ -1673,7 +1673,7 @@ class ChooseShipRNoJump(Frame):
         clickedRS = StringVar()
         clickedRS.set(options[0])
 
-        label = Label(self, wraplengt=250, text="Please Select the Ship Group")
+        label = Label(self, wraplength=250, text="Please Select the Ship Group")
         label.grid(row=4, column=0, padx=10, pady=10)
 
         drop = OptionMenu(self, clickedRS, *options)
@@ -1814,7 +1814,7 @@ class ChooseShipCNoJump(Frame):
         label = Label(self, width=50, text="Constelation with Ship ---")
         label.grid(row=1, column=0, padx=10, pady=10)
 
-        label = Label(self, wraplengt=250, text="Please Input the Constelation e.g 'Z-6NQ6'")
+        label = Label(self, wraplength=250, text="Please Input the Constelation e.g 'Z-6NQ6'")
         label.grid(row=2, column=0, padx=10, pady=10)
 
         inputCS = Entry(self, font=('Helvetica',10))
@@ -1969,7 +1969,7 @@ class allKillsCorpNoShip(Frame):
         label = Label(self, width=50, text="All Kills Corp No Ship")
         label.grid(row=1, column=0, padx=10, pady=10)
 
-        label = Label(self, wraplengt=250, text="Please Input the Corp Name")
+        label = Label(self, wraplength=250, text="Please Input the Corp Name")
         label.grid(row=4, column=0, padx=10, pady=10)
 
         inputAKCS = Entry(self, font=('Helvetica',10))
@@ -2414,6 +2414,28 @@ class allKillsCorpShip(Frame):
             "Retriever",           
         ]
 
+        option40 = [  
+            "Please Select             ",          
+            "Adrestia",
+            "Aliastra Catalyst",
+            "Caedes",
+            "Cambion",
+            "Chameleon",
+            "Chremoas",
+            "Etana",
+            "Fiend",
+            "Freki",
+            "Imp",
+            "Malice",
+            "Mimir",
+            "Moracha",
+            "Raven State Issue",
+            "Tempest Tribal Issue",
+            "Utu",
+            "Vangel",
+            "Whiptail",
+        ]
+
         def chosen(event):
             myLabel = Label(self, text=clickedRss.get())
             return clickedRss.get()
@@ -2684,6 +2706,13 @@ class allKillsCorpShip(Frame):
                 clickedRss = StringVar()
                 clickedRss.set(option39[0])
                 drop2 = OptionMenu(self, clickedRss, *option39, command=chosen)
+                drop2.config(width=18)
+                drop2.grid(row=7, column=0, padx=10, pady=10)
+
+            elif clickedRS.get() == "Alliance Tournament":
+                clickedRss = StringVar()
+                clickedRss.set(option40[0])
+                drop2 = OptionMenu(self, clickedRss, *option40, command=chosen)
                 drop2.config(width=18)
                 drop2.grid(row=7, column=0, padx=10, pady=10)
 
@@ -3315,6 +3344,45 @@ class allKillsCorpShip(Frame):
             elif ships == 'Retriever':
                 ship = '/ship/17478/'
 
+            elif ships == 'Tiamat':
+                ship = '/ship/48635/'
+            elif ships == 'Hydra':
+                ship = '/ship/48636/' 
+            elif ships == 'Adrestia':
+                ship = '/ship/2836/'
+            elif ships == 'Caedes':
+                ship = '/ship/42246/'
+            elif ships == 'Cambion':
+                ship = '/ship/32788/'
+            elif ships == 'Chameleon':
+                ship = '/ship/33675/'
+            elif ships == 'Chremoas':
+                ship = '/ship/33397/'
+            elif ships == 'Etana':
+                ship = '/ship/32790/'
+            elif ships == 'Fiend':
+                ship = '/ship/35781/'
+            elif ships == 'Freki':
+                ship = '/ship/32207/'
+            elif ships == 'Imp':
+                ship = '/ship/35779'
+            elif ships == 'Malice':
+                ship = '/ship/3516/'
+            elif ships == 'Mimir':
+                ship = '/ship/32209/'
+            elif ships == 'Moracha':
+                ship = '/ship/33395/'
+            elif ships == 'Raven State Issue':
+                ship = '/ship/26840/'
+            elif ships == 'Tempest Tribal Issue':
+                ship = '/ship/26842/'
+            elif ships == 'Utu':
+                ship = '/ship/2834/'
+            elif ships == 'Vangel':
+                ship = '/ship/3518/'
+            elif ships == 'Whiptail':
+                ship = '/ship/33673/'
+
             elif ships == 'Please Select             ':
                  messagebox.showerror("Oops", "Please Select a Ship")
 
@@ -3324,7 +3392,7 @@ class allKillsCorpShip(Frame):
         label = Label(self, width=50, text="All Kills Corp with Ship")
         label.grid(row=1, column=0, padx=10, pady=10)
 
-        label = Label(self, wraplengt=250, text="Please Input the Corp Name")
+        label = Label(self, wraplength=250, text="Please Input the Corp Name")
         label.grid(row=4, column=0, padx=10, pady=10)
 
         inputAKCS = Entry(self, font=('Helvetica',10))
@@ -3370,6 +3438,7 @@ class allKillsCorpShip(Frame):
             "Industrial Command",
             "Industrial",
             "Exhumers & Bardges",
+            "Alliance Tournament",
         ]
 
 
@@ -3452,7 +3521,7 @@ class allKillsAllianceNoShip(Frame):
         label = Label(self, width=50, text="All Kills Aliance No Ship")
         label.grid(row=1, column=0, padx=10, pady=10)
 
-        label = Label(self, wraplengt=250, text="Please Input the Alliance Name")
+        label = Label(self, wraplength=250, text="Please Input the Alliance Name")
         label.grid(row=4, column=0, padx=10, pady=10)
 
         inputAKCS = Entry(self, font=('Helvetica',10))
@@ -3897,6 +3966,28 @@ class allKillsAllianceShip(Frame):
             "Retriever",           
         ]
 
+        option40 = [  
+            "Please Select             ",          
+            "Adrestia",
+            "Aliastra Catalyst",
+            "Caedes",
+            "Cambion",
+            "Chameleon",
+            "Chremoas",
+            "Etana",
+            "Fiend",
+            "Freki",
+            "Imp",
+            "Malice",
+            "Mimir",
+            "Moracha",
+            "Raven State Issue",
+            "Tempest Tribal Issue",
+            "Utu",
+            "Vangel",
+            "Whiptail",
+        ]
+
         def chosen(event):
             myLabel = Label(self, text=clickedRss.get())
             return clickedRss.get()
@@ -4167,6 +4258,14 @@ class allKillsAllianceShip(Frame):
                 clickedRss = StringVar()
                 clickedRss.set(option39[0])
                 drop2 = OptionMenu(self, clickedRss, *option39, command=chosen)
+                drop2.config(width=18)
+                drop2.grid(row=7, column=0, padx=10, pady=10)
+
+
+            elif clickedRS.get() == "Alliance Tournament":
+                clickedRss = StringVar()
+                clickedRss.set(option40[0])
+                drop2 = OptionMenu(self, clickedRss, *option40, command=chosen)
                 drop2.config(width=18)
                 drop2.grid(row=7, column=0, padx=10, pady=10)
 
@@ -4797,6 +4896,45 @@ class allKillsAllianceShip(Frame):
             elif ships == 'Retriever':
                 ship = '/ship/17478/'
 
+            elif ships == 'Tiamat':
+                ship = '/ship/48635/'
+            elif ships == 'Hydra':
+                ship = '/ship/48636/' 
+            elif ships == 'Adrestia':
+                ship = '/ship/2836/'
+            elif ships == 'Caedes':
+                ship = '/ship/42246/'
+            elif ships == 'Cambion':
+                ship = '/ship/32788/'
+            elif ships == 'Chameleon':
+                ship = '/ship/33675/'
+            elif ships == 'Chremoas':
+                ship = '/ship/33397/'
+            elif ships == 'Etana':
+                ship = '/ship/32790/'
+            elif ships == 'Fiend':
+                ship = '/ship/35781/'
+            elif ships == 'Freki':
+                ship = '/ship/32207/'
+            elif ships == 'Imp':
+                ship = '/ship/35779'
+            elif ships == 'Malice':
+                ship = '/ship/3516/'
+            elif ships == 'Mimir':
+                ship = '/ship/32209/'
+            elif ships == 'Moracha':
+                ship = '/ship/33395/'
+            elif ships == 'Raven State Issue':
+                ship = '/ship/26840/'
+            elif ships == 'Tempest Tribal Issue':
+                ship = '/ship/26842/'
+            elif ships == 'Utu':
+                ship = '/ship/2834/'
+            elif ships == 'Vangel':
+                ship = '/ship/3518/'
+            elif ships == 'Whiptail':
+                ship = '/ship/33673/'
+
             elif ships == 'Please Select             ':
                  messagebox.showerror("Oops", "Please Select a Ship")
 
@@ -4806,7 +4944,7 @@ class allKillsAllianceShip(Frame):
         label = Label(self, width=50, text="All Kills Aliance with Ship")
         label.grid(row=1, column=0, padx=10, pady=10)
 
-        label = Label(self, wraplengt=250, text="Please Input the Alliance Name")
+        label = Label(self, wraplength=250, text="Please Input the Alliance Name")
         label.grid(row=4, column=0, padx=10, pady=10)
 
         inputAKCS = Entry(self, font=('Helvetica',10))
@@ -4852,6 +4990,7 @@ class allKillsAllianceShip(Frame):
             "Industrial Command",
             "Industrial",
             "Exhumers & Bardges",
+            "Alliance Tournament",
         ]
 
 
@@ -4933,7 +5072,7 @@ class allKillsRegionNoShip(Frame):
         label = Label(self, width=50, text="All Kills By Region No Ship")
         label.grid(row=1, column=0, padx=10, pady=10)
 
-        label = Label(self, wraplengt=250, text="Please Input the Region e.g 'Syndicate'")
+        label = Label(self, wraplength=250, text="Please Input the Region e.g 'Syndicate'")
         label.grid(row=4, column=0, padx=10, pady=10)
 
         inputAKCS = Entry(self, font=('Helvetica',10))
@@ -5377,6 +5516,28 @@ class allKillsRegionShip(Frame):
             "Retriever",           
         ]
 
+        option40 = [  
+            "Please Select             ",          
+            "Adrestia",
+            "Aliastra Catalyst",
+            "Caedes",
+            "Cambion",
+            "Chameleon",
+            "Chremoas",
+            "Etana",
+            "Fiend",
+            "Freki",
+            "Imp",
+            "Malice",
+            "Mimir",
+            "Moracha",
+            "Raven State Issue",
+            "Tempest Tribal Issue",
+            "Utu",
+            "Vangel",
+            "Whiptail",
+        ]
+
         def chosen(event):
             myLabel = Label(self, text=clickedRss.get())
             return clickedRss.get()
@@ -5647,6 +5808,14 @@ class allKillsRegionShip(Frame):
                 clickedRss = StringVar()
                 clickedRss.set(option39[0])
                 drop2 = OptionMenu(self, clickedRss, *option39, command=chosen)
+                drop2.config(width=18)
+                drop2.grid(row=7, column=0, padx=10, pady=10)
+
+
+            elif clickedRS.get() == "Alliance Tournament":
+                clickedRss = StringVar()
+                clickedRss.set(option40[0])
+                drop2 = OptionMenu(self, clickedRss, *option40, command=chosen)
                 drop2.config(width=18)
                 drop2.grid(row=7, column=0, padx=10, pady=10)
 
@@ -6278,6 +6447,44 @@ class allKillsRegionShip(Frame):
             elif ships == 'Retriever':
                 ship = '/ship/17478/'
 
+            elif ships == 'Tiamat':
+                ship = '/ship/48635/'
+            elif ships == 'Hydra':
+                ship = '/ship/48636/' 
+            elif ships == 'Adrestia':
+                ship = '/ship/2836/'
+            elif ships == 'Caedes':
+                ship = '/ship/42246/'
+            elif ships == 'Cambion':
+                ship = '/ship/32788/'
+            elif ships == 'Chameleon':
+                ship = '/ship/33675/'
+            elif ships == 'Chremoas':
+                ship = '/ship/33397/'
+            elif ships == 'Etana':
+                ship = '/ship/32790/'
+            elif ships == 'Fiend':
+                ship = '/ship/35781/'
+            elif ships == 'Freki':
+                ship = '/ship/32207/'
+            elif ships == 'Imp':
+                ship = '/ship/35779'
+            elif ships == 'Malice':
+                ship = '/ship/3516/'
+            elif ships == 'Mimir':
+                ship = '/ship/32209/'
+            elif ships == 'Moracha':
+                ship = '/ship/33395/'
+            elif ships == 'Raven State Issue':
+                ship = '/ship/26840/'
+            elif ships == 'Tempest Tribal Issue':
+                ship = '/ship/26842/'
+            elif ships == 'Utu':
+                ship = '/ship/2834/'
+            elif ships == 'Vangel':
+                ship = '/ship/3518/'
+            elif ships == 'Whiptail':
+                ship = '/ship/33673/'
 
             elif ships == 'Please Select             ':
                  messagebox.showerror("Oops", "Please Select a Ship")
@@ -6289,7 +6496,7 @@ class allKillsRegionShip(Frame):
         label = Label(self, width=50, text="All Kills By Region With Ship")
         label.grid(row=1, column=0, padx=10, pady=10)
 
-        label = Label(self, wraplengt=250, text="Please Input the Region e.g 'Syndicate'")
+        label = Label(self, wraplength=250, text="Please Input the Region e.g 'Syndicate'")
         label.grid(row=4, column=0, padx=10, pady=10) 
 
         inputAKCS = Entry(self, font=('Helvetica',10))
@@ -6335,6 +6542,7 @@ class allKillsRegionShip(Frame):
             "Industrial Command",
             "Industrial",
             "Exhumers & Bardges",
+            "Alliance Tournament",
         ]
 
 
@@ -6463,13 +6671,13 @@ class allKillsCharacterRegNoShip(Frame):
         label = Label(self, width=50, text="All Kills Character By Region No Ship")
         label.grid(row=1, column=0, padx=10, pady=10)
 
-        label = Label(self, wraplengt=250, text="Please Input or Paste the Character Name")
+        label = Label(self, wraplength=250, text="Please Input or Paste the Character Name")
         label.grid(row=2, column=0, padx=10, pady=10)
 
         inputAKCC = Entry(self, font=('Helvetica',10))
         inputAKCC.grid(row=3, column=0, padx=10, pady=10) 
 
-        label = Label(self, wraplengt=250, text="Please Input the Region e.g 'Syndicate'")
+        label = Label(self, wraplength=250, text="Please Input the Region e.g 'Syndicate'")
         label.grid(row=4, column=0, padx=10, pady=10)
 
         inputAKCS = Entry(self, font=('Helvetica',10))
@@ -6913,6 +7121,28 @@ class allKillsCharacterRegShip(Frame):
             "Retriever",           
         ]
 
+        option40 = [  
+            "Please Select             ",          
+            "Adrestia",
+            "Aliastra Catalyst",
+            "Caedes",
+            "Cambion",
+            "Chameleon",
+            "Chremoas",
+            "Etana",
+            "Fiend",
+            "Freki",
+            "Imp",
+            "Malice",
+            "Mimir",
+            "Moracha",
+            "Raven State Issue",
+            "Tempest Tribal Issue",
+            "Utu",
+            "Vangel",
+            "Whiptail",
+        ]
+
         def chosen(event):
             myLabel = Label(self, text=clickedRss.get())
             return clickedRss.get()
@@ -7186,6 +7416,14 @@ class allKillsCharacterRegShip(Frame):
                 drop2.config(width=18)
                 drop2.grid(row=7, column=0, padx=10, pady=10)
 
+
+
+            elif clickedRS.get() == "Alliance Tournament":
+                clickedRss = StringVar()
+                clickedRss.set(option40[0])
+                drop2 = OptionMenu(self, clickedRss, *option40, command=chosen)
+                drop2.config(width=18)
+                drop2.grid(row=7, column=0, padx=10, pady=10)
 
         def myClickRNS():
             error = 0
@@ -7842,7 +8080,44 @@ class allKillsCharacterRegShip(Frame):
             elif ships == 'Retriever':
                 ship = '/ship/17478/'
 
-
+            elif ships == 'Tiamat':
+                ship = '/ship/48635/'
+            elif ships == 'Hydra':
+                ship = '/ship/48636/' 
+            elif ships == 'Adrestia':
+                ship = '/ship/2836/'
+            elif ships == 'Caedes':
+                ship = '/ship/42246/'
+            elif ships == 'Cambion':
+                ship = '/ship/32788/'
+            elif ships == 'Chameleon':
+                ship = '/ship/33675/'
+            elif ships == 'Chremoas':
+                ship = '/ship/33397/'
+            elif ships == 'Etana':
+                ship = '/ship/32790/'
+            elif ships == 'Fiend':
+                ship = '/ship/35781/'
+            elif ships == 'Freki':
+                ship = '/ship/32207/'
+            elif ships == 'Imp':
+                ship = '/ship/35779'
+            elif ships == 'Malice':
+                ship = '/ship/3516/'
+            elif ships == 'Mimir':
+                ship = '/ship/32209/'
+            elif ships == 'Moracha':
+                ship = '/ship/33395/'
+            elif ships == 'Raven State Issue':
+                ship = '/ship/26840/'
+            elif ships == 'Tempest Tribal Issue':
+                ship = '/ship/26842/'
+            elif ships == 'Utu':
+                ship = '/ship/2834/'
+            elif ships == 'Vangel':
+                ship = '/ship/3518/'
+            elif ships == 'Whiptail':
+                ship = '/ship/33673/'
 
             elif ships == 'Please Select             ':
                  messagebox.showerror("Oops", "Please Select a Ship")
@@ -7854,13 +8129,13 @@ class allKillsCharacterRegShip(Frame):
         label = Label(self, width=50, text="All Kills Character By Region With Ship")
         label.grid(row=1, column=0, padx=10, pady=10)
 
-        label = Label(self, wraplengt=250, text="Please Input or Paste the Character Name")
+        label = Label(self, wraplength=250, text="Please Input or Paste the Character Name")
         label.grid(row=2, column=0, padx=10, pady=10) 
 
         inputAKCC = Entry(self, font=('Helvetica',10))
         inputAKCC.grid(row=3, column=0, padx=10, pady=10) 
 
-        label = Label(self, wraplengt=250, text="Please Input the Region e.g 'Syndicate'")
+        label = Label(self, wraplength=250, text="Please Input the Region e.g 'Syndicate'")
         label.grid(row=4, column=0, padx=10, pady=10) 
 
         inputAKCS = Entry(self, font=('Helvetica',10))
@@ -7906,6 +8181,7 @@ class allKillsCharacterRegShip(Frame):
             "Industrial Command",
             "Industrial",
             "Exhumers & Bardges",
+            "Alliance Tournament",
         ]
 
 
@@ -8015,13 +8291,13 @@ class allKillsCharacterConNoShip(Frame):
         label = Label(self, width=50, text="All Kills Character By Consteltion Without Ship")
         label.grid(row=1, column=0, padx=10, pady=10)
 
-        label = Label(self, wraplengt=250, text="Please Input or Paste the Character Name")
+        label = Label(self, wraplength=250, text="Please Input or Paste the Character Name")
         label.grid(row=2, column=0, padx=10, pady=10)
 
         inputAKCC = Entry(self, font=('Helvetica',10))
         inputAKCC.grid(row=3, column=0, padx=10, pady=10) 
 
-        label = Label(self, wraplengt=250, text="Please Input the Constelation e.g 'TA-A7V'")
+        label = Label(self, wraplength=250, text="Please Input the Constelation e.g 'TA-A7V'")
         label.grid(row=4, column=0, padx=10, pady=10)
 
         inputAKCS = Entry(self, font=('Helvetica',10))
@@ -8465,6 +8741,28 @@ class allKillsCharacterConShip(Frame):
             "Retriever",           
         ]
 
+        option40 = [  
+            "Please Select             ",          
+            "Adrestia",
+            "Aliastra Catalyst",
+            "Caedes",
+            "Cambion",
+            "Chameleon",
+            "Chremoas",
+            "Etana",
+            "Fiend",
+            "Freki",
+            "Imp",
+            "Malice",
+            "Mimir",
+            "Moracha",
+            "Raven State Issue",
+            "Tempest Tribal Issue",
+            "Utu",
+            "Vangel",
+            "Whiptail",
+        ]
+
         def chosen(event):
             myLabel = Label(self, text=clickedRss.get())
             return clickedRss.get()
@@ -8735,6 +9033,15 @@ class allKillsCharacterConShip(Frame):
                 clickedRss = StringVar()
                 clickedRss.set(option39[0])
                 drop2 = OptionMenu(self, clickedRss, *option39, command=chosen)
+                drop2.config(width=18)
+                drop2.grid(row=7, column=0, padx=10, pady=10)
+
+
+
+            elif clickedRS.get() == "Alliance Tournament":
+                clickedRss = StringVar()
+                clickedRss.set(option40[0])
+                drop2 = OptionMenu(self, clickedRss, *option40, command=chosen)
                 drop2.config(width=18)
                 drop2.grid(row=7, column=0, padx=10, pady=10)
 
@@ -9393,7 +9700,44 @@ class allKillsCharacterConShip(Frame):
             elif ships == 'Retriever':
                 ship = '/ship/17478/'
 
-
+            elif ships == 'Tiamat':
+                ship = '/ship/48635/'
+            elif ships == 'Hydra':
+                ship = '/ship/48636/' 
+            elif ships == 'Adrestia':
+                ship = '/ship/2836/'
+            elif ships == 'Caedes':
+                ship = '/ship/42246/'
+            elif ships == 'Cambion':
+                ship = '/ship/32788/'
+            elif ships == 'Chameleon':
+                ship = '/ship/33675/'
+            elif ships == 'Chremoas':
+                ship = '/ship/33397/'
+            elif ships == 'Etana':
+                ship = '/ship/32790/'
+            elif ships == 'Fiend':
+                ship = '/ship/35781/'
+            elif ships == 'Freki':
+                ship = '/ship/32207/'
+            elif ships == 'Imp':
+                ship = '/ship/35779'
+            elif ships == 'Malice':
+                ship = '/ship/3516/'
+            elif ships == 'Mimir':
+                ship = '/ship/32209/'
+            elif ships == 'Moracha':
+                ship = '/ship/33395/'
+            elif ships == 'Raven State Issue':
+                ship = '/ship/26840/'
+            elif ships == 'Tempest Tribal Issue':
+                ship = '/ship/26842/'
+            elif ships == 'Utu':
+                ship = '/ship/2834/'
+            elif ships == 'Vangel':
+                ship = '/ship/3518/'
+            elif ships == 'Whiptail':
+                ship = '/ship/33673/'
 
             elif ships == 'Please Select             ':
                  messagebox.showerror("Oops", "Please Select a Ship")
@@ -9405,13 +9749,13 @@ class allKillsCharacterConShip(Frame):
         label = Label(self, width=50, text="All Kills Character By Consteltion with ship")
         label.grid(row=1, column=0, padx=10, pady=10)
 
-        label = Label(self, wraplengt=250, text="Please Input or Paste the Character Name")
+        label = Label(self, wraplength=250, text="Please Input or Paste the Character Name")
         label.grid(row=2, column=0, padx=10, pady=10) 
 
         inputAKCC = Entry(self, font=('Helvetica',10))
         inputAKCC.grid(row=3, column=0, padx=10, pady=10) 
 
-        label = Label(self, wraplengt=250, text="Please Input the Constelation e.g 'TA-A7V'")
+        label = Label(self, wraplength=250, text="Please Input the Constelation e.g 'TA-A7V'")
         label.grid(row=4, column=0, padx=10, pady=10) 
 
         inputAKCS = Entry(self, font=('Helvetica',10))
@@ -9457,6 +9801,7 @@ class allKillsCharacterConShip(Frame):
             "Industrial Command",
             "Industrial",
             "Exhumers & Bardges",
+            "Alliance Tournament",
         ]
 
 
@@ -9534,7 +9879,7 @@ class allKillsCharacterAllNoShip(Frame):
         label = Label(self, width=50, text="All Kills Character All, No Ship")
         label.grid(row=1, column=0, padx=10, pady=10)
 
-        label = Label(self, wraplengt=250, text="Please Input or Paste the Character Name")
+        label = Label(self, wraplength=250, text="Please Input or Paste the Character Name")
         label.grid(row=2, column=0, padx=10, pady=10)
 
         inputAKCC = Entry(self, font=('Helvetica',10))
@@ -9978,6 +10323,28 @@ class allKillsCharacterAllShip(Frame):
             "Retriever",           
         ]
 
+        option40 = [  
+            "Please Select             ",          
+            "Adrestia",
+            "Aliastra Catalyst",
+            "Caedes",
+            "Cambion",
+            "Chameleon",
+            "Chremoas",
+            "Etana",
+            "Fiend",
+            "Freki",
+            "Imp",
+            "Malice",
+            "Mimir",
+            "Moracha",
+            "Raven State Issue",
+            "Tempest Tribal Issue",
+            "Utu",
+            "Vangel",
+            "Whiptail",
+        ]
+
         def chosen(event):
             myLabel = Label(self, text=clickedRss.get())
             return clickedRss.get()
@@ -10248,6 +10615,15 @@ class allKillsCharacterAllShip(Frame):
                 clickedRss = StringVar()
                 clickedRss.set(option39[0])
                 drop2 = OptionMenu(self, clickedRss, *option39, command=chosen)
+                drop2.config(width=18)
+                drop2.grid(row=7, column=0, padx=10, pady=10)
+
+
+
+            elif clickedRS.get() == "Alliance Tournament":
+                clickedRss = StringVar()
+                clickedRss.set(option40[0])
+                drop2 = OptionMenu(self, clickedRss, *option40, command=chosen)
                 drop2.config(width=18)
                 drop2.grid(row=7, column=0, padx=10, pady=10)
 
@@ -10875,6 +11251,45 @@ class allKillsCharacterAllShip(Frame):
             elif ships == 'Retriever':
                 ship = '/ship/17478/'
 
+            elif ships == 'Tiamat':
+                ship = '/ship/48635/'
+            elif ships == 'Hydra':
+                ship = '/ship/48636/' 
+            elif ships == 'Adrestia':
+                ship = '/ship/2836/'
+            elif ships == 'Caedes':
+                ship = '/ship/42246/'
+            elif ships == 'Cambion':
+                ship = '/ship/32788/'
+            elif ships == 'Chameleon':
+                ship = '/ship/33675/'
+            elif ships == 'Chremoas':
+                ship = '/ship/33397/'
+            elif ships == 'Etana':
+                ship = '/ship/32790/'
+            elif ships == 'Fiend':
+                ship = '/ship/35781/'
+            elif ships == 'Freki':
+                ship = '/ship/32207/'
+            elif ships == 'Imp':
+                ship = '/ship/35779'
+            elif ships == 'Malice':
+                ship = '/ship/3516/'
+            elif ships == 'Mimir':
+                ship = '/ship/32209/'
+            elif ships == 'Moracha':
+                ship = '/ship/33395/'
+            elif ships == 'Raven State Issue':
+                ship = '/ship/26840/'
+            elif ships == 'Tempest Tribal Issue':
+                ship = '/ship/26842/'
+            elif ships == 'Utu':
+                ship = '/ship/2834/'
+            elif ships == 'Vangel':
+                ship = '/ship/3518/'
+            elif ships == 'Whiptail':
+                ship = '/ship/33673/'
+
             elif ships == 'Please Select             ':
                  messagebox.showerror("Oops", "Please Select a Ship")
 
@@ -10885,7 +11300,7 @@ class allKillsCharacterAllShip(Frame):
         label = Label(self, width=50, text="All Kills Character By System With Ships -----")
         label.grid(row=1, column=0, padx=10, pady=10) 
 
-        label = Label(self, wraplengt=250, text="Please Input or Paste the Character Name")
+        label = Label(self, wraplength=250, text="Please Input or Paste the Character Name")
         label.grid(row=2, column=0, padx=10, pady=10) 
 
         inputAKCC = Entry(self, font=('Helvetica',10))
@@ -10931,6 +11346,7 @@ class allKillsCharacterAllShip(Frame):
             "Industrial Command",
             "Industrial",
             "Exhumers & Bardges",
+            "Alliance Tournament",
         ]
 
 
@@ -11379,6 +11795,28 @@ class allKillsCharacterSysShip(Frame):
             "Retriever",           
         ]
 
+        option40 = [  
+            "Please Select             ",          
+            "Adrestia",
+            "Aliastra Catalyst",
+            "Caedes",
+            "Cambion",
+            "Chameleon",
+            "Chremoas",
+            "Etana",
+            "Fiend",
+            "Freki",
+            "Imp",
+            "Malice",
+            "Mimir",
+            "Moracha",
+            "Raven State Issue",
+            "Tempest Tribal Issue",
+            "Utu",
+            "Vangel",
+            "Whiptail",
+        ]
+
         def chosen(event):
             myLabel = Label(self, text=clickedRss.get())
             return clickedRss.get()
@@ -11649,6 +12087,15 @@ class allKillsCharacterSysShip(Frame):
                 clickedRss = StringVar()
                 clickedRss.set(option39[0])
                 drop2 = OptionMenu(self, clickedRss, *option39, command=chosen)
+                drop2.config(width=18)
+                drop2.grid(row=7, column=0, padx=10, pady=10)
+
+
+
+            elif clickedRS.get() == "Alliance Tournament":
+                clickedRss = StringVar()
+                clickedRss.set(option40[0])
+                drop2 = OptionMenu(self, clickedRss, *option40, command=chosen)
                 drop2.config(width=18)
                 drop2.grid(row=7, column=0, padx=10, pady=10)
 
@@ -12308,7 +12755,44 @@ class allKillsCharacterSysShip(Frame):
             elif ships == 'Retriever':
                 ship = '/ship/17478/'
 
-
+            elif ships == 'Tiamat':
+                ship = '/ship/48635/'
+            elif ships == 'Hydra':
+                ship = '/ship/48636/' 
+            elif ships == 'Adrestia':
+                ship = '/ship/2836/'
+            elif ships == 'Caedes':
+                ship = '/ship/42246/'
+            elif ships == 'Cambion':
+                ship = '/ship/32788/'
+            elif ships == 'Chameleon':
+                ship = '/ship/33675/'
+            elif ships == 'Chremoas':
+                ship = '/ship/33397/'
+            elif ships == 'Etana':
+                ship = '/ship/32790/'
+            elif ships == 'Fiend':
+                ship = '/ship/35781/'
+            elif ships == 'Freki':
+                ship = '/ship/32207/'
+            elif ships == 'Imp':
+                ship = '/ship/35779'
+            elif ships == 'Malice':
+                ship = '/ship/3516/'
+            elif ships == 'Mimir':
+                ship = '/ship/32209/'
+            elif ships == 'Moracha':
+                ship = '/ship/33395/'
+            elif ships == 'Raven State Issue':
+                ship = '/ship/26840/'
+            elif ships == 'Tempest Tribal Issue':
+                ship = '/ship/26842/'
+            elif ships == 'Utu':
+                ship = '/ship/2834/'
+            elif ships == 'Vangel':
+                ship = '/ship/3518/'
+            elif ships == 'Whiptail':
+                ship = '/ship/33673/'
 
             elif ships == 'Please Select             ':
                  messagebox.showerror("Oops", "Please Select a Ship")
@@ -12320,13 +12804,13 @@ class allKillsCharacterSysShip(Frame):
         label = Label(self, width=50, text="All Kills Character By System With Ships -----")
         label.grid(row=1, column=0, padx=10, pady=10) 
 
-        label = Label(self, wraplengt=250, text="Please Input or Paste the Character Name")
+        label = Label(self, wraplength=250, text="Please Input or Paste the Character Name")
         label.grid(row=2, column=0, padx=10, pady=10) 
 
         inputAKCC = Entry(self, font=('Helvetica',10))
         inputAKCC.grid(row=3, column=0, padx=10, pady=10) 
 
-        label = Label(self, wraplengt=250, text="Please Input the System e.g 'Y9G-KS'")
+        label = Label(self, wraplength=250, text="Please Input the System e.g 'Y9G-KS'")
         label.grid(row=4, column=0, padx=10, pady=10) 
 
         inputAKCS = Entry(self, font=('Helvetica',10))
@@ -12372,6 +12856,7 @@ class allKillsCharacterSysShip(Frame):
             "Industrial Command",
             "Industrial",
             "Exhumers & Bardges",
+            "Alliance Tournament",
         ]
 
 
@@ -12461,13 +12946,13 @@ class allKillsCharacterSysNoShip(Frame):
         label = Label(self, width=50, text="All Kills Character By System Without Ships -----")
         label.grid(row=1, column=0, padx=10, pady=10)
 
-        label = Label(self, wraplengt=250, text="Please Input or Paste the Character Name")
+        label = Label(self, wraplength=250, text="Please Input or Paste the Character Name")
         label.grid(row=2, column=0, padx=10, pady=10)
 
         inputAKCC = Entry(self, font=('Helvetica',10))
         inputAKCC.grid(row=3, column=0, padx=10, pady=10) 
 
-        label = Label(self, wraplengt=250, text="Please Input the System e.g 'Y9G-KS'")
+        label = Label(self, wraplength=250, text="Please Input the System e.g 'Y9G-KS'")
         label.grid(row=4, column=0, padx=10, pady=10)
 
         inputAKCS = Entry(self, font=('Helvetica',10))
@@ -12938,6 +13423,28 @@ class allKillsShipSysShip(Frame):
             "Retriever",           
         ]
 
+        option40 = [  
+            "Please Select             ",          
+            "Adrestia",
+            "Aliastra Catalyst",
+            "Caedes",
+            "Cambion",
+            "Chameleon",
+            "Chremoas",
+            "Etana",
+            "Fiend",
+            "Freki",
+            "Imp",
+            "Malice",
+            "Mimir",
+            "Moracha",
+            "Raven State Issue",
+            "Tempest Tribal Issue",
+            "Utu",
+            "Vangel",
+            "Whiptail",
+        ]
+
         def chosen(event):
             myLabel = Label(self, text=clickedRss.get())
             return clickedRss.get()
@@ -13208,6 +13715,15 @@ class allKillsShipSysShip(Frame):
                 clickedRss = StringVar()
                 clickedRss.set(option39[0])
                 drop2 = OptionMenu(self, clickedRss, *option39, command=chosen)
+                drop2.config(width=18)
+                drop2.grid(row=7, column=0, padx=10, pady=10)
+
+
+
+            elif clickedRS.get() == "Alliance Tournament":
+                clickedRss = StringVar()
+                clickedRss.set(option40[0])
+                drop2 = OptionMenu(self, clickedRss, *option40, command=chosen)
                 drop2.config(width=18)
                 drop2.grid(row=7, column=0, padx=10, pady=10)
 
@@ -13837,6 +14353,44 @@ class allKillsShipSysShip(Frame):
             elif ships == 'Retriever':
                 ship = '/ship/17478/'
 
+            elif ships == 'Tiamat':
+                ship = '/ship/48635/'
+            elif ships == 'Hydra':
+                ship = '/ship/48636/' 
+            elif ships == 'Adrestia':
+                ship = '/ship/2836/'
+            elif ships == 'Caedes':
+                ship = '/ship/42246/'
+            elif ships == 'Cambion':
+                ship = '/ship/32788/'
+            elif ships == 'Chameleon':
+                ship = '/ship/33675/'
+            elif ships == 'Chremoas':
+                ship = '/ship/33397/'
+            elif ships == 'Etana':
+                ship = '/ship/32790/'
+            elif ships == 'Fiend':
+                ship = '/ship/35781/'
+            elif ships == 'Freki':
+                ship = '/ship/32207/'
+            elif ships == 'Imp':
+                ship = '/ship/35779'
+            elif ships == 'Malice':
+                ship = '/ship/3516/'
+            elif ships == 'Mimir':
+                ship = '/ship/32209/'
+            elif ships == 'Moracha':
+                ship = '/ship/33395/'
+            elif ships == 'Raven State Issue':
+                ship = '/ship/26840/'
+            elif ships == 'Tempest Tribal Issue':
+                ship = '/ship/26842/'
+            elif ships == 'Utu':
+                ship = '/ship/2834/'
+            elif ships == 'Vangel':
+                ship = '/ship/3518/'
+            elif ships == 'Whiptail':
+                ship = '/ship/33673/'
 
 
             elif ships == 'Please Select             ':
@@ -13849,7 +14403,7 @@ class allKillsShipSysShip(Frame):
         label = Label(self, width=50, text="All Kills in System With Ships -----")
         label.grid(row=1, column=0, padx=10, pady=10) 
 
-        label = Label(self, wraplengt=250, text="Please Input the System e.g 'Y9G-KS'")
+        label = Label(self, wraplength=250, text="Please Input the System e.g 'Y9G-KS'")
         label.grid(row=4, column=0, padx=10, pady=10) 
 
         inputAKCS = Entry(self, font=('Helvetica',10))
@@ -13895,6 +14449,7 @@ class allKillsShipSysShip(Frame):
             "Industrial Command",
             "Industrial",
             "Exhumers & Bardges",
+            "Alliance Tournament",
         ]
 
         clickedRS = StringVar()
@@ -14342,6 +14897,29 @@ class allKillsShipRegShip(Frame):
             "Retriever",           
         ]
 
+
+        option40 = [  
+            "Please Select             ",          
+            "Adrestia",
+            "Aliastra Catalyst",
+            "Caedes",
+            "Cambion",
+            "Chameleon",
+            "Chremoas",
+            "Etana",
+            "Fiend",
+            "Freki",
+            "Imp",
+            "Malice",
+            "Mimir",
+            "Moracha",
+            "Raven State Issue",
+            "Tempest Tribal Issue",
+            "Utu",
+            "Vangel",
+            "Whiptail",
+        ]
+
         def chosen(event):
             myLabel = Label(self, text=clickedRss.get())
             return clickedRss.get()
@@ -14615,6 +15193,14 @@ class allKillsShipRegShip(Frame):
                 drop2.config(width=18)
                 drop2.grid(row=7, column=0, padx=10, pady=10)
 
+
+
+            elif clickedRS.get() == "Alliance Tournament":
+                clickedRss = StringVar()
+                clickedRss.set(option40[0])
+                drop2 = OptionMenu(self, clickedRss, *option40, command=chosen)
+                drop2.config(width=18)
+                drop2.grid(row=7, column=0, padx=10, pady=10)
 
         def myClickRNS():
             error = 0
@@ -15242,7 +15828,44 @@ class allKillsShipRegShip(Frame):
             elif ships == 'Retriever':
                 ship = '/ship/17478/'
 
-
+            elif ships == 'Tiamat':
+                ship = '/ship/48635/'
+            elif ships == 'Hydra':
+                ship = '/ship/48636/' 
+            elif ships == 'Adrestia':
+                ship = '/ship/2836/'
+            elif ships == 'Caedes':
+                ship = '/ship/42246/'
+            elif ships == 'Cambion':
+                ship = '/ship/32788/'
+            elif ships == 'Chameleon':
+                ship = '/ship/33675/'
+            elif ships == 'Chremoas':
+                ship = '/ship/33397/'
+            elif ships == 'Etana':
+                ship = '/ship/32790/'
+            elif ships == 'Fiend':
+                ship = '/ship/35781/'
+            elif ships == 'Freki':
+                ship = '/ship/32207/'
+            elif ships == 'Imp':
+                ship = '/ship/35779'
+            elif ships == 'Malice':
+                ship = '/ship/3516/'
+            elif ships == 'Mimir':
+                ship = '/ship/32209/'
+            elif ships == 'Moracha':
+                ship = '/ship/33395/'
+            elif ships == 'Raven State Issue':
+                ship = '/ship/26840/'
+            elif ships == 'Tempest Tribal Issue':
+                ship = '/ship/26842/'
+            elif ships == 'Utu':
+                ship = '/ship/2834/'
+            elif ships == 'Vangel':
+                ship = '/ship/3518/'
+            elif ships == 'Whiptail':
+                ship = '/ship/33673/'
 
             elif ships == 'Please Select             ':
                  messagebox.showerror("Oops", "Please Select a Ship")
@@ -15254,7 +15877,7 @@ class allKillsShipRegShip(Frame):
         label = Label(self, width=50, text="All Kills By Region With Ship")
         label.grid(row=1, column=0, padx=10, pady=10)
 
-        label = Label(self, wraplengt=250, text="Please Input the Region e.g 'Syndicate'")
+        label = Label(self, wraplength=250, text="Please Input the Region e.g 'Syndicate'")
         label.grid(row=4, column=0, padx=10, pady=10) 
 
         inputAKCS = Entry(self, font=('Helvetica',10))
@@ -15300,8 +15923,8 @@ class allKillsShipRegShip(Frame):
             "Industrial Command",
             "Industrial",
             "Exhumers & Bardges",
+            "Alliance Tournament",
         ]
-
 
         clickedRS = StringVar()
         clickedRS.set(option1[0])
@@ -15748,6 +16371,29 @@ class allKillsShipConShip(Frame):
             "Retriever",           
         ]
 
+
+        option40 = [  
+            "Please Select             ",          
+            "Adrestia",
+            "Aliastra Catalyst",
+            "Caedes",
+            "Cambion",
+            "Chameleon",
+            "Chremoas",
+            "Etana",
+            "Fiend",
+            "Freki",
+            "Imp",
+            "Malice",
+            "Mimir",
+            "Moracha",
+            "Raven State Issue",
+            "Tempest Tribal Issue",
+            "Utu",
+            "Vangel",
+            "Whiptail",
+        ]
+
         def chosen(event):
             myLabel = Label(self, text=clickedRss.get())
             return clickedRss.get()
@@ -16018,6 +16664,15 @@ class allKillsShipConShip(Frame):
                 clickedRss = StringVar()
                 clickedRss.set(option39[0])
                 drop2 = OptionMenu(self, clickedRss, *option39, command=chosen)
+                drop2.config(width=18)
+                drop2.grid(row=7, column=0, padx=10, pady=10)
+
+
+
+            elif clickedRS.get() == "Alliance Tournament":
+                clickedRss = StringVar()
+                clickedRss.set(option40[0])
+                drop2 = OptionMenu(self, clickedRss, *option40, command=chosen)
                 drop2.config(width=18)
                 drop2.grid(row=7, column=0, padx=10, pady=10)
 
@@ -16647,6 +17302,44 @@ class allKillsShipConShip(Frame):
             elif ships == 'Retriever':
                 ship = '/ship/17478/'
 
+            elif ships == 'Tiamat':
+                ship = '/ship/48635/'
+            elif ships == 'Hydra':
+                ship = '/ship/48636/' 
+            elif ships == 'Adrestia':
+                ship = '/ship/2836/'
+            elif ships == 'Caedes':
+                ship = '/ship/42246/'
+            elif ships == 'Cambion':
+                ship = '/ship/32788/'
+            elif ships == 'Chameleon':
+                ship = '/ship/33675/'
+            elif ships == 'Chremoas':
+                ship = '/ship/33397/'
+            elif ships == 'Etana':
+                ship = '/ship/32790/'
+            elif ships == 'Fiend':
+                ship = '/ship/35781/'
+            elif ships == 'Freki':
+                ship = '/ship/32207/'
+            elif ships == 'Imp':
+                ship = '/ship/35779'
+            elif ships == 'Malice':
+                ship = '/ship/3516/'
+            elif ships == 'Mimir':
+                ship = '/ship/32209/'
+            elif ships == 'Moracha':
+                ship = '/ship/33395/'
+            elif ships == 'Raven State Issue':
+                ship = '/ship/26840/'
+            elif ships == 'Tempest Tribal Issue':
+                ship = '/ship/26842/'
+            elif ships == 'Utu':
+                ship = '/ship/2834/'
+            elif ships == 'Vangel':
+                ship = '/ship/3518/'
+            elif ships == 'Whiptail':
+                ship = '/ship/33673/'
 
 
             elif ships == 'Please Select             ':
@@ -16659,7 +17352,7 @@ class allKillsShipConShip(Frame):
         label = Label(self, width=50, text="All Kills By Consteltion with ship")
         label.grid(row=1, column=0, padx=10, pady=10)
 
-        label = Label(self, wraplengt=250, text="Please Input the Constelation e.g 'TA-A7V'")
+        label = Label(self, wraplength=250, text="Please Input the Constelation e.g 'TA-A7V'")
         label.grid(row=4, column=0, padx=10, pady=10) 
 
         inputAKCS = Entry(self, font=('Helvetica',10))
@@ -16705,6 +17398,7 @@ class allKillsShipConShip(Frame):
             "Industrial Command",
             "Industrial",
             "Exhumers & Bardges",
+            "Alliance Tournament",
         ]
 
 
@@ -17153,6 +17847,29 @@ class allKillsShipAllShip(Frame):
             "Retriever",           
         ]
 
+
+        option40 = [  
+            "Please Select             ",          
+            "Adrestia",
+            "Aliastra Catalyst",
+            "Caedes",
+            "Cambion",
+            "Chameleon",
+            "Chremoas",
+            "Etana",
+            "Fiend",
+            "Freki",
+            "Imp",
+            "Malice",
+            "Mimir",
+            "Moracha",
+            "Raven State Issue",
+            "Tempest Tribal Issue",
+            "Utu",
+            "Vangel",
+            "Whiptail",
+        ]
+
         def chosen(event):
             myLabel = Label(self, text=clickedRss.get())
             return clickedRss.get()
@@ -17425,6 +18142,16 @@ class allKillsShipAllShip(Frame):
                 drop2 = OptionMenu(self, clickedRss, *option39, command=chosen)
                 drop2.config(width=18)
                 drop2.grid(row=7, column=0, padx=10, pady=10)
+
+
+
+            elif clickedRS.get() == "Alliance Tournament":
+                clickedRss = StringVar()
+                clickedRss.set(option40[0])
+                drop2 = OptionMenu(self, clickedRss, *option40, command=chosen)
+                drop2.config(width=18)
+                drop2.grid(row=7, column=0, padx=10, pady=10)
+
 
         def myClickC():
 
@@ -18021,6 +18748,45 @@ class allKillsShipAllShip(Frame):
             elif ships == 'Retriever':
                 ship = '/ship/17478/'
 
+            elif ships == 'Tiamat':
+                ship = '/ship/48635/'
+            elif ships == 'Hydra':
+                ship = '/ship/48636/' 
+            elif ships == 'Adrestia':
+                ship = '/ship/2836/'
+            elif ships == 'Caedes':
+                ship = '/ship/42246/'
+            elif ships == 'Cambion':
+                ship = '/ship/32788/'
+            elif ships == 'Chameleon':
+                ship = '/ship/33675/'
+            elif ships == 'Chremoas':
+                ship = '/ship/33397/'
+            elif ships == 'Etana':
+                ship = '/ship/32790/'
+            elif ships == 'Fiend':
+                ship = '/ship/35781/'
+            elif ships == 'Freki':
+                ship = '/ship/32207/'
+            elif ships == 'Imp':
+                ship = '/ship/35779'
+            elif ships == 'Malice':
+                ship = '/ship/3516/'
+            elif ships == 'Mimir':
+                ship = '/ship/32209/'
+            elif ships == 'Moracha':
+                ship = '/ship/33395/'
+            elif ships == 'Raven State Issue':
+                ship = '/ship/26840/'
+            elif ships == 'Tempest Tribal Issue':
+                ship = '/ship/26842/'
+            elif ships == 'Utu':
+                ship = '/ship/2834/'
+            elif ships == 'Vangel':
+                ship = '/ship/3518/'
+            elif ships == 'Whiptail':
+                ship = '/ship/33673/'
+
             elif ships == 'Please Select             ':
                  messagebox.showerror("Oops", "Please Select a Ship")
 
@@ -18071,6 +18837,7 @@ class allKillsShipAllShip(Frame):
             "Industrial Command",
             "Industrial",
             "Exhumers & Bardges",
+            "Alliance Tournament",
         ]
 
 
@@ -18208,7 +18975,7 @@ class allLossesCorpNoShip(Frame):
         label = Label(self, width=50, text="All Lossses Corp No Ship")
         label.grid(row=1, column=0, padx=10, pady=10)
 
-        label = Label(self, wraplengt=250, text="Please Input the Corp Name")
+        label = Label(self, wraplength=250, text="Please Input the Corp Name")
         label.grid(row=4, column=0, padx=10, pady=10)
 
         inputAKCS = Entry(self, font=('Helvetica',10))
@@ -18925,6 +19692,14 @@ class allLossesCorpShip(Frame):
                 drop2.config(width=18)
                 drop2.grid(row=7, column=0, padx=10, pady=10)
 
+            elif clickedRS.get() == "Alliance Tournament":
+                clickedRss = StringVar()
+                clickedRss.set(option40[0])
+                drop2 = OptionMenu(self, clickedRss, *option40, command=chosen)
+                drop2.config(width=18)
+                drop2.grid(row=7, column=0, padx=10, pady=10)
+
+
         def myClickRNS():
 
             error = 0
@@ -19553,6 +20328,45 @@ class allLossesCorpShip(Frame):
             elif ships == 'Retriever':
                 ship = '/ship/17478/'
 
+            elif ships == 'Tiamat':
+                ship = '/ship/48635/'
+            elif ships == 'Hydra':
+                ship = '/ship/48636/' 
+            elif ships == 'Adrestia':
+                ship = '/ship/2836/'
+            elif ships == 'Caedes':
+                ship = '/ship/42246/'
+            elif ships == 'Cambion':
+                ship = '/ship/32788/'
+            elif ships == 'Chameleon':
+                ship = '/ship/33675/'
+            elif ships == 'Chremoas':
+                ship = '/ship/33397/'
+            elif ships == 'Etana':
+                ship = '/ship/32790/'
+            elif ships == 'Fiend':
+                ship = '/ship/35781/'
+            elif ships == 'Freki':
+                ship = '/ship/32207/'
+            elif ships == 'Imp':
+                ship = '/ship/35779'
+            elif ships == 'Malice':
+                ship = '/ship/3516/'
+            elif ships == 'Mimir':
+                ship = '/ship/32209/'
+            elif ships == 'Moracha':
+                ship = '/ship/33395/'
+            elif ships == 'Raven State Issue':
+                ship = '/ship/26840/'
+            elif ships == 'Tempest Tribal Issue':
+                ship = '/ship/26842/'
+            elif ships == 'Utu':
+                ship = '/ship/2834/'
+            elif ships == 'Vangel':
+                ship = '/ship/3518/'
+            elif ships == 'Whiptail':
+                ship = '/ship/33673/'
+
             elif ships == 'Please Select             ':
                  messagebox.showerror("Oops", "Please Select a Ship")
 
@@ -19562,7 +20376,7 @@ class allLossesCorpShip(Frame):
         label = Label(self, width=50, text="All Losses Corp with Ship")
         label.grid(row=1, column=0, padx=10, pady=10)
 
-        label = Label(self, wraplengt=250, text="Please Input the Corp Name")
+        label = Label(self, wraplength=250, text="Please Input the Corp Name")
         label.grid(row=4, column=0, padx=10, pady=10)
 
         inputAKCS = Entry(self, font=('Helvetica',10))
@@ -19608,6 +20422,7 @@ class allLossesCorpShip(Frame):
             "Industrial Command",
             "Industrial",
             "Exhumers & Bardges",
+            "Alliance Tournament",
         ]
 
 
@@ -19690,7 +20505,7 @@ class allLossesAllianceNoShip(Frame):
         label = Label(self, width=50, text="All Losses Aliance No Ship")
         label.grid(row=1, column=0, padx=10, pady=10)
 
-        label = Label(self, wraplengt=250, text="Please Input the Alliance Name")
+        label = Label(self, wraplength=250, text="Please Input the Alliance Name")
         label.grid(row=4, column=0, padx=10, pady=10)
 
         inputAKCS = Entry(self, font=('Helvetica',10))
@@ -20408,6 +21223,14 @@ class allLossesAllianceShip(Frame):
                 drop2.config(width=18)
                 drop2.grid(row=7, column=0, padx=10, pady=10)
 
+            elif clickedRS.get() == "Alliance Tournament":
+                clickedRss = StringVar()
+                clickedRss.set(option40[0])
+                drop2 = OptionMenu(self, clickedRss, *option40, command=chosen)
+                drop2.config(width=18)
+                drop2.grid(row=7, column=0, padx=10, pady=10)
+
+
         def myClickRNS():
 
             error = 0
@@ -21035,6 +21858,45 @@ class allLossesAllianceShip(Frame):
             elif ships == 'Retriever':
                 ship = '/ship/17478/'
 
+            elif ships == 'Tiamat':
+                ship = '/ship/48635/'
+            elif ships == 'Hydra':
+                ship = '/ship/48636/' 
+            elif ships == 'Adrestia':
+                ship = '/ship/2836/'
+            elif ships == 'Caedes':
+                ship = '/ship/42246/'
+            elif ships == 'Cambion':
+                ship = '/ship/32788/'
+            elif ships == 'Chameleon':
+                ship = '/ship/33675/'
+            elif ships == 'Chremoas':
+                ship = '/ship/33397/'
+            elif ships == 'Etana':
+                ship = '/ship/32790/'
+            elif ships == 'Fiend':
+                ship = '/ship/35781/'
+            elif ships == 'Freki':
+                ship = '/ship/32207/'
+            elif ships == 'Imp':
+                ship = '/ship/35779'
+            elif ships == 'Malice':
+                ship = '/ship/3516/'
+            elif ships == 'Mimir':
+                ship = '/ship/32209/'
+            elif ships == 'Moracha':
+                ship = '/ship/33395/'
+            elif ships == 'Raven State Issue':
+                ship = '/ship/26840/'
+            elif ships == 'Tempest Tribal Issue':
+                ship = '/ship/26842/'
+            elif ships == 'Utu':
+                ship = '/ship/2834/'
+            elif ships == 'Vangel':
+                ship = '/ship/3518/'
+            elif ships == 'Whiptail':
+                ship = '/ship/33673/'
+
             elif ships == 'Please Select             ':
                  messagebox.showerror("Oops", "Please Select a Ship")
 
@@ -21044,7 +21906,7 @@ class allLossesAllianceShip(Frame):
         label = Label(self, width=50, text="All Losses Aliance with Ship")
         label.grid(row=1, column=0, padx=10, pady=10)
 
-        label = Label(self, wraplengt=250, text="Please Input the Alliance Name")
+        label = Label(self, wraplength=250, text="Please Input the Alliance Name")
         label.grid(row=4, column=0, padx=10, pady=10)
 
         inputAKCS = Entry(self, font=('Helvetica',10))
@@ -21090,6 +21952,7 @@ class allLossesAllianceShip(Frame):
             "Industrial Command",
             "Industrial",
             "Exhumers & Bardges",
+            "Alliance Tournament",
         ]
 
 
@@ -21171,7 +22034,7 @@ class allLossesRegionNoShip(Frame):
         label = Label(self, width=50, text="All Losses By Region No Ship")
         label.grid(row=1, column=0, padx=10, pady=10)
 
-        label = Label(self, wraplengt=250, text="Please Input the Region e.g 'Syndicate'")
+        label = Label(self, wraplength=250, text="Please Input the Region e.g 'Syndicate'")
         label.grid(row=4, column=0, padx=10, pady=10)
 
         inputAKCS = Entry(self, font=('Helvetica',10))
@@ -21888,6 +22751,14 @@ class allLossesRegionShip(Frame):
                 drop2.config(width=18)
                 drop2.grid(row=7, column=0, padx=10, pady=10)
 
+            elif clickedRS.get() == "Alliance Tournament":
+                clickedRss = StringVar()
+                clickedRss.set(option40[0])
+                drop2 = OptionMenu(self, clickedRss, *option40, command=chosen)
+                drop2.config(width=18)
+                drop2.grid(row=7, column=0, padx=10, pady=10)
+
+
 
         def myClickRNS():
 
@@ -22516,6 +23387,45 @@ class allLossesRegionShip(Frame):
             elif ships == 'Retriever':
                 ship = '/ship/17478/'
 
+            elif ships == 'Tiamat':
+                ship = '/ship/48635/'
+            elif ships == 'Hydra':
+                ship = '/ship/48636/' 
+            elif ships == 'Adrestia':
+                ship = '/ship/2836/'
+            elif ships == 'Caedes':
+                ship = '/ship/42246/'
+            elif ships == 'Cambion':
+                ship = '/ship/32788/'
+            elif ships == 'Chameleon':
+                ship = '/ship/33675/'
+            elif ships == 'Chremoas':
+                ship = '/ship/33397/'
+            elif ships == 'Etana':
+                ship = '/ship/32790/'
+            elif ships == 'Fiend':
+                ship = '/ship/35781/'
+            elif ships == 'Freki':
+                ship = '/ship/32207/'
+            elif ships == 'Imp':
+                ship = '/ship/35779'
+            elif ships == 'Malice':
+                ship = '/ship/3516/'
+            elif ships == 'Mimir':
+                ship = '/ship/32209/'
+            elif ships == 'Moracha':
+                ship = '/ship/33395/'
+            elif ships == 'Raven State Issue':
+                ship = '/ship/26840/'
+            elif ships == 'Tempest Tribal Issue':
+                ship = '/ship/26842/'
+            elif ships == 'Utu':
+                ship = '/ship/2834/'
+            elif ships == 'Vangel':
+                ship = '/ship/3518/'
+            elif ships == 'Whiptail':
+                ship = '/ship/33673/'
+
 
             elif ships == 'Please Select             ':
                  messagebox.showerror("Oops", "Please Select a Ship")
@@ -22527,7 +23437,7 @@ class allLossesRegionShip(Frame):
         label = Label(self, width=50, text="All Losses By Region With Ship")
         label.grid(row=1, column=0, padx=10, pady=10)
 
-        label = Label(self, wraplengt=250, text="Please Input the Region e.g 'Syndicate'")
+        label = Label(self, wraplength=250, text="Please Input the Region e.g 'Syndicate'")
         label.grid(row=4, column=0, padx=10, pady=10) 
 
         inputAKCS = Entry(self, font=('Helvetica',10))
@@ -22573,6 +23483,7 @@ class allLossesRegionShip(Frame):
             "Industrial Command",
             "Industrial",
             "Exhumers & Bardges",
+            "Alliance Tournament",
         ]
 
 
@@ -22701,13 +23612,13 @@ class allLossesCharacterRegNoShip(Frame):
         label = Label(self, width=50, text="All Losses Character By Region No Ship")
         label.grid(row=1, column=0, padx=10, pady=10)
 
-        label = Label(self, wraplengt=250, text="Please Input or Paste the Character Name")
+        label = Label(self, wraplength=250, text="Please Input or Paste the Character Name")
         label.grid(row=2, column=0, padx=10, pady=10)
 
         inputAKCC = Entry(self, font=('Helvetica',10))
         inputAKCC.grid(row=3, column=0, padx=10, pady=10) 
 
-        label = Label(self, wraplengt=250, text="Please Input the Region e.g 'Syndicate'")
+        label = Label(self, wraplength=250, text="Please Input the Region e.g 'Syndicate'")
         label.grid(row=4, column=0, padx=10, pady=10)
 
         inputAKCS = Entry(self, font=('Helvetica',10))
@@ -23424,6 +24335,14 @@ class allLossesCharacterRegShip(Frame):
                 drop2.config(width=18)
                 drop2.grid(row=7, column=0, padx=10, pady=10)
 
+            elif clickedRS.get() == "Alliance Tournament":
+                clickedRss = StringVar()
+                clickedRss.set(option40[0])
+                drop2 = OptionMenu(self, clickedRss, *option40, command=chosen)
+                drop2.config(width=18)
+                drop2.grid(row=7, column=0, padx=10, pady=10)
+
+
 
         def myClickRNS():
             error = 0
@@ -24080,6 +24999,45 @@ class allLossesCharacterRegShip(Frame):
             elif ships == 'Retriever':
                 ship = '/ship/17478/'
 
+            elif ships == 'Tiamat':
+                ship = '/ship/48635/'
+            elif ships == 'Hydra':
+                ship = '/ship/48636/' 
+            elif ships == 'Adrestia':
+                ship = '/ship/2836/'
+            elif ships == 'Caedes':
+                ship = '/ship/42246/'
+            elif ships == 'Cambion':
+                ship = '/ship/32788/'
+            elif ships == 'Chameleon':
+                ship = '/ship/33675/'
+            elif ships == 'Chremoas':
+                ship = '/ship/33397/'
+            elif ships == 'Etana':
+                ship = '/ship/32790/'
+            elif ships == 'Fiend':
+                ship = '/ship/35781/'
+            elif ships == 'Freki':
+                ship = '/ship/32207/'
+            elif ships == 'Imp':
+                ship = '/ship/35779'
+            elif ships == 'Malice':
+                ship = '/ship/3516/'
+            elif ships == 'Mimir':
+                ship = '/ship/32209/'
+            elif ships == 'Moracha':
+                ship = '/ship/33395/'
+            elif ships == 'Raven State Issue':
+                ship = '/ship/26840/'
+            elif ships == 'Tempest Tribal Issue':
+                ship = '/ship/26842/'
+            elif ships == 'Utu':
+                ship = '/ship/2834/'
+            elif ships == 'Vangel':
+                ship = '/ship/3518/'
+            elif ships == 'Whiptail':
+                ship = '/ship/33673/'
+
 
 
             elif ships == 'Please Select             ':
@@ -24092,13 +25050,13 @@ class allLossesCharacterRegShip(Frame):
         label = Label(self, width=50, text="All Losses Character By Region With Ship")
         label.grid(row=1, column=0, padx=10, pady=10)
 
-        label = Label(self, wraplengt=250, text="Please Input or Paste the Character Name")
+        label = Label(self, wraplength=250, text="Please Input or Paste the Character Name")
         label.grid(row=2, column=0, padx=10, pady=10) 
 
         inputAKCC = Entry(self, font=('Helvetica',10))
         inputAKCC.grid(row=3, column=0, padx=10, pady=10) 
 
-        label = Label(self, wraplengt=250, text="Please Input the Region e.g 'Syndicate'")
+        label = Label(self, wraplength=250, text="Please Input the Region e.g 'Syndicate'")
         label.grid(row=4, column=0, padx=10, pady=10) 
 
         inputAKCS = Entry(self, font=('Helvetica',10))
@@ -24144,6 +25102,7 @@ class allLossesCharacterRegShip(Frame):
             "Industrial Command",
             "Industrial",
             "Exhumers & Bardges",
+            "Alliance Tournament",
         ]
 
 
@@ -24253,13 +25212,13 @@ class allLossesCharacterConNoShip(Frame):
         label = Label(self, width=50, text="All Losses Character By Consteltion Without Ship")
         label.grid(row=1, column=0, padx=10, pady=10)
 
-        label = Label(self, wraplengt=250, text="Please Input or Paste the Character Name")
+        label = Label(self, wraplength=250, text="Please Input or Paste the Character Name")
         label.grid(row=2, column=0, padx=10, pady=10)
 
         inputAKCC = Entry(self, font=('Helvetica',10))
         inputAKCC.grid(row=3, column=0, padx=10, pady=10) 
 
-        label = Label(self, wraplengt=250, text="Please Input the Constelation e.g 'TA-A7V'")
+        label = Label(self, wraplength=250, text="Please Input the Constelation e.g 'TA-A7V'")
         label.grid(row=4, column=0, padx=10, pady=10)
 
         inputAKCS = Entry(self, font=('Helvetica',10))
@@ -24976,6 +25935,14 @@ class allLossesCharacterConShip(Frame):
                 drop2.config(width=18)
                 drop2.grid(row=7, column=0, padx=10, pady=10)
 
+            elif clickedRS.get() == "Alliance Tournament":
+                clickedRss = StringVar()
+                clickedRss.set(option40[0])
+                drop2 = OptionMenu(self, clickedRss, *option40, command=chosen)
+                drop2.config(width=18)
+                drop2.grid(row=7, column=0, padx=10, pady=10)
+
+
         def myClickCNS():
             error = 0
             while error == 0:
@@ -25631,6 +26598,45 @@ class allLossesCharacterConShip(Frame):
             elif ships == 'Retriever':
                 ship = '/ship/17478/'
 
+            elif ships == 'Tiamat':
+                ship = '/ship/48635/'
+            elif ships == 'Hydra':
+                ship = '/ship/48636/' 
+            elif ships == 'Adrestia':
+                ship = '/ship/2836/'
+            elif ships == 'Caedes':
+                ship = '/ship/42246/'
+            elif ships == 'Cambion':
+                ship = '/ship/32788/'
+            elif ships == 'Chameleon':
+                ship = '/ship/33675/'
+            elif ships == 'Chremoas':
+                ship = '/ship/33397/'
+            elif ships == 'Etana':
+                ship = '/ship/32790/'
+            elif ships == 'Fiend':
+                ship = '/ship/35781/'
+            elif ships == 'Freki':
+                ship = '/ship/32207/'
+            elif ships == 'Imp':
+                ship = '/ship/35779'
+            elif ships == 'Malice':
+                ship = '/ship/3516/'
+            elif ships == 'Mimir':
+                ship = '/ship/32209/'
+            elif ships == 'Moracha':
+                ship = '/ship/33395/'
+            elif ships == 'Raven State Issue':
+                ship = '/ship/26840/'
+            elif ships == 'Tempest Tribal Issue':
+                ship = '/ship/26842/'
+            elif ships == 'Utu':
+                ship = '/ship/2834/'
+            elif ships == 'Vangel':
+                ship = '/ship/3518/'
+            elif ships == 'Whiptail':
+                ship = '/ship/33673/'
+
 
 
             elif ships == 'Please Select             ':
@@ -25643,13 +26649,13 @@ class allLossesCharacterConShip(Frame):
         label = Label(self, width=50, text="All Losses Character By Consteltion with ship")
         label.grid(row=1, column=0, padx=10, pady=10)
 
-        label = Label(self, wraplengt=250, text="Please Input or Paste the Character Name")
+        label = Label(self, wraplength=250, text="Please Input or Paste the Character Name")
         label.grid(row=2, column=0, padx=10, pady=10) 
 
         inputAKCC = Entry(self, font=('Helvetica',10))
         inputAKCC.grid(row=3, column=0, padx=10, pady=10) 
 
-        label = Label(self, wraplengt=250, text="Please Input the Constelation e.g 'TA-A7V'")
+        label = Label(self, wraplength=250, text="Please Input the Constelation e.g 'TA-A7V'")
         label.grid(row=4, column=0, padx=10, pady=10) 
 
         inputAKCS = Entry(self, font=('Helvetica',10))
@@ -25695,6 +26701,7 @@ class allLossesCharacterConShip(Frame):
             "Industrial Command",
             "Industrial",
             "Exhumers & Bardges",
+            "Alliance Tournament",
         ]
 
 
@@ -25772,7 +26779,7 @@ class allLossesCharacterAllNoShip(Frame):
         label = Label(self, width=50, text="All Losses Character All, No Ship")
         label.grid(row=1, column=0, padx=10, pady=10)
 
-        label = Label(self, wraplengt=250, text="Please Input or Paste the Character Name")
+        label = Label(self, wraplength=250, text="Please Input or Paste the Character Name")
         label.grid(row=2, column=0, padx=10, pady=10)
 
         inputAKCC = Entry(self, font=('Helvetica',10))
@@ -26489,6 +27496,14 @@ class allLossesCharacterAllShip(Frame):
                 drop2.config(width=18)
                 drop2.grid(row=7, column=0, padx=10, pady=10)
 
+            elif clickedRS.get() == "Alliance Tournament":
+                clickedRss = StringVar()
+                clickedRss.set(option40[0])
+                drop2 = OptionMenu(self, clickedRss, *option40, command=chosen)
+                drop2.config(width=18)
+                drop2.grid(row=7, column=0, padx=10, pady=10)
+
+
         def myClickC():
 
             error = 0
@@ -27113,6 +28128,45 @@ class allLossesCharacterAllShip(Frame):
             elif ships == 'Retriever':
                 ship = '/ship/17478/'
 
+            elif ships == 'Tiamat':
+                ship = '/ship/48635/'
+            elif ships == 'Hydra':
+                ship = '/ship/48636/' 
+            elif ships == 'Adrestia':
+                ship = '/ship/2836/'
+            elif ships == 'Caedes':
+                ship = '/ship/42246/'
+            elif ships == 'Cambion':
+                ship = '/ship/32788/'
+            elif ships == 'Chameleon':
+                ship = '/ship/33675/'
+            elif ships == 'Chremoas':
+                ship = '/ship/33397/'
+            elif ships == 'Etana':
+                ship = '/ship/32790/'
+            elif ships == 'Fiend':
+                ship = '/ship/35781/'
+            elif ships == 'Freki':
+                ship = '/ship/32207/'
+            elif ships == 'Imp':
+                ship = '/ship/35779'
+            elif ships == 'Malice':
+                ship = '/ship/3516/'
+            elif ships == 'Mimir':
+                ship = '/ship/32209/'
+            elif ships == 'Moracha':
+                ship = '/ship/33395/'
+            elif ships == 'Raven State Issue':
+                ship = '/ship/26840/'
+            elif ships == 'Tempest Tribal Issue':
+                ship = '/ship/26842/'
+            elif ships == 'Utu':
+                ship = '/ship/2834/'
+            elif ships == 'Vangel':
+                ship = '/ship/3518/'
+            elif ships == 'Whiptail':
+                ship = '/ship/33673/'
+
             elif ships == 'Please Select             ':
                  messagebox.showerror("Oops", "Please Select a Ship")
 
@@ -27123,7 +28177,7 @@ class allLossesCharacterAllShip(Frame):
         label = Label(self, width=50, text="All Losses Character By System With Ships -----")
         label.grid(row=1, column=0, padx=10, pady=10) 
 
-        label = Label(self, wraplengt=250, text="Please Input or Paste the Character Name")
+        label = Label(self, wraplength=250, text="Please Input or Paste the Character Name")
         label.grid(row=2, column=0, padx=10, pady=10) 
 
         inputAKCC = Entry(self, font=('Helvetica',10))
@@ -27169,6 +28223,7 @@ class allLossesCharacterAllShip(Frame):
             "Industrial Command",
             "Industrial",
             "Exhumers & Bardges",
+            "Alliance Tournament",
         ]
 
 
@@ -27890,6 +28945,14 @@ class allLossesCharacterSysShip(Frame):
                 drop2.config(width=18)
                 drop2.grid(row=7, column=0, padx=10, pady=10)
 
+            elif clickedRS.get() == "Alliance Tournament":
+                clickedRss = StringVar()
+                clickedRss.set(option40[0])
+                drop2 = OptionMenu(self, clickedRss, *option40, command=chosen)
+                drop2.config(width=18)
+                drop2.grid(row=7, column=0, padx=10, pady=10)
+
+
         def myClickCSS():
 
             error = 0
@@ -28546,6 +29609,45 @@ class allLossesCharacterSysShip(Frame):
             elif ships == 'Retriever':
                 ship = '/ship/17478/'
 
+            elif ships == 'Tiamat':
+                ship = '/ship/48635/'
+            elif ships == 'Hydra':
+                ship = '/ship/48636/' 
+            elif ships == 'Adrestia':
+                ship = '/ship/2836/'
+            elif ships == 'Caedes':
+                ship = '/ship/42246/'
+            elif ships == 'Cambion':
+                ship = '/ship/32788/'
+            elif ships == 'Chameleon':
+                ship = '/ship/33675/'
+            elif ships == 'Chremoas':
+                ship = '/ship/33397/'
+            elif ships == 'Etana':
+                ship = '/ship/32790/'
+            elif ships == 'Fiend':
+                ship = '/ship/35781/'
+            elif ships == 'Freki':
+                ship = '/ship/32207/'
+            elif ships == 'Imp':
+                ship = '/ship/35779'
+            elif ships == 'Malice':
+                ship = '/ship/3516/'
+            elif ships == 'Mimir':
+                ship = '/ship/32209/'
+            elif ships == 'Moracha':
+                ship = '/ship/33395/'
+            elif ships == 'Raven State Issue':
+                ship = '/ship/26840/'
+            elif ships == 'Tempest Tribal Issue':
+                ship = '/ship/26842/'
+            elif ships == 'Utu':
+                ship = '/ship/2834/'
+            elif ships == 'Vangel':
+                ship = '/ship/3518/'
+            elif ships == 'Whiptail':
+                ship = '/ship/33673/'
+
 
 
             elif ships == 'Please Select             ':
@@ -28558,13 +29660,13 @@ class allLossesCharacterSysShip(Frame):
         label = Label(self, width=50, text="All Losses Character By System With Ships -----")
         label.grid(row=1, column=0, padx=10, pady=10) 
 
-        label = Label(self, wraplengt=250, text="Please Input or Paste the Character Name")
+        label = Label(self, wraplength=250, text="Please Input or Paste the Character Name")
         label.grid(row=2, column=0, padx=10, pady=10) 
 
         inputAKCC = Entry(self, font=('Helvetica',10))
         inputAKCC.grid(row=3, column=0, padx=10, pady=10) 
 
-        label = Label(self, wraplengt=250, text="Please Input the System e.g 'Y9G-KS'")
+        label = Label(self, wraplength=250, text="Please Input the System e.g 'Y9G-KS'")
         label.grid(row=4, column=0, padx=10, pady=10) 
 
         inputAKCS = Entry(self, font=('Helvetica',10))
@@ -28610,6 +29712,7 @@ class allLossesCharacterSysShip(Frame):
             "Industrial Command",
             "Industrial",
             "Exhumers & Bardges",
+            "Alliance Tournament",
         ]
 
 
@@ -28699,13 +29802,13 @@ class allLossesCharacterSysNoShip(Frame):
         label = Label(self, width=50, text="All Losses Character By System Without Ships -----")
         label.grid(row=1, column=0, padx=10, pady=10)
 
-        label = Label(self, wraplengt=250, text="Please Input or Paste the Character Name")
+        label = Label(self, wraplength=250, text="Please Input or Paste the Character Name")
         label.grid(row=2, column=0, padx=10, pady=10)
 
         inputAKCC = Entry(self, font=('Helvetica',10))
         inputAKCC.grid(row=3, column=0, padx=10, pady=10) 
 
-        label = Label(self, wraplengt=250, text="Please Input the System e.g 'Y9G-KS'")
+        label = Label(self, wraplength=250, text="Please Input the System e.g 'Y9G-KS'")
         label.grid(row=4, column=0, padx=10, pady=10)
 
         inputAKCS = Entry(self, font=('Helvetica',10))
@@ -29449,6 +30552,14 @@ class allLossesShipSysShip(Frame):
                 drop2.config(width=18)
                 drop2.grid(row=7, column=0, padx=10, pady=10)
 
+            elif clickedRS.get() == "Alliance Tournament":
+                clickedRss = StringVar()
+                clickedRss.set(option40[0])
+                drop2 = OptionMenu(self, clickedRss, *option40, command=chosen)
+                drop2.config(width=18)
+                drop2.grid(row=7, column=0, padx=10, pady=10)
+
+
         def myClickCSS():
 
             error = 0
@@ -30075,6 +31186,45 @@ class allLossesShipSysShip(Frame):
             elif ships == 'Retriever':
                 ship = '/ship/17478/'
 
+            elif ships == 'Tiamat':
+                ship = '/ship/48635/'
+            elif ships == 'Hydra':
+                ship = '/ship/48636/' 
+            elif ships == 'Adrestia':
+                ship = '/ship/2836/'
+            elif ships == 'Caedes':
+                ship = '/ship/42246/'
+            elif ships == 'Cambion':
+                ship = '/ship/32788/'
+            elif ships == 'Chameleon':
+                ship = '/ship/33675/'
+            elif ships == 'Chremoas':
+                ship = '/ship/33397/'
+            elif ships == 'Etana':
+                ship = '/ship/32790/'
+            elif ships == 'Fiend':
+                ship = '/ship/35781/'
+            elif ships == 'Freki':
+                ship = '/ship/32207/'
+            elif ships == 'Imp':
+                ship = '/ship/35779'
+            elif ships == 'Malice':
+                ship = '/ship/3516/'
+            elif ships == 'Mimir':
+                ship = '/ship/32209/'
+            elif ships == 'Moracha':
+                ship = '/ship/33395/'
+            elif ships == 'Raven State Issue':
+                ship = '/ship/26840/'
+            elif ships == 'Tempest Tribal Issue':
+                ship = '/ship/26842/'
+            elif ships == 'Utu':
+                ship = '/ship/2834/'
+            elif ships == 'Vangel':
+                ship = '/ship/3518/'
+            elif ships == 'Whiptail':
+                ship = '/ship/33673/'
+
 
 
             elif ships == 'Please Select             ':
@@ -30087,7 +31237,7 @@ class allLossesShipSysShip(Frame):
         label = Label(self, width=50, text="All Losses in System With Ships -----")
         label.grid(row=1, column=0, padx=10, pady=10) 
 
-        label = Label(self, wraplengt=250, text="Please Input the System e.g 'Y9G-KS'")
+        label = Label(self, wraplength=250, text="Please Input the System e.g 'Y9G-KS'")
         label.grid(row=4, column=0, padx=10, pady=10) 
 
         inputAKCS = Entry(self, font=('Helvetica',10))
@@ -30133,6 +31283,7 @@ class allLossesShipSysShip(Frame):
             "Industrial Command",
             "Industrial",
             "Exhumers & Bardges",
+            "Alliance Tournament",
         ]
 
         clickedRS = StringVar()
@@ -30853,6 +32004,14 @@ class allLossesShipRegShip(Frame):
                 drop2.config(width=18)
                 drop2.grid(row=7, column=0, padx=10, pady=10)
 
+            elif clickedRS.get() == "Alliance Tournament":
+                clickedRss = StringVar()
+                clickedRss.set(option40[0])
+                drop2 = OptionMenu(self, clickedRss, *option40, command=chosen)
+                drop2.config(width=18)
+                drop2.grid(row=7, column=0, padx=10, pady=10)
+
+
 
         def myClickRNS():
             error = 0
@@ -31480,6 +32639,45 @@ class allLossesShipRegShip(Frame):
             elif ships == 'Retriever':
                 ship = '/ship/17478/'
 
+            elif ships == 'Tiamat':
+                ship = '/ship/48635/'
+            elif ships == 'Hydra':
+                ship = '/ship/48636/' 
+            elif ships == 'Adrestia':
+                ship = '/ship/2836/'
+            elif ships == 'Caedes':
+                ship = '/ship/42246/'
+            elif ships == 'Cambion':
+                ship = '/ship/32788/'
+            elif ships == 'Chameleon':
+                ship = '/ship/33675/'
+            elif ships == 'Chremoas':
+                ship = '/ship/33397/'
+            elif ships == 'Etana':
+                ship = '/ship/32790/'
+            elif ships == 'Fiend':
+                ship = '/ship/35781/'
+            elif ships == 'Freki':
+                ship = '/ship/32207/'
+            elif ships == 'Imp':
+                ship = '/ship/35779'
+            elif ships == 'Malice':
+                ship = '/ship/3516/'
+            elif ships == 'Mimir':
+                ship = '/ship/32209/'
+            elif ships == 'Moracha':
+                ship = '/ship/33395/'
+            elif ships == 'Raven State Issue':
+                ship = '/ship/26840/'
+            elif ships == 'Tempest Tribal Issue':
+                ship = '/ship/26842/'
+            elif ships == 'Utu':
+                ship = '/ship/2834/'
+            elif ships == 'Vangel':
+                ship = '/ship/3518/'
+            elif ships == 'Whiptail':
+                ship = '/ship/33673/'
+
 
 
             elif ships == 'Please Select             ':
@@ -31492,7 +32690,7 @@ class allLossesShipRegShip(Frame):
         label = Label(self, width=50, text="All Losses By Region With Ship")
         label.grid(row=1, column=0, padx=10, pady=10)
 
-        label = Label(self, wraplengt=250, text="Please Input the Region e.g 'Syndicate'")
+        label = Label(self, wraplength=250, text="Please Input the Region e.g 'Syndicate'")
         label.grid(row=4, column=0, padx=10, pady=10) 
 
         inputAKCS = Entry(self, font=('Helvetica',10))
@@ -31538,6 +32736,7 @@ class allLossesShipRegShip(Frame):
             "Industrial Command",
             "Industrial",
             "Exhumers & Bardges",
+            "Alliance Tournament",
         ]
 
 
@@ -32259,6 +33458,14 @@ class allLossesShipConShip(Frame):
                 drop2.config(width=18)
                 drop2.grid(row=7, column=0, padx=10, pady=10)
 
+            elif clickedRS.get() == "Alliance Tournament":
+                clickedRss = StringVar()
+                clickedRss.set(option40[0])
+                drop2 = OptionMenu(self, clickedRss, *option40, command=chosen)
+                drop2.config(width=18)
+                drop2.grid(row=7, column=0, padx=10, pady=10)
+
+
         def myClickCNS():
             error = 0
             
@@ -32885,6 +34092,45 @@ class allLossesShipConShip(Frame):
             elif ships == 'Retriever':
                 ship = '/ship/17478/'
 
+            elif ships == 'Tiamat':
+                ship = '/ship/48635/'
+            elif ships == 'Hydra':
+                ship = '/ship/48636/' 
+            elif ships == 'Adrestia':
+                ship = '/ship/2836/'
+            elif ships == 'Caedes':
+                ship = '/ship/42246/'
+            elif ships == 'Cambion':
+                ship = '/ship/32788/'
+            elif ships == 'Chameleon':
+                ship = '/ship/33675/'
+            elif ships == 'Chremoas':
+                ship = '/ship/33397/'
+            elif ships == 'Etana':
+                ship = '/ship/32790/'
+            elif ships == 'Fiend':
+                ship = '/ship/35781/'
+            elif ships == 'Freki':
+                ship = '/ship/32207/'
+            elif ships == 'Imp':
+                ship = '/ship/35779'
+            elif ships == 'Malice':
+                ship = '/ship/3516/'
+            elif ships == 'Mimir':
+                ship = '/ship/32209/'
+            elif ships == 'Moracha':
+                ship = '/ship/33395/'
+            elif ships == 'Raven State Issue':
+                ship = '/ship/26840/'
+            elif ships == 'Tempest Tribal Issue':
+                ship = '/ship/26842/'
+            elif ships == 'Utu':
+                ship = '/ship/2834/'
+            elif ships == 'Vangel':
+                ship = '/ship/3518/'
+            elif ships == 'Whiptail':
+                ship = '/ship/33673/'
+
 
 
             elif ships == 'Please Select             ':
@@ -32897,7 +34143,7 @@ class allLossesShipConShip(Frame):
         label = Label(self, width=50, text="All Losses By Consteltion with ship")
         label.grid(row=1, column=0, padx=10, pady=10)
 
-        label = Label(self, wraplengt=250, text="Please Input the Constelation e.g 'TA-A7V'")
+        label = Label(self, wraplength=250, text="Please Input the Constelation e.g 'TA-A7V'")
         label.grid(row=4, column=0, padx=10, pady=10) 
 
         inputAKCS = Entry(self, font=('Helvetica',10))
@@ -32943,6 +34189,7 @@ class allLossesShipConShip(Frame):
             "Industrial Command",
             "Industrial",
             "Exhumers & Bardges",
+            "Alliance Tournament",
         ]
 
 
@@ -33664,6 +34911,14 @@ class allLossesShipAllShip(Frame):
                 drop2.config(width=18)
                 drop2.grid(row=7, column=0, padx=10, pady=10)
 
+            elif clickedRS.get() == "Alliance Tournament":
+                clickedRss = StringVar()
+                clickedRss.set(option40[0])
+                drop2 = OptionMenu(self, clickedRss, *option40, command=chosen)
+                drop2.config(width=18)
+                drop2.grid(row=7, column=0, padx=10, pady=10)
+
+
         def myClickC():
 
             error = 0
@@ -34259,6 +35514,45 @@ class allLossesShipAllShip(Frame):
             elif ships == 'Retriever':
                 ship = '/ship/17478/'
 
+            elif ships == 'Tiamat':
+                ship = '/ship/48635/'
+            elif ships == 'Hydra':
+                ship = '/ship/48636/' 
+            elif ships == 'Adrestia':
+                ship = '/ship/2836/'
+            elif ships == 'Caedes':
+                ship = '/ship/42246/'
+            elif ships == 'Cambion':
+                ship = '/ship/32788/'
+            elif ships == 'Chameleon':
+                ship = '/ship/33675/'
+            elif ships == 'Chremoas':
+                ship = '/ship/33397/'
+            elif ships == 'Etana':
+                ship = '/ship/32790/'
+            elif ships == 'Fiend':
+                ship = '/ship/35781/'
+            elif ships == 'Freki':
+                ship = '/ship/32207/'
+            elif ships == 'Imp':
+                ship = '/ship/35779'
+            elif ships == 'Malice':
+                ship = '/ship/3516/'
+            elif ships == 'Mimir':
+                ship = '/ship/32209/'
+            elif ships == 'Moracha':
+                ship = '/ship/33395/'
+            elif ships == 'Raven State Issue':
+                ship = '/ship/26840/'
+            elif ships == 'Tempest Tribal Issue':
+                ship = '/ship/26842/'
+            elif ships == 'Utu':
+                ship = '/ship/2834/'
+            elif ships == 'Vangel':
+                ship = '/ship/3518/'
+            elif ships == 'Whiptail':
+                ship = '/ship/33673/'
+
             elif ships == 'Please Select             ':
                  messagebox.showerror("Oops", "Please Select a Ship")
 
@@ -34309,6 +35603,7 @@ class allLossesShipAllShip(Frame):
             "Industrial Command",
             "Industrial",
             "Exhumers & Bardges",
+            "Alliance Tournament",
         ]
 
 
@@ -34446,7 +35741,7 @@ class allSoloKillsCorpNoShip(Frame):
         label = Label(self, width=50, text="All Solo Kills Corp No Ship")
         label.grid(row=1, column=0, padx=10, pady=10)
 
-        label = Label(self, wraplengt=250, text="Please Input the Corp Name")
+        label = Label(self, wraplength=250, text="Please Input the Corp Name")
         label.grid(row=4, column=0, padx=10, pady=10)
 
         inputAKCS = Entry(self, font=('Helvetica',10))
@@ -35163,6 +36458,14 @@ class allSoloKillsCorpShip(Frame):
                 drop2.config(width=18)
                 drop2.grid(row=7, column=0, padx=10, pady=10)
 
+            elif clickedRS.get() == "Alliance Tournament":
+                clickedRss = StringVar()
+                clickedRss.set(option40[0])
+                drop2 = OptionMenu(self, clickedRss, *option40, command=chosen)
+                drop2.config(width=18)
+                drop2.grid(row=7, column=0, padx=10, pady=10)
+
+
         def myClickRNS():
 
             error = 0
@@ -35791,6 +37094,45 @@ class allSoloKillsCorpShip(Frame):
             elif ships == 'Retriever':
                 ship = '/ship/17478/'
 
+            elif ships == 'Tiamat':
+                ship = '/ship/48635/'
+            elif ships == 'Hydra':
+                ship = '/ship/48636/' 
+            elif ships == 'Adrestia':
+                ship = '/ship/2836/'
+            elif ships == 'Caedes':
+                ship = '/ship/42246/'
+            elif ships == 'Cambion':
+                ship = '/ship/32788/'
+            elif ships == 'Chameleon':
+                ship = '/ship/33675/'
+            elif ships == 'Chremoas':
+                ship = '/ship/33397/'
+            elif ships == 'Etana':
+                ship = '/ship/32790/'
+            elif ships == 'Fiend':
+                ship = '/ship/35781/'
+            elif ships == 'Freki':
+                ship = '/ship/32207/'
+            elif ships == 'Imp':
+                ship = '/ship/35779'
+            elif ships == 'Malice':
+                ship = '/ship/3516/'
+            elif ships == 'Mimir':
+                ship = '/ship/32209/'
+            elif ships == 'Moracha':
+                ship = '/ship/33395/'
+            elif ships == 'Raven State Issue':
+                ship = '/ship/26840/'
+            elif ships == 'Tempest Tribal Issue':
+                ship = '/ship/26842/'
+            elif ships == 'Utu':
+                ship = '/ship/2834/'
+            elif ships == 'Vangel':
+                ship = '/ship/3518/'
+            elif ships == 'Whiptail':
+                ship = '/ship/33673/'
+
             elif ships == 'Please Select             ':
                  messagebox.showerror("Oops", "Please Select a Ship")
 
@@ -35800,7 +37142,7 @@ class allSoloKillsCorpShip(Frame):
         label = Label(self, width=50, text="All Solo Kills Corp with Ship")
         label.grid(row=1, column=0, padx=10, pady=10)
 
-        label = Label(self, wraplengt=250, text="Please Input the Corp Name")
+        label = Label(self, wraplength=250, text="Please Input the Corp Name")
         label.grid(row=4, column=0, padx=10, pady=10)
 
         inputAKCS = Entry(self, font=('Helvetica',10))
@@ -35846,6 +37188,7 @@ class allSoloKillsCorpShip(Frame):
             "Industrial Command",
             "Industrial",
             "Exhumers & Bardges",
+            "Alliance Tournament",
         ]
 
 
@@ -35928,7 +37271,7 @@ class allSoloKillsAllianceNoShip(Frame):
         label = Label(self, width=50, text="All Solo Kills Aliance No Ship")
         label.grid(row=1, column=0, padx=10, pady=10)
 
-        label = Label(self, wraplengt=250, text="Please Input the Alliance Name")
+        label = Label(self, wraplength=250, text="Please Input the Alliance Name")
         label.grid(row=4, column=0, padx=10, pady=10)
 
         inputAKCS = Entry(self, font=('Helvetica',10))
@@ -36645,6 +37988,14 @@ class allSoloKillsAllianceShip(Frame):
                 drop2.config(width=18)
                 drop2.grid(row=7, column=0, padx=10, pady=10)
 
+            elif clickedRS.get() == "Alliance Tournament":
+                clickedRss = StringVar()
+                clickedRss.set(option40[0])
+                drop2 = OptionMenu(self, clickedRss, *option40, command=chosen)
+                drop2.config(width=18)
+                drop2.grid(row=7, column=0, padx=10, pady=10)
+
+
         def myClickRNS():
 
             error = 0
@@ -37272,6 +38623,45 @@ class allSoloKillsAllianceShip(Frame):
             elif ships == 'Retriever':
                 ship = '/ship/17478/'
 
+            elif ships == 'Tiamat':
+                ship = '/ship/48635/'
+            elif ships == 'Hydra':
+                ship = '/ship/48636/' 
+            elif ships == 'Adrestia':
+                ship = '/ship/2836/'
+            elif ships == 'Caedes':
+                ship = '/ship/42246/'
+            elif ships == 'Cambion':
+                ship = '/ship/32788/'
+            elif ships == 'Chameleon':
+                ship = '/ship/33675/'
+            elif ships == 'Chremoas':
+                ship = '/ship/33397/'
+            elif ships == 'Etana':
+                ship = '/ship/32790/'
+            elif ships == 'Fiend':
+                ship = '/ship/35781/'
+            elif ships == 'Freki':
+                ship = '/ship/32207/'
+            elif ships == 'Imp':
+                ship = '/ship/35779'
+            elif ships == 'Malice':
+                ship = '/ship/3516/'
+            elif ships == 'Mimir':
+                ship = '/ship/32209/'
+            elif ships == 'Moracha':
+                ship = '/ship/33395/'
+            elif ships == 'Raven State Issue':
+                ship = '/ship/26840/'
+            elif ships == 'Tempest Tribal Issue':
+                ship = '/ship/26842/'
+            elif ships == 'Utu':
+                ship = '/ship/2834/'
+            elif ships == 'Vangel':
+                ship = '/ship/3518/'
+            elif ships == 'Whiptail':
+                ship = '/ship/33673/'
+
             elif ships == 'Please Select             ':
                  messagebox.showerror("Oops", "Please Select a Ship")
 
@@ -37281,7 +38671,7 @@ class allSoloKillsAllianceShip(Frame):
         label = Label(self, width=50, text="All Solo Kills Aliance with Ship")
         label.grid(row=1, column=0, padx=10, pady=10)
 
-        label = Label(self, wraplengt=250, text="Please Input the Alliance Name")
+        label = Label(self, wraplength=250, text="Please Input the Alliance Name")
         label.grid(row=4, column=0, padx=10, pady=10)
 
         inputAKCS = Entry(self, font=('Helvetica',10))
@@ -37327,6 +38717,7 @@ class allSoloKillsAllianceShip(Frame):
             "Industrial Command",
             "Industrial",
             "Exhumers & Bardges",
+            "Alliance Tournament",
         ]
 
 
@@ -37408,7 +38799,7 @@ class allSoloKillsRegionNoShip(Frame):
         label = Label(self, width=50, text="All Solo Kills By Region No Ship")
         label.grid(row=1, column=0, padx=10, pady=10)
 
-        label = Label(self, wraplengt=250, text="Please Input the Region e.g 'Syndicate'")
+        label = Label(self, wraplength=250, text="Please Input the Region e.g 'Syndicate'")
         label.grid(row=4, column=0, padx=10, pady=10)
 
         inputAKCS = Entry(self, font=('Helvetica',10))
@@ -38125,6 +39516,14 @@ class allSoloKillsRegionShip(Frame):
                 drop2.config(width=18)
                 drop2.grid(row=7, column=0, padx=10, pady=10)
 
+            elif clickedRS.get() == "Alliance Tournament":
+                clickedRss = StringVar()
+                clickedRss.set(option40[0])
+                drop2 = OptionMenu(self, clickedRss, *option40, command=chosen)
+                drop2.config(width=18)
+                drop2.grid(row=7, column=0, padx=10, pady=10)
+
+
 
         def myClickRNS():
 
@@ -38753,6 +40152,45 @@ class allSoloKillsRegionShip(Frame):
             elif ships == 'Retriever':
                 ship = '/ship/17478/'
 
+            elif ships == 'Tiamat':
+                ship = '/ship/48635/'
+            elif ships == 'Hydra':
+                ship = '/ship/48636/' 
+            elif ships == 'Adrestia':
+                ship = '/ship/2836/'
+            elif ships == 'Caedes':
+                ship = '/ship/42246/'
+            elif ships == 'Cambion':
+                ship = '/ship/32788/'
+            elif ships == 'Chameleon':
+                ship = '/ship/33675/'
+            elif ships == 'Chremoas':
+                ship = '/ship/33397/'
+            elif ships == 'Etana':
+                ship = '/ship/32790/'
+            elif ships == 'Fiend':
+                ship = '/ship/35781/'
+            elif ships == 'Freki':
+                ship = '/ship/32207/'
+            elif ships == 'Imp':
+                ship = '/ship/35779'
+            elif ships == 'Malice':
+                ship = '/ship/3516/'
+            elif ships == 'Mimir':
+                ship = '/ship/32209/'
+            elif ships == 'Moracha':
+                ship = '/ship/33395/'
+            elif ships == 'Raven State Issue':
+                ship = '/ship/26840/'
+            elif ships == 'Tempest Tribal Issue':
+                ship = '/ship/26842/'
+            elif ships == 'Utu':
+                ship = '/ship/2834/'
+            elif ships == 'Vangel':
+                ship = '/ship/3518/'
+            elif ships == 'Whiptail':
+                ship = '/ship/33673/'
+
 
             elif ships == 'Please Select             ':
                  messagebox.showerror("Oops", "Please Select a Ship")
@@ -38764,7 +40202,7 @@ class allSoloKillsRegionShip(Frame):
         label = Label(self, width=50, text="All Solo Kills By Region With Ship")
         label.grid(row=1, column=0, padx=10, pady=10)
 
-        label = Label(self, wraplengt=250, text="Please Input the Region e.g 'Syndicate'")
+        label = Label(self, wraplength=250, text="Please Input the Region e.g 'Syndicate'")
         label.grid(row=4, column=0, padx=10, pady=10) 
 
         inputAKCS = Entry(self, font=('Helvetica',10))
@@ -38810,6 +40248,7 @@ class allSoloKillsRegionShip(Frame):
             "Industrial Command",
             "Industrial",
             "Exhumers & Bardges",
+            "Alliance Tournament",
         ]
 
 
@@ -38938,13 +40377,13 @@ class allSoloKillsCharacterRegNoShip(Frame):
         label = Label(self, width=50, text="All Solo Kills Character By Region No Ship")
         label.grid(row=1, column=0, padx=10, pady=10)
 
-        label = Label(self, wraplengt=250, text="Please Input or Paste the Character Name")
+        label = Label(self, wraplength=250, text="Please Input or Paste the Character Name")
         label.grid(row=2, column=0, padx=10, pady=10)
 
         inputAKCC = Entry(self, font=('Helvetica',10))
         inputAKCC.grid(row=3, column=0, padx=10, pady=10) 
 
-        label = Label(self, wraplengt=250, text="Please Input the Region e.g 'Syndicate'")
+        label = Label(self, wraplength=250, text="Please Input the Region e.g 'Syndicate'")
         label.grid(row=4, column=0, padx=10, pady=10)
 
         inputAKCS = Entry(self, font=('Helvetica',10))
@@ -39661,6 +41100,14 @@ class allSoloKillsCharacterRegShip(Frame):
                 drop2.config(width=18)
                 drop2.grid(row=7, column=0, padx=10, pady=10)
 
+            elif clickedRS.get() == "Alliance Tournament":
+                clickedRss = StringVar()
+                clickedRss.set(option40[0])
+                drop2 = OptionMenu(self, clickedRss, *option40, command=chosen)
+                drop2.config(width=18)
+                drop2.grid(row=7, column=0, padx=10, pady=10)
+
+
 
         def myClickRNS():
             error = 0
@@ -40317,6 +41764,45 @@ class allSoloKillsCharacterRegShip(Frame):
             elif ships == 'Retriever':
                 ship = '/ship/17478/'
 
+            elif ships == 'Tiamat':
+                ship = '/ship/48635/'
+            elif ships == 'Hydra':
+                ship = '/ship/48636/' 
+            elif ships == 'Adrestia':
+                ship = '/ship/2836/'
+            elif ships == 'Caedes':
+                ship = '/ship/42246/'
+            elif ships == 'Cambion':
+                ship = '/ship/32788/'
+            elif ships == 'Chameleon':
+                ship = '/ship/33675/'
+            elif ships == 'Chremoas':
+                ship = '/ship/33397/'
+            elif ships == 'Etana':
+                ship = '/ship/32790/'
+            elif ships == 'Fiend':
+                ship = '/ship/35781/'
+            elif ships == 'Freki':
+                ship = '/ship/32207/'
+            elif ships == 'Imp':
+                ship = '/ship/35779'
+            elif ships == 'Malice':
+                ship = '/ship/3516/'
+            elif ships == 'Mimir':
+                ship = '/ship/32209/'
+            elif ships == 'Moracha':
+                ship = '/ship/33395/'
+            elif ships == 'Raven State Issue':
+                ship = '/ship/26840/'
+            elif ships == 'Tempest Tribal Issue':
+                ship = '/ship/26842/'
+            elif ships == 'Utu':
+                ship = '/ship/2834/'
+            elif ships == 'Vangel':
+                ship = '/ship/3518/'
+            elif ships == 'Whiptail':
+                ship = '/ship/33673/'
+
 
 
             elif ships == 'Please Select             ':
@@ -40329,13 +41815,13 @@ class allSoloKillsCharacterRegShip(Frame):
         label = Label(self, width=50, text="All Solo Kills Character By Region With Ship")
         label.grid(row=1, column=0, padx=10, pady=10)
 
-        label = Label(self, wraplengt=250, text="Please Input or Paste the Character Name")
+        label = Label(self, wraplength=250, text="Please Input or Paste the Character Name")
         label.grid(row=2, column=0, padx=10, pady=10) 
 
         inputAKCC = Entry(self, font=('Helvetica',10))
         inputAKCC.grid(row=3, column=0, padx=10, pady=10) 
 
-        label = Label(self, wraplengt=250, text="Please Input the Region e.g 'Syndicate'")
+        label = Label(self, wraplength=250, text="Please Input the Region e.g 'Syndicate'")
         label.grid(row=4, column=0, padx=10, pady=10) 
 
         inputAKCS = Entry(self, font=('Helvetica',10))
@@ -40381,6 +41867,7 @@ class allSoloKillsCharacterRegShip(Frame):
             "Industrial Command",
             "Industrial",
             "Exhumers & Bardges",
+            "Alliance Tournament",
         ]
 
 
@@ -40490,13 +41977,13 @@ class allSoloKillsCharacterConNoShip(Frame):
         label = Label(self, width=50, text="All Solo Kills Character By Consteltion Without Ship")
         label.grid(row=1, column=0, padx=10, pady=10)
 
-        label = Label(self, wraplengt=250, text="Please Input or Paste the Character Name")
+        label = Label(self, wraplength=250, text="Please Input or Paste the Character Name")
         label.grid(row=2, column=0, padx=10, pady=10)
 
         inputAKCC = Entry(self, font=('Helvetica',10))
         inputAKCC.grid(row=3, column=0, padx=10, pady=10) 
 
-        label = Label(self, wraplengt=250, text="Please Input the Constelation e.g 'TA-A7V'")
+        label = Label(self, wraplength=250, text="Please Input the Constelation e.g 'TA-A7V'")
         label.grid(row=4, column=0, padx=10, pady=10)
 
         inputAKCS = Entry(self, font=('Helvetica',10))
@@ -41213,6 +42700,14 @@ class allSoloKillsCharacterConShip(Frame):
                 drop2.config(width=18)
                 drop2.grid(row=7, column=0, padx=10, pady=10)
 
+            elif clickedRS.get() == "Alliance Tournament":
+                clickedRss = StringVar()
+                clickedRss.set(option40[0])
+                drop2 = OptionMenu(self, clickedRss, *option40, command=chosen)
+                drop2.config(width=18)
+                drop2.grid(row=7, column=0, padx=10, pady=10)
+
+
         def myClickCNS():
             error = 0
             while error == 0:
@@ -41868,6 +43363,45 @@ class allSoloKillsCharacterConShip(Frame):
             elif ships == 'Retriever':
                 ship = '/ship/17478/'
 
+            elif ships == 'Tiamat':
+                ship = '/ship/48635/'
+            elif ships == 'Hydra':
+                ship = '/ship/48636/' 
+            elif ships == 'Adrestia':
+                ship = '/ship/2836/'
+            elif ships == 'Caedes':
+                ship = '/ship/42246/'
+            elif ships == 'Cambion':
+                ship = '/ship/32788/'
+            elif ships == 'Chameleon':
+                ship = '/ship/33675/'
+            elif ships == 'Chremoas':
+                ship = '/ship/33397/'
+            elif ships == 'Etana':
+                ship = '/ship/32790/'
+            elif ships == 'Fiend':
+                ship = '/ship/35781/'
+            elif ships == 'Freki':
+                ship = '/ship/32207/'
+            elif ships == 'Imp':
+                ship = '/ship/35779'
+            elif ships == 'Malice':
+                ship = '/ship/3516/'
+            elif ships == 'Mimir':
+                ship = '/ship/32209/'
+            elif ships == 'Moracha':
+                ship = '/ship/33395/'
+            elif ships == 'Raven State Issue':
+                ship = '/ship/26840/'
+            elif ships == 'Tempest Tribal Issue':
+                ship = '/ship/26842/'
+            elif ships == 'Utu':
+                ship = '/ship/2834/'
+            elif ships == 'Vangel':
+                ship = '/ship/3518/'
+            elif ships == 'Whiptail':
+                ship = '/ship/33673/'
+
 
 
             elif ships == 'Please Select             ':
@@ -41880,13 +43414,13 @@ class allSoloKillsCharacterConShip(Frame):
         label = Label(self, width=50, text="All Solo Kills Character By Consteltion with ship")
         label.grid(row=1, column=0, padx=10, pady=10)
 
-        label = Label(self, wraplengt=250, text="Please Input or Paste the Character Name")
+        label = Label(self, wraplength=250, text="Please Input or Paste the Character Name")
         label.grid(row=2, column=0, padx=10, pady=10) 
 
         inputAKCC = Entry(self, font=('Helvetica',10))
         inputAKCC.grid(row=3, column=0, padx=10, pady=10) 
 
-        label = Label(self, wraplengt=250, text="Please Input the Constelation e.g 'TA-A7V'")
+        label = Label(self, wraplength=250, text="Please Input the Constelation e.g 'TA-A7V'")
         label.grid(row=4, column=0, padx=10, pady=10) 
 
         inputAKCS = Entry(self, font=('Helvetica',10))
@@ -41932,6 +43466,7 @@ class allSoloKillsCharacterConShip(Frame):
             "Industrial Command",
             "Industrial",
             "Exhumers & Bardges",
+            "Alliance Tournament",
         ]
 
 
@@ -42009,7 +43544,7 @@ class allSoloKillsCharacterAllNoShip(Frame):
         label = Label(self, width=50, text="All Solo Kills Character All, No Ship")
         label.grid(row=1, column=0, padx=10, pady=10)
 
-        label = Label(self, wraplengt=250, text="Please Input or Paste the Character Name")
+        label = Label(self, wraplength=250, text="Please Input or Paste the Character Name")
         label.grid(row=2, column=0, padx=10, pady=10)
 
         inputAKCC = Entry(self, font=('Helvetica',10))
@@ -42726,6 +44261,14 @@ class allSoloKillsCharacterAllShip(Frame):
                 drop2.config(width=18)
                 drop2.grid(row=7, column=0, padx=10, pady=10)
 
+            elif clickedRS.get() == "Alliance Tournament":
+                clickedRss = StringVar()
+                clickedRss.set(option40[0])
+                drop2 = OptionMenu(self, clickedRss, *option40, command=chosen)
+                drop2.config(width=18)
+                drop2.grid(row=7, column=0, padx=10, pady=10)
+
+
         def myClickC():
 
             error = 0
@@ -43350,6 +44893,45 @@ class allSoloKillsCharacterAllShip(Frame):
             elif ships == 'Retriever':
                 ship = '/ship/17478/'
 
+            elif ships == 'Tiamat':
+                ship = '/ship/48635/'
+            elif ships == 'Hydra':
+                ship = '/ship/48636/' 
+            elif ships == 'Adrestia':
+                ship = '/ship/2836/'
+            elif ships == 'Caedes':
+                ship = '/ship/42246/'
+            elif ships == 'Cambion':
+                ship = '/ship/32788/'
+            elif ships == 'Chameleon':
+                ship = '/ship/33675/'
+            elif ships == 'Chremoas':
+                ship = '/ship/33397/'
+            elif ships == 'Etana':
+                ship = '/ship/32790/'
+            elif ships == 'Fiend':
+                ship = '/ship/35781/'
+            elif ships == 'Freki':
+                ship = '/ship/32207/'
+            elif ships == 'Imp':
+                ship = '/ship/35779'
+            elif ships == 'Malice':
+                ship = '/ship/3516/'
+            elif ships == 'Mimir':
+                ship = '/ship/32209/'
+            elif ships == 'Moracha':
+                ship = '/ship/33395/'
+            elif ships == 'Raven State Issue':
+                ship = '/ship/26840/'
+            elif ships == 'Tempest Tribal Issue':
+                ship = '/ship/26842/'
+            elif ships == 'Utu':
+                ship = '/ship/2834/'
+            elif ships == 'Vangel':
+                ship = '/ship/3518/'
+            elif ships == 'Whiptail':
+                ship = '/ship/33673/'
+
             elif ships == 'Please Select             ':
                  messagebox.showerror("Oops", "Please Select a Ship")
 
@@ -43360,7 +44942,7 @@ class allSoloKillsCharacterAllShip(Frame):
         label = Label(self, width=50, text="All Solo Kills Character By System With Ships -----")
         label.grid(row=1, column=0, padx=10, pady=10) 
 
-        label = Label(self, wraplengt=250, text="Please Input or Paste the Character Name")
+        label = Label(self, wraplength=250, text="Please Input or Paste the Character Name")
         label.grid(row=2, column=0, padx=10, pady=10) 
 
         inputAKCC = Entry(self, font=('Helvetica',10))
@@ -43406,6 +44988,7 @@ class allSoloKillsCharacterAllShip(Frame):
             "Industrial Command",
             "Industrial",
             "Exhumers & Bardges",
+            "Alliance Tournament",
         ]
 
 
@@ -44127,6 +45710,14 @@ class allSoloKillsCharacterSysShip(Frame):
                 drop2.config(width=18)
                 drop2.grid(row=7, column=0, padx=10, pady=10)
 
+            elif clickedRS.get() == "Alliance Tournament":
+                clickedRss = StringVar()
+                clickedRss.set(option40[0])
+                drop2 = OptionMenu(self, clickedRss, *option40, command=chosen)
+                drop2.config(width=18)
+                drop2.grid(row=7, column=0, padx=10, pady=10)
+
+
         def myClickCSS():
 
             error = 0
@@ -44783,6 +46374,45 @@ class allSoloKillsCharacterSysShip(Frame):
             elif ships == 'Retriever':
                 ship = '/ship/17478/'
 
+            elif ships == 'Tiamat':
+                ship = '/ship/48635/'
+            elif ships == 'Hydra':
+                ship = '/ship/48636/' 
+            elif ships == 'Adrestia':
+                ship = '/ship/2836/'
+            elif ships == 'Caedes':
+                ship = '/ship/42246/'
+            elif ships == 'Cambion':
+                ship = '/ship/32788/'
+            elif ships == 'Chameleon':
+                ship = '/ship/33675/'
+            elif ships == 'Chremoas':
+                ship = '/ship/33397/'
+            elif ships == 'Etana':
+                ship = '/ship/32790/'
+            elif ships == 'Fiend':
+                ship = '/ship/35781/'
+            elif ships == 'Freki':
+                ship = '/ship/32207/'
+            elif ships == 'Imp':
+                ship = '/ship/35779'
+            elif ships == 'Malice':
+                ship = '/ship/3516/'
+            elif ships == 'Mimir':
+                ship = '/ship/32209/'
+            elif ships == 'Moracha':
+                ship = '/ship/33395/'
+            elif ships == 'Raven State Issue':
+                ship = '/ship/26840/'
+            elif ships == 'Tempest Tribal Issue':
+                ship = '/ship/26842/'
+            elif ships == 'Utu':
+                ship = '/ship/2834/'
+            elif ships == 'Vangel':
+                ship = '/ship/3518/'
+            elif ships == 'Whiptail':
+                ship = '/ship/33673/'
+
 
 
             elif ships == 'Please Select             ':
@@ -44795,13 +46425,13 @@ class allSoloKillsCharacterSysShip(Frame):
         label = Label(self, width=50, text="All Solo Kills Character By System With Ships -----")
         label.grid(row=1, column=0, padx=10, pady=10) 
 
-        label = Label(self, wraplengt=250, text="Please Input or Paste the Character Name")
+        label = Label(self, wraplength=250, text="Please Input or Paste the Character Name")
         label.grid(row=2, column=0, padx=10, pady=10) 
 
         inputAKCC = Entry(self, font=('Helvetica',10))
         inputAKCC.grid(row=3, column=0, padx=10, pady=10) 
 
-        label = Label(self, wraplengt=250, text="Please Input the System e.g 'Y9G-KS'")
+        label = Label(self, wraplength=250, text="Please Input the System e.g 'Y9G-KS'")
         label.grid(row=4, column=0, padx=10, pady=10) 
 
         inputAKCS = Entry(self, font=('Helvetica',10))
@@ -44847,6 +46477,7 @@ class allSoloKillsCharacterSysShip(Frame):
             "Industrial Command",
             "Industrial",
             "Exhumers & Bardges",
+            "Alliance Tournament",
         ]
 
 
@@ -44936,13 +46567,13 @@ class allSoloKillsCharacterSysNoShip(Frame):
         label = Label(self, width=50, text="All Solo Kills Character By System Without Ships -----")
         label.grid(row=1, column=0, padx=10, pady=10)
 
-        label = Label(self, wraplengt=250, text="Please Input or Paste the Character Name")
+        label = Label(self, wraplength=250, text="Please Input or Paste the Character Name")
         label.grid(row=2, column=0, padx=10, pady=10)
 
         inputAKCC = Entry(self, font=('Helvetica',10))
         inputAKCC.grid(row=3, column=0, padx=10, pady=10) 
 
-        label = Label(self, wraplengt=250, text="Please Input the System e.g 'Y9G-KS'")
+        label = Label(self, wraplength=250, text="Please Input the System e.g 'Y9G-KS'")
         label.grid(row=4, column=0, padx=10, pady=10)
 
         inputAKCS = Entry(self, font=('Helvetica',10))
@@ -45686,6 +47317,14 @@ class allSoloKillsShipSysShip(Frame):
                 drop2.config(width=18)
                 drop2.grid(row=7, column=0, padx=10, pady=10)
 
+            elif clickedRS.get() == "Alliance Tournament":
+                clickedRss = StringVar()
+                clickedRss.set(option40[0])
+                drop2 = OptionMenu(self, clickedRss, *option40, command=chosen)
+                drop2.config(width=18)
+                drop2.grid(row=7, column=0, padx=10, pady=10)
+
+
         def myClickCSS():
 
             error = 0
@@ -46312,6 +47951,45 @@ class allSoloKillsShipSysShip(Frame):
             elif ships == 'Retriever':
                 ship = '/ship/17478/'
 
+            elif ships == 'Tiamat':
+                ship = '/ship/48635/'
+            elif ships == 'Hydra':
+                ship = '/ship/48636/' 
+            elif ships == 'Adrestia':
+                ship = '/ship/2836/'
+            elif ships == 'Caedes':
+                ship = '/ship/42246/'
+            elif ships == 'Cambion':
+                ship = '/ship/32788/'
+            elif ships == 'Chameleon':
+                ship = '/ship/33675/'
+            elif ships == 'Chremoas':
+                ship = '/ship/33397/'
+            elif ships == 'Etana':
+                ship = '/ship/32790/'
+            elif ships == 'Fiend':
+                ship = '/ship/35781/'
+            elif ships == 'Freki':
+                ship = '/ship/32207/'
+            elif ships == 'Imp':
+                ship = '/ship/35779'
+            elif ships == 'Malice':
+                ship = '/ship/3516/'
+            elif ships == 'Mimir':
+                ship = '/ship/32209/'
+            elif ships == 'Moracha':
+                ship = '/ship/33395/'
+            elif ships == 'Raven State Issue':
+                ship = '/ship/26840/'
+            elif ships == 'Tempest Tribal Issue':
+                ship = '/ship/26842/'
+            elif ships == 'Utu':
+                ship = '/ship/2834/'
+            elif ships == 'Vangel':
+                ship = '/ship/3518/'
+            elif ships == 'Whiptail':
+                ship = '/ship/33673/'
+
 
 
             elif ships == 'Please Select             ':
@@ -46324,7 +48002,7 @@ class allSoloKillsShipSysShip(Frame):
         label = Label(self, width=50, text="All Solo Kills in System With Ships -----")
         label.grid(row=1, column=0, padx=10, pady=10) 
 
-        label = Label(self, wraplengt=250, text="Please Input the System e.g 'Y9G-KS'")
+        label = Label(self, wraplength=250, text="Please Input the System e.g 'Y9G-KS'")
         label.grid(row=4, column=0, padx=10, pady=10) 
 
         inputAKCS = Entry(self, font=('Helvetica',10))
@@ -46370,6 +48048,7 @@ class allSoloKillsShipSysShip(Frame):
             "Industrial Command",
             "Industrial",
             "Exhumers & Bardges",
+            "Alliance Tournament",
         ]
 
         clickedRS = StringVar()
@@ -47090,6 +48769,14 @@ class allSoloKillsShipRegShip(Frame):
                 drop2.config(width=18)
                 drop2.grid(row=7, column=0, padx=10, pady=10)
 
+            elif clickedRS.get() == "Alliance Tournament":
+                clickedRss = StringVar()
+                clickedRss.set(option40[0])
+                drop2 = OptionMenu(self, clickedRss, *option40, command=chosen)
+                drop2.config(width=18)
+                drop2.grid(row=7, column=0, padx=10, pady=10)
+
+
 
         def myClickRNS():
             error = 0
@@ -47717,6 +49404,45 @@ class allSoloKillsShipRegShip(Frame):
             elif ships == 'Retriever':
                 ship = '/ship/17478/'
 
+            elif ships == 'Tiamat':
+                ship = '/ship/48635/'
+            elif ships == 'Hydra':
+                ship = '/ship/48636/' 
+            elif ships == 'Adrestia':
+                ship = '/ship/2836/'
+            elif ships == 'Caedes':
+                ship = '/ship/42246/'
+            elif ships == 'Cambion':
+                ship = '/ship/32788/'
+            elif ships == 'Chameleon':
+                ship = '/ship/33675/'
+            elif ships == 'Chremoas':
+                ship = '/ship/33397/'
+            elif ships == 'Etana':
+                ship = '/ship/32790/'
+            elif ships == 'Fiend':
+                ship = '/ship/35781/'
+            elif ships == 'Freki':
+                ship = '/ship/32207/'
+            elif ships == 'Imp':
+                ship = '/ship/35779'
+            elif ships == 'Malice':
+                ship = '/ship/3516/'
+            elif ships == 'Mimir':
+                ship = '/ship/32209/'
+            elif ships == 'Moracha':
+                ship = '/ship/33395/'
+            elif ships == 'Raven State Issue':
+                ship = '/ship/26840/'
+            elif ships == 'Tempest Tribal Issue':
+                ship = '/ship/26842/'
+            elif ships == 'Utu':
+                ship = '/ship/2834/'
+            elif ships == 'Vangel':
+                ship = '/ship/3518/'
+            elif ships == 'Whiptail':
+                ship = '/ship/33673/'
+
 
             elif ships == 'Please Select             ':
                  messagebox.showerror("Oops", "Please Select a Ship")
@@ -47728,7 +49454,7 @@ class allSoloKillsShipRegShip(Frame):
         label = Label(self, width=50, text="All Solo Kills By Region With Ship")
         label.grid(row=1, column=0, padx=10, pady=10)
 
-        label = Label(self, wraplengt=250, text="Please Input the Region e.g 'Syndicate'")
+        label = Label(self, wraplength=250, text="Please Input the Region e.g 'Syndicate'")
         label.grid(row=4, column=0, padx=10, pady=10) 
 
         inputAKCS = Entry(self, font=('Helvetica',10))
@@ -47774,6 +49500,7 @@ class allSoloKillsShipRegShip(Frame):
             "Industrial Command",
             "Industrial",
             "Exhumers & Bardges",
+            "Alliance Tournament",
         ]
 
 
@@ -48495,6 +50222,14 @@ class allSoloKillsShipConShip(Frame):
                 drop2.config(width=18)
                 drop2.grid(row=7, column=0, padx=10, pady=10)
 
+            elif clickedRS.get() == "Alliance Tournament":
+                clickedRss = StringVar()
+                clickedRss.set(option40[0])
+                drop2 = OptionMenu(self, clickedRss, *option40, command=chosen)
+                drop2.config(width=18)
+                drop2.grid(row=7, column=0, padx=10, pady=10)
+
+
         def myClickCNS():
             error = 0
             
@@ -49121,6 +50856,45 @@ class allSoloKillsShipConShip(Frame):
             elif ships == 'Retriever':
                 ship = '/ship/17478/'
 
+            elif ships == 'Tiamat':
+                ship = '/ship/48635/'
+            elif ships == 'Hydra':
+                ship = '/ship/48636/' 
+            elif ships == 'Adrestia':
+                ship = '/ship/2836/'
+            elif ships == 'Caedes':
+                ship = '/ship/42246/'
+            elif ships == 'Cambion':
+                ship = '/ship/32788/'
+            elif ships == 'Chameleon':
+                ship = '/ship/33675/'
+            elif ships == 'Chremoas':
+                ship = '/ship/33397/'
+            elif ships == 'Etana':
+                ship = '/ship/32790/'
+            elif ships == 'Fiend':
+                ship = '/ship/35781/'
+            elif ships == 'Freki':
+                ship = '/ship/32207/'
+            elif ships == 'Imp':
+                ship = '/ship/35779'
+            elif ships == 'Malice':
+                ship = '/ship/3516/'
+            elif ships == 'Mimir':
+                ship = '/ship/32209/'
+            elif ships == 'Moracha':
+                ship = '/ship/33395/'
+            elif ships == 'Raven State Issue':
+                ship = '/ship/26840/'
+            elif ships == 'Tempest Tribal Issue':
+                ship = '/ship/26842/'
+            elif ships == 'Utu':
+                ship = '/ship/2834/'
+            elif ships == 'Vangel':
+                ship = '/ship/3518/'
+            elif ships == 'Whiptail':
+                ship = '/ship/33673/'
+
 
 
             elif ships == 'Please Select             ':
@@ -49133,7 +50907,7 @@ class allSoloKillsShipConShip(Frame):
         label = Label(self, width=50, text="All Solo Kills By Consteltion with ship")
         label.grid(row=1, column=0, padx=10, pady=10)
 
-        label = Label(self, wraplengt=250, text="Please Input the Constelation e.g 'TA-A7V'")
+        label = Label(self, wraplength=250, text="Please Input the Constelation e.g 'TA-A7V'")
         label.grid(row=4, column=0, padx=10, pady=10) 
 
         inputAKCS = Entry(self, font=('Helvetica',10))
@@ -49179,6 +50953,7 @@ class allSoloKillsShipConShip(Frame):
             "Industrial Command",
             "Industrial",
             "Exhumers & Bardges",
+            "Alliance Tournament",
         ]
 
 
@@ -49900,6 +51675,14 @@ class allSoloKillsShipAllShip(Frame):
                 drop2.config(width=18)
                 drop2.grid(row=7, column=0, padx=10, pady=10)
 
+            elif clickedRS.get() == "Alliance Tournament":
+                clickedRss = StringVar()
+                clickedRss.set(option40[0])
+                drop2 = OptionMenu(self, clickedRss, *option40, command=chosen)
+                drop2.config(width=18)
+                drop2.grid(row=7, column=0, padx=10, pady=10)
+
+
         def myClickC():
 
             error = 0
@@ -50495,6 +52278,45 @@ class allSoloKillsShipAllShip(Frame):
             elif ships == 'Retriever':
                 ship = '/ship/17478/'
 
+            elif ships == 'Tiamat':
+                ship = '/ship/48635/'
+            elif ships == 'Hydra':
+                ship = '/ship/48636/' 
+            elif ships == 'Adrestia':
+                ship = '/ship/2836/'
+            elif ships == 'Caedes':
+                ship = '/ship/42246/'
+            elif ships == 'Cambion':
+                ship = '/ship/32788/'
+            elif ships == 'Chameleon':
+                ship = '/ship/33675/'
+            elif ships == 'Chremoas':
+                ship = '/ship/33397/'
+            elif ships == 'Etana':
+                ship = '/ship/32790/'
+            elif ships == 'Fiend':
+                ship = '/ship/35781/'
+            elif ships == 'Freki':
+                ship = '/ship/32207/'
+            elif ships == 'Imp':
+                ship = '/ship/35779'
+            elif ships == 'Malice':
+                ship = '/ship/3516/'
+            elif ships == 'Mimir':
+                ship = '/ship/32209/'
+            elif ships == 'Moracha':
+                ship = '/ship/33395/'
+            elif ships == 'Raven State Issue':
+                ship = '/ship/26840/'
+            elif ships == 'Tempest Tribal Issue':
+                ship = '/ship/26842/'
+            elif ships == 'Utu':
+                ship = '/ship/2834/'
+            elif ships == 'Vangel':
+                ship = '/ship/3518/'
+            elif ships == 'Whiptail':
+                ship = '/ship/33673/'
+
             elif ships == 'Please Select             ':
                  messagebox.showerror("Oops", "Please Select a Ship")
 
@@ -50545,6 +52367,7 @@ class allSoloKillsShipAllShip(Frame):
             "Industrial Command",
             "Industrial",
             "Exhumers & Bardges",
+            "Alliance Tournament",
         ]
 
 
@@ -50682,7 +52505,7 @@ class allSoloDeathsCorpNoShip(Frame):
         label = Label(self, width=50, text="All Solo Deaths by Corp with No Ship")
         label.grid(row=1, column=0, padx=10, pady=10)
 
-        label = Label(self, wraplengt=250, text="Please Input the Corp Name")
+        label = Label(self, wraplength=250, text="Please Input the Corp Name")
         label.grid(row=4, column=0, padx=10, pady=10)
 
         inputAKCS = Entry(self, font=('Helvetica',10))
@@ -51399,6 +53222,14 @@ class allSoloDeathsCorpShip(Frame):
                 drop2.config(width=18)
                 drop2.grid(row=7, column=0, padx=10, pady=10)
 
+            elif clickedRS.get() == "Alliance Tournament":
+                clickedRss = StringVar()
+                clickedRss.set(option40[0])
+                drop2 = OptionMenu(self, clickedRss, *option40, command=chosen)
+                drop2.config(width=18)
+                drop2.grid(row=7, column=0, padx=10, pady=10)
+
+
         def myClickRNS():
 
             error = 0
@@ -52027,6 +53858,45 @@ class allSoloDeathsCorpShip(Frame):
             elif ships == 'Retriever':
                 ship = '/ship/17478/'
 
+            elif ships == 'Tiamat':
+                ship = '/ship/48635/'
+            elif ships == 'Hydra':
+                ship = '/ship/48636/' 
+            elif ships == 'Adrestia':
+                ship = '/ship/2836/'
+            elif ships == 'Caedes':
+                ship = '/ship/42246/'
+            elif ships == 'Cambion':
+                ship = '/ship/32788/'
+            elif ships == 'Chameleon':
+                ship = '/ship/33675/'
+            elif ships == 'Chremoas':
+                ship = '/ship/33397/'
+            elif ships == 'Etana':
+                ship = '/ship/32790/'
+            elif ships == 'Fiend':
+                ship = '/ship/35781/'
+            elif ships == 'Freki':
+                ship = '/ship/32207/'
+            elif ships == 'Imp':
+                ship = '/ship/35779'
+            elif ships == 'Malice':
+                ship = '/ship/3516/'
+            elif ships == 'Mimir':
+                ship = '/ship/32209/'
+            elif ships == 'Moracha':
+                ship = '/ship/33395/'
+            elif ships == 'Raven State Issue':
+                ship = '/ship/26840/'
+            elif ships == 'Tempest Tribal Issue':
+                ship = '/ship/26842/'
+            elif ships == 'Utu':
+                ship = '/ship/2834/'
+            elif ships == 'Vangel':
+                ship = '/ship/3518/'
+            elif ships == 'Whiptail':
+                ship = '/ship/33673/'
+
             elif ships == 'Please Select             ':
                  messagebox.showerror("Oops", "Please Select a Ship")
 
@@ -52036,7 +53906,7 @@ class allSoloDeathsCorpShip(Frame):
         label = Label(self, width=50, text="All Solo Deaths for Corp with Ship")
         label.grid(row=1, column=0, padx=10, pady=10)
 
-        label = Label(self, wraplengt=250, text="Please Input the Corp Name")
+        label = Label(self, wraplength=250, text="Please Input the Corp Name")
         label.grid(row=4, column=0, padx=10, pady=10)
 
         inputAKCS = Entry(self, font=('Helvetica',10))
@@ -52082,6 +53952,7 @@ class allSoloDeathsCorpShip(Frame):
             "Industrial Command",
             "Industrial",
             "Exhumers & Bardges",
+            "Alliance Tournament",
         ]
 
 
@@ -52164,7 +54035,7 @@ class allSoloDeathsAllianceNoShip(Frame):
         label = Label(self, width=50, text="All Solo Deaths Aliance No Ship")
         label.grid(row=1, column=0, padx=10, pady=10)
 
-        label = Label(self, wraplengt=250, text="Please Input the Alliance Name")
+        label = Label(self, wraplength=250, text="Please Input the Alliance Name")
         label.grid(row=4, column=0, padx=10, pady=10)
 
         inputAKCS = Entry(self, font=('Helvetica',10))
@@ -52881,6 +54752,14 @@ class allSoloDeathsAllianceShip(Frame):
                 drop2.config(width=18)
                 drop2.grid(row=7, column=0, padx=10, pady=10)
 
+            elif clickedRS.get() == "Alliance Tournament":
+                clickedRss = StringVar()
+                clickedRss.set(option40[0])
+                drop2 = OptionMenu(self, clickedRss, *option40, command=chosen)
+                drop2.config(width=18)
+                drop2.grid(row=7, column=0, padx=10, pady=10)
+
+
         def myClickRNS():
 
             error = 0
@@ -53508,6 +55387,45 @@ class allSoloDeathsAllianceShip(Frame):
             elif ships == 'Retriever':
                 ship = '/ship/17478/'
 
+            elif ships == 'Tiamat':
+                ship = '/ship/48635/'
+            elif ships == 'Hydra':
+                ship = '/ship/48636/' 
+            elif ships == 'Adrestia':
+                ship = '/ship/2836/'
+            elif ships == 'Caedes':
+                ship = '/ship/42246/'
+            elif ships == 'Cambion':
+                ship = '/ship/32788/'
+            elif ships == 'Chameleon':
+                ship = '/ship/33675/'
+            elif ships == 'Chremoas':
+                ship = '/ship/33397/'
+            elif ships == 'Etana':
+                ship = '/ship/32790/'
+            elif ships == 'Fiend':
+                ship = '/ship/35781/'
+            elif ships == 'Freki':
+                ship = '/ship/32207/'
+            elif ships == 'Imp':
+                ship = '/ship/35779'
+            elif ships == 'Malice':
+                ship = '/ship/3516/'
+            elif ships == 'Mimir':
+                ship = '/ship/32209/'
+            elif ships == 'Moracha':
+                ship = '/ship/33395/'
+            elif ships == 'Raven State Issue':
+                ship = '/ship/26840/'
+            elif ships == 'Tempest Tribal Issue':
+                ship = '/ship/26842/'
+            elif ships == 'Utu':
+                ship = '/ship/2834/'
+            elif ships == 'Vangel':
+                ship = '/ship/3518/'
+            elif ships == 'Whiptail':
+                ship = '/ship/33673/'
+
             elif ships == 'Please Select             ':
                  messagebox.showerror("Oops", "Please Select a Ship")
 
@@ -53517,7 +55435,7 @@ class allSoloDeathsAllianceShip(Frame):
         label = Label(self, width=50, text="All Solo Deaths Aliance with Ship")
         label.grid(row=1, column=0, padx=10, pady=10)
 
-        label = Label(self, wraplengt=250, text="Please Input the Alliance Name")
+        label = Label(self, wraplength=250, text="Please Input the Alliance Name")
         label.grid(row=4, column=0, padx=10, pady=10)
 
         inputAKCS = Entry(self, font=('Helvetica',10))
@@ -53563,6 +55481,7 @@ class allSoloDeathsAllianceShip(Frame):
             "Industrial Command",
             "Industrial",
             "Exhumers & Bardges",
+            "Alliance Tournament",
         ]
 
 
@@ -53644,7 +55563,7 @@ class allSoloDeathsRegionNoShip(Frame):
         label = Label(self, width=50, text="All Solo Deaths By Region No Ship")
         label.grid(row=1, column=0, padx=10, pady=10)
 
-        label = Label(self, wraplengt=250, text="Please Input the Region e.g 'Syndicate'")
+        label = Label(self, wraplength=250, text="Please Input the Region e.g 'Syndicate'")
         label.grid(row=4, column=0, padx=10, pady=10)
 
         inputAKCS = Entry(self, font=('Helvetica',10))
@@ -54361,6 +56280,14 @@ class allSoloDeathsRegionShip(Frame):
                 drop2.config(width=18)
                 drop2.grid(row=7, column=0, padx=10, pady=10)
 
+            elif clickedRS.get() == "Alliance Tournament":
+                clickedRss = StringVar()
+                clickedRss.set(option40[0])
+                drop2 = OptionMenu(self, clickedRss, *option40, command=chosen)
+                drop2.config(width=18)
+                drop2.grid(row=7, column=0, padx=10, pady=10)
+
+
 
         def myClickRNS():
 
@@ -54989,6 +56916,45 @@ class allSoloDeathsRegionShip(Frame):
             elif ships == 'Retriever':
                 ship = '/ship/17478/'
 
+            elif ships == 'Tiamat':
+                ship = '/ship/48635/'
+            elif ships == 'Hydra':
+                ship = '/ship/48636/' 
+            elif ships == 'Adrestia':
+                ship = '/ship/2836/'
+            elif ships == 'Caedes':
+                ship = '/ship/42246/'
+            elif ships == 'Cambion':
+                ship = '/ship/32788/'
+            elif ships == 'Chameleon':
+                ship = '/ship/33675/'
+            elif ships == 'Chremoas':
+                ship = '/ship/33397/'
+            elif ships == 'Etana':
+                ship = '/ship/32790/'
+            elif ships == 'Fiend':
+                ship = '/ship/35781/'
+            elif ships == 'Freki':
+                ship = '/ship/32207/'
+            elif ships == 'Imp':
+                ship = '/ship/35779'
+            elif ships == 'Malice':
+                ship = '/ship/3516/'
+            elif ships == 'Mimir':
+                ship = '/ship/32209/'
+            elif ships == 'Moracha':
+                ship = '/ship/33395/'
+            elif ships == 'Raven State Issue':
+                ship = '/ship/26840/'
+            elif ships == 'Tempest Tribal Issue':
+                ship = '/ship/26842/'
+            elif ships == 'Utu':
+                ship = '/ship/2834/'
+            elif ships == 'Vangel':
+                ship = '/ship/3518/'
+            elif ships == 'Whiptail':
+                ship = '/ship/33673/'
+
 
             elif ships == 'Please Select             ':
                  messagebox.showerror("Oops", "Please Select a Ship")
@@ -55000,7 +56966,7 @@ class allSoloDeathsRegionShip(Frame):
         label = Label(self, width=50, text="All Solo Deaths By Region With Ship")
         label.grid(row=1, column=0, padx=10, pady=10)
 
-        label = Label(self, wraplengt=250, text="Please Input the Region e.g 'Syndicate'")
+        label = Label(self, wraplength=250, text="Please Input the Region e.g 'Syndicate'")
         label.grid(row=4, column=0, padx=10, pady=10) 
 
         inputAKCS = Entry(self, font=('Helvetica',10))
@@ -55046,6 +57012,7 @@ class allSoloDeathsRegionShip(Frame):
             "Industrial Command",
             "Industrial",
             "Exhumers & Bardges",
+            "Alliance Tournament",
         ]
 
 
@@ -55174,13 +57141,13 @@ class allSoloDeathsCharacterRegNoShip(Frame):
         label = Label(self, width=50, text="All Solo Deaths for Character By Region No Ship")
         label.grid(row=1, column=0, padx=10, pady=10)
 
-        label = Label(self, wraplengt=250, text="Please Input or Paste the Character Name")
+        label = Label(self, wraplength=250, text="Please Input or Paste the Character Name")
         label.grid(row=2, column=0, padx=10, pady=10)
 
         inputAKCC = Entry(self, font=('Helvetica',10))
         inputAKCC.grid(row=3, column=0, padx=10, pady=10) 
 
-        label = Label(self, wraplengt=250, text="Please Input the Region e.g 'Syndicate'")
+        label = Label(self, wraplength=250, text="Please Input the Region e.g 'Syndicate'")
         label.grid(row=4, column=0, padx=10, pady=10)
 
         inputAKCS = Entry(self, font=('Helvetica',10))
@@ -55897,6 +57864,14 @@ class allSoloDeathsCharacterRegShip(Frame):
                 drop2.config(width=18)
                 drop2.grid(row=7, column=0, padx=10, pady=10)
 
+            elif clickedRS.get() == "Alliance Tournament":
+                clickedRss = StringVar()
+                clickedRss.set(option40[0])
+                drop2 = OptionMenu(self, clickedRss, *option40, command=chosen)
+                drop2.config(width=18)
+                drop2.grid(row=7, column=0, padx=10, pady=10)
+
+
 
         def myClickRNS():
             error = 0
@@ -56553,6 +58528,45 @@ class allSoloDeathsCharacterRegShip(Frame):
             elif ships == 'Retriever':
                 ship = '/ship/17478/'
 
+            elif ships == 'Tiamat':
+                ship = '/ship/48635/'
+            elif ships == 'Hydra':
+                ship = '/ship/48636/' 
+            elif ships == 'Adrestia':
+                ship = '/ship/2836/'
+            elif ships == 'Caedes':
+                ship = '/ship/42246/'
+            elif ships == 'Cambion':
+                ship = '/ship/32788/'
+            elif ships == 'Chameleon':
+                ship = '/ship/33675/'
+            elif ships == 'Chremoas':
+                ship = '/ship/33397/'
+            elif ships == 'Etana':
+                ship = '/ship/32790/'
+            elif ships == 'Fiend':
+                ship = '/ship/35781/'
+            elif ships == 'Freki':
+                ship = '/ship/32207/'
+            elif ships == 'Imp':
+                ship = '/ship/35779'
+            elif ships == 'Malice':
+                ship = '/ship/3516/'
+            elif ships == 'Mimir':
+                ship = '/ship/32209/'
+            elif ships == 'Moracha':
+                ship = '/ship/33395/'
+            elif ships == 'Raven State Issue':
+                ship = '/ship/26840/'
+            elif ships == 'Tempest Tribal Issue':
+                ship = '/ship/26842/'
+            elif ships == 'Utu':
+                ship = '/ship/2834/'
+            elif ships == 'Vangel':
+                ship = '/ship/3518/'
+            elif ships == 'Whiptail':
+                ship = '/ship/33673/'
+
 
 
             elif ships == 'Please Select             ':
@@ -56565,13 +58579,13 @@ class allSoloDeathsCharacterRegShip(Frame):
         label = Label(self, width=50, text="All Solo Deaths for Character By Region With Ship")
         label.grid(row=1, column=0, padx=10, pady=10)
 
-        label = Label(self, wraplengt=250, text="Please Input or Paste the Character Name")
+        label = Label(self, wraplength=250, text="Please Input or Paste the Character Name")
         label.grid(row=2, column=0, padx=10, pady=10) 
 
         inputAKCC = Entry(self, font=('Helvetica',10))
         inputAKCC.grid(row=3, column=0, padx=10, pady=10) 
 
-        label = Label(self, wraplengt=250, text="Please Input the Region e.g 'Syndicate'")
+        label = Label(self, wraplength=250, text="Please Input the Region e.g 'Syndicate'")
         label.grid(row=4, column=0, padx=10, pady=10) 
 
         inputAKCS = Entry(self, font=('Helvetica',10))
@@ -56617,6 +58631,7 @@ class allSoloDeathsCharacterRegShip(Frame):
             "Industrial Command",
             "Industrial",
             "Exhumers & Bardges",
+            "Alliance Tournament",
         ]
 
 
@@ -56726,13 +58741,13 @@ class allSoloDeathsCharacterConNoShip(Frame):
         label = Label(self, width=50, text="All Solo Deaths Character By Consteltion Without Ship")
         label.grid(row=1, column=0, padx=10, pady=10)
 
-        label = Label(self, wraplengt=250, text="Please Input or Paste the Character Name")
+        label = Label(self, wraplength=250, text="Please Input or Paste the Character Name")
         label.grid(row=2, column=0, padx=10, pady=10)
 
         inputAKCC = Entry(self, font=('Helvetica',10))
         inputAKCC.grid(row=3, column=0, padx=10, pady=10) 
 
-        label = Label(self, wraplengt=250, text="Please Input the Constelation e.g 'TA-A7V'")
+        label = Label(self, wraplength=250, text="Please Input the Constelation e.g 'TA-A7V'")
         label.grid(row=4, column=0, padx=10, pady=10)
 
         inputAKCS = Entry(self, font=('Helvetica',10))
@@ -57449,6 +59464,14 @@ class allSoloDeathsCharacterConShip(Frame):
                 drop2.config(width=18)
                 drop2.grid(row=7, column=0, padx=10, pady=10)
 
+            elif clickedRS.get() == "Alliance Tournament":
+                clickedRss = StringVar()
+                clickedRss.set(option40[0])
+                drop2 = OptionMenu(self, clickedRss, *option40, command=chosen)
+                drop2.config(width=18)
+                drop2.grid(row=7, column=0, padx=10, pady=10)
+
+
         def myClickCNS():
             error = 0
             while error == 0:
@@ -58104,6 +60127,45 @@ class allSoloDeathsCharacterConShip(Frame):
             elif ships == 'Retriever':
                 ship = '/ship/17478/'
 
+            elif ships == 'Tiamat':
+                ship = '/ship/48635/'
+            elif ships == 'Hydra':
+                ship = '/ship/48636/' 
+            elif ships == 'Adrestia':
+                ship = '/ship/2836/'
+            elif ships == 'Caedes':
+                ship = '/ship/42246/'
+            elif ships == 'Cambion':
+                ship = '/ship/32788/'
+            elif ships == 'Chameleon':
+                ship = '/ship/33675/'
+            elif ships == 'Chremoas':
+                ship = '/ship/33397/'
+            elif ships == 'Etana':
+                ship = '/ship/32790/'
+            elif ships == 'Fiend':
+                ship = '/ship/35781/'
+            elif ships == 'Freki':
+                ship = '/ship/32207/'
+            elif ships == 'Imp':
+                ship = '/ship/35779'
+            elif ships == 'Malice':
+                ship = '/ship/3516/'
+            elif ships == 'Mimir':
+                ship = '/ship/32209/'
+            elif ships == 'Moracha':
+                ship = '/ship/33395/'
+            elif ships == 'Raven State Issue':
+                ship = '/ship/26840/'
+            elif ships == 'Tempest Tribal Issue':
+                ship = '/ship/26842/'
+            elif ships == 'Utu':
+                ship = '/ship/2834/'
+            elif ships == 'Vangel':
+                ship = '/ship/3518/'
+            elif ships == 'Whiptail':
+                ship = '/ship/33673/'
+
 
 
             elif ships == 'Please Select             ':
@@ -58116,13 +60178,13 @@ class allSoloDeathsCharacterConShip(Frame):
         label = Label(self, width=50, text="All Solo Deaths Character By Consteltion with ship")
         label.grid(row=1, column=0, padx=10, pady=10)
 
-        label = Label(self, wraplengt=250, text="Please Input or Paste the Character Name")
+        label = Label(self, wraplength=250, text="Please Input or Paste the Character Name")
         label.grid(row=2, column=0, padx=10, pady=10) 
 
         inputAKCC = Entry(self, font=('Helvetica',10))
         inputAKCC.grid(row=3, column=0, padx=10, pady=10) 
 
-        label = Label(self, wraplengt=250, text="Please Input the Constelation e.g 'TA-A7V'")
+        label = Label(self, wraplength=250, text="Please Input the Constelation e.g 'TA-A7V'")
         label.grid(row=4, column=0, padx=10, pady=10) 
 
         inputAKCS = Entry(self, font=('Helvetica',10))
@@ -58168,6 +60230,7 @@ class allSoloDeathsCharacterConShip(Frame):
             "Industrial Command",
             "Industrial",
             "Exhumers & Bardges",
+            "Alliance Tournament",
         ]
 
 
@@ -58245,7 +60308,7 @@ class allSoloDeathsCharacterAllNoShip(Frame):
         label = Label(self, width=50, text="All Solo Deaths Character All, No Ship")
         label.grid(row=1, column=0, padx=10, pady=10)
 
-        label = Label(self, wraplengt=250, text="Please Input or Paste the Character Name")
+        label = Label(self, wraplength=250, text="Please Input or Paste the Character Name")
         label.grid(row=2, column=0, padx=10, pady=10)
 
         inputAKCC = Entry(self, font=('Helvetica',10))
@@ -58962,6 +61025,14 @@ class allSoloDeathsCharacterAllShip(Frame):
                 drop2.config(width=18)
                 drop2.grid(row=7, column=0, padx=10, pady=10)
 
+            elif clickedRS.get() == "Alliance Tournament":
+                clickedRss = StringVar()
+                clickedRss.set(option40[0])
+                drop2 = OptionMenu(self, clickedRss, *option40, command=chosen)
+                drop2.config(width=18)
+                drop2.grid(row=7, column=0, padx=10, pady=10)
+
+
         def myClickC():
 
             error = 0
@@ -59586,6 +61657,45 @@ class allSoloDeathsCharacterAllShip(Frame):
             elif ships == 'Retriever':
                 ship = '/ship/17478/'
 
+            elif ships == 'Tiamat':
+                ship = '/ship/48635/'
+            elif ships == 'Hydra':
+                ship = '/ship/48636/' 
+            elif ships == 'Adrestia':
+                ship = '/ship/2836/'
+            elif ships == 'Caedes':
+                ship = '/ship/42246/'
+            elif ships == 'Cambion':
+                ship = '/ship/32788/'
+            elif ships == 'Chameleon':
+                ship = '/ship/33675/'
+            elif ships == 'Chremoas':
+                ship = '/ship/33397/'
+            elif ships == 'Etana':
+                ship = '/ship/32790/'
+            elif ships == 'Fiend':
+                ship = '/ship/35781/'
+            elif ships == 'Freki':
+                ship = '/ship/32207/'
+            elif ships == 'Imp':
+                ship = '/ship/35779'
+            elif ships == 'Malice':
+                ship = '/ship/3516/'
+            elif ships == 'Mimir':
+                ship = '/ship/32209/'
+            elif ships == 'Moracha':
+                ship = '/ship/33395/'
+            elif ships == 'Raven State Issue':
+                ship = '/ship/26840/'
+            elif ships == 'Tempest Tribal Issue':
+                ship = '/ship/26842/'
+            elif ships == 'Utu':
+                ship = '/ship/2834/'
+            elif ships == 'Vangel':
+                ship = '/ship/3518/'
+            elif ships == 'Whiptail':
+                ship = '/ship/33673/'
+
             elif ships == 'Please Select             ':
                  messagebox.showerror("Oops", "Please Select a Ship")
 
@@ -59596,7 +61706,7 @@ class allSoloDeathsCharacterAllShip(Frame):
         label = Label(self, width=50, text="All Solo Deaths Character By System With Ships -----")
         label.grid(row=1, column=0, padx=10, pady=10) 
 
-        label = Label(self, wraplengt=250, text="Please Input or Paste the Character Name")
+        label = Label(self, wraplength=250, text="Please Input or Paste the Character Name")
         label.grid(row=2, column=0, padx=10, pady=10) 
 
         inputAKCC = Entry(self, font=('Helvetica',10))
@@ -59642,6 +61752,7 @@ class allSoloDeathsCharacterAllShip(Frame):
             "Industrial Command",
             "Industrial",
             "Exhumers & Bardges",
+            "Alliance Tournament",
         ]
 
 
@@ -60363,6 +62474,14 @@ class allSoloDeathsCharacterSysShip(Frame):
                 drop2.config(width=18)
                 drop2.grid(row=7, column=0, padx=10, pady=10)
 
+            elif clickedRS.get() == "Alliance Tournament":
+                clickedRss = StringVar()
+                clickedRss.set(option40[0])
+                drop2 = OptionMenu(self, clickedRss, *option40, command=chosen)
+                drop2.config(width=18)
+                drop2.grid(row=7, column=0, padx=10, pady=10)
+
+
         def myClickCSS():
 
             error = 0
@@ -61019,6 +63138,45 @@ class allSoloDeathsCharacterSysShip(Frame):
             elif ships == 'Retriever':
                 ship = '/ship/17478/'
 
+            elif ships == 'Tiamat':
+                ship = '/ship/48635/'
+            elif ships == 'Hydra':
+                ship = '/ship/48636/' 
+            elif ships == 'Adrestia':
+                ship = '/ship/2836/'
+            elif ships == 'Caedes':
+                ship = '/ship/42246/'
+            elif ships == 'Cambion':
+                ship = '/ship/32788/'
+            elif ships == 'Chameleon':
+                ship = '/ship/33675/'
+            elif ships == 'Chremoas':
+                ship = '/ship/33397/'
+            elif ships == 'Etana':
+                ship = '/ship/32790/'
+            elif ships == 'Fiend':
+                ship = '/ship/35781/'
+            elif ships == 'Freki':
+                ship = '/ship/32207/'
+            elif ships == 'Imp':
+                ship = '/ship/35779'
+            elif ships == 'Malice':
+                ship = '/ship/3516/'
+            elif ships == 'Mimir':
+                ship = '/ship/32209/'
+            elif ships == 'Moracha':
+                ship = '/ship/33395/'
+            elif ships == 'Raven State Issue':
+                ship = '/ship/26840/'
+            elif ships == 'Tempest Tribal Issue':
+                ship = '/ship/26842/'
+            elif ships == 'Utu':
+                ship = '/ship/2834/'
+            elif ships == 'Vangel':
+                ship = '/ship/3518/'
+            elif ships == 'Whiptail':
+                ship = '/ship/33673/'
+
 
 
             elif ships == 'Please Select             ':
@@ -61031,13 +63189,13 @@ class allSoloDeathsCharacterSysShip(Frame):
         label = Label(self, width=50, text="All Solo Deaths for Character By System With Ships -----")
         label.grid(row=1, column=0, padx=10, pady=10) 
 
-        label = Label(self, wraplengt=250, text="Please Input or Paste the Character Name")
+        label = Label(self, wraplength=250, text="Please Input or Paste the Character Name")
         label.grid(row=2, column=0, padx=10, pady=10) 
 
         inputAKCC = Entry(self, font=('Helvetica',10))
         inputAKCC.grid(row=3, column=0, padx=10, pady=10) 
 
-        label = Label(self, wraplengt=250, text="Please Input the System e.g 'Y9G-KS'")
+        label = Label(self, wraplength=250, text="Please Input the System e.g 'Y9G-KS'")
         label.grid(row=4, column=0, padx=10, pady=10) 
 
         inputAKCS = Entry(self, font=('Helvetica',10))
@@ -61083,6 +63241,7 @@ class allSoloDeathsCharacterSysShip(Frame):
             "Industrial Command",
             "Industrial",
             "Exhumers & Bardges",
+            "Alliance Tournament",
         ]
 
 
@@ -61172,13 +63331,13 @@ class allSoloDeathsCharacterSysNoShip(Frame):
         label = Label(self, width=50, text="All Solo Deaths Character By System Without Ships -----")
         label.grid(row=1, column=0, padx=10, pady=10)
 
-        label = Label(self, wraplengt=250, text="Please Input or Paste the Character Name")
+        label = Label(self, wraplength=250, text="Please Input or Paste the Character Name")
         label.grid(row=2, column=0, padx=10, pady=10)
 
         inputAKCC = Entry(self, font=('Helvetica',10))
         inputAKCC.grid(row=3, column=0, padx=10, pady=10) 
 
-        label = Label(self, wraplengt=250, text="Please Input the System e.g 'Y9G-KS'")
+        label = Label(self, wraplength=250, text="Please Input the System e.g 'Y9G-KS'")
         label.grid(row=4, column=0, padx=10, pady=10)
 
         inputAKCS = Entry(self, font=('Helvetica',10))
@@ -61922,6 +64081,14 @@ class allSoloDeathsShipSysShip(Frame):
                 drop2.config(width=18)
                 drop2.grid(row=7, column=0, padx=10, pady=10)
 
+            elif clickedRS.get() == "Alliance Tournament":
+                clickedRss = StringVar()
+                clickedRss.set(option40[0])
+                drop2 = OptionMenu(self, clickedRss, *option40, command=chosen)
+                drop2.config(width=18)
+                drop2.grid(row=7, column=0, padx=10, pady=10)
+
+
         def myClickCSS():
 
             error = 0
@@ -62548,6 +64715,45 @@ class allSoloDeathsShipSysShip(Frame):
             elif ships == 'Retriever':
                 ship = '/ship/17478/'
 
+            elif ships == 'Tiamat':
+                ship = '/ship/48635/'
+            elif ships == 'Hydra':
+                ship = '/ship/48636/' 
+            elif ships == 'Adrestia':
+                ship = '/ship/2836/'
+            elif ships == 'Caedes':
+                ship = '/ship/42246/'
+            elif ships == 'Cambion':
+                ship = '/ship/32788/'
+            elif ships == 'Chameleon':
+                ship = '/ship/33675/'
+            elif ships == 'Chremoas':
+                ship = '/ship/33397/'
+            elif ships == 'Etana':
+                ship = '/ship/32790/'
+            elif ships == 'Fiend':
+                ship = '/ship/35781/'
+            elif ships == 'Freki':
+                ship = '/ship/32207/'
+            elif ships == 'Imp':
+                ship = '/ship/35779'
+            elif ships == 'Malice':
+                ship = '/ship/3516/'
+            elif ships == 'Mimir':
+                ship = '/ship/32209/'
+            elif ships == 'Moracha':
+                ship = '/ship/33395/'
+            elif ships == 'Raven State Issue':
+                ship = '/ship/26840/'
+            elif ships == 'Tempest Tribal Issue':
+                ship = '/ship/26842/'
+            elif ships == 'Utu':
+                ship = '/ship/2834/'
+            elif ships == 'Vangel':
+                ship = '/ship/3518/'
+            elif ships == 'Whiptail':
+                ship = '/ship/33673/'
+
 
             elif ships == 'Please Select             ':
                  messagebox.showerror("Oops", "Please Select a Ship")
@@ -62559,7 +64765,7 @@ class allSoloDeathsShipSysShip(Frame):
         label = Label(self, width=50, text="All Solo Deaths in System With Ships -----")
         label.grid(row=1, column=0, padx=10, pady=10) 
 
-        label = Label(self, wraplengt=250, text="Please Input the System e.g 'Y9G-KS'")
+        label = Label(self, wraplength=250, text="Please Input the System e.g 'Y9G-KS'")
         label.grid(row=4, column=0, padx=10, pady=10) 
 
         inputAKCS = Entry(self, font=('Helvetica',10))
@@ -62605,6 +64811,7 @@ class allSoloDeathsShipSysShip(Frame):
             "Industrial Command",
             "Industrial",
             "Exhumers & Bardges",
+            "Alliance Tournament",
         ]
 
         clickedRS = StringVar()
@@ -63325,6 +65532,14 @@ class allSoloDeathsShipRegShip(Frame):
                 drop2.config(width=18)
                 drop2.grid(row=7, column=0, padx=10, pady=10)
 
+            elif clickedRS.get() == "Alliance Tournament":
+                clickedRss = StringVar()
+                clickedRss.set(option40[0])
+                drop2 = OptionMenu(self, clickedRss, *option40, command=chosen)
+                drop2.config(width=18)
+                drop2.grid(row=7, column=0, padx=10, pady=10)
+
+
 
         def myClickRNS():
             error = 0
@@ -63952,6 +66167,45 @@ class allSoloDeathsShipRegShip(Frame):
             elif ships == 'Retriever':
                 ship = '/ship/17478/'
 
+            elif ships == 'Tiamat':
+                ship = '/ship/48635/'
+            elif ships == 'Hydra':
+                ship = '/ship/48636/' 
+            elif ships == 'Adrestia':
+                ship = '/ship/2836/'
+            elif ships == 'Caedes':
+                ship = '/ship/42246/'
+            elif ships == 'Cambion':
+                ship = '/ship/32788/'
+            elif ships == 'Chameleon':
+                ship = '/ship/33675/'
+            elif ships == 'Chremoas':
+                ship = '/ship/33397/'
+            elif ships == 'Etana':
+                ship = '/ship/32790/'
+            elif ships == 'Fiend':
+                ship = '/ship/35781/'
+            elif ships == 'Freki':
+                ship = '/ship/32207/'
+            elif ships == 'Imp':
+                ship = '/ship/35779'
+            elif ships == 'Malice':
+                ship = '/ship/3516/'
+            elif ships == 'Mimir':
+                ship = '/ship/32209/'
+            elif ships == 'Moracha':
+                ship = '/ship/33395/'
+            elif ships == 'Raven State Issue':
+                ship = '/ship/26840/'
+            elif ships == 'Tempest Tribal Issue':
+                ship = '/ship/26842/'
+            elif ships == 'Utu':
+                ship = '/ship/2834/'
+            elif ships == 'Vangel':
+                ship = '/ship/3518/'
+            elif ships == 'Whiptail':
+                ship = '/ship/33673/'
+
 
             elif ships == 'Please Select             ':
                  messagebox.showerror("Oops", "Please Select a Ship")
@@ -63963,7 +66217,7 @@ class allSoloDeathsShipRegShip(Frame):
         label = Label(self, width=50, text="All Solo Deaths By Region With Ship")
         label.grid(row=1, column=0, padx=10, pady=10)
 
-        label = Label(self, wraplengt=250, text="Please Input the Region e.g 'Syndicate'")
+        label = Label(self, wraplength=250, text="Please Input the Region e.g 'Syndicate'")
         label.grid(row=4, column=0, padx=10, pady=10) 
 
         inputAKCS = Entry(self, font=('Helvetica',10))
@@ -64009,6 +66263,7 @@ class allSoloDeathsShipRegShip(Frame):
             "Industrial Command",
             "Industrial",
             "Exhumers & Bardges",
+            "Alliance Tournament",
         ]
 
 
@@ -64730,6 +66985,14 @@ class allSoloDeathsShipConShip(Frame):
                 drop2.config(width=18)
                 drop2.grid(row=7, column=0, padx=10, pady=10)
 
+            elif clickedRS.get() == "Alliance Tournament":
+                clickedRss = StringVar()
+                clickedRss.set(option40[0])
+                drop2 = OptionMenu(self, clickedRss, *option40, command=chosen)
+                drop2.config(width=18)
+                drop2.grid(row=7, column=0, padx=10, pady=10)
+
+
         def myClickCNS():
             error = 0
             
@@ -65356,6 +67619,45 @@ class allSoloDeathsShipConShip(Frame):
             elif ships == 'Retriever':
                 ship = '/ship/17478/'
 
+            elif ships == 'Tiamat':
+                ship = '/ship/48635/'
+            elif ships == 'Hydra':
+                ship = '/ship/48636/' 
+            elif ships == 'Adrestia':
+                ship = '/ship/2836/'
+            elif ships == 'Caedes':
+                ship = '/ship/42246/'
+            elif ships == 'Cambion':
+                ship = '/ship/32788/'
+            elif ships == 'Chameleon':
+                ship = '/ship/33675/'
+            elif ships == 'Chremoas':
+                ship = '/ship/33397/'
+            elif ships == 'Etana':
+                ship = '/ship/32790/'
+            elif ships == 'Fiend':
+                ship = '/ship/35781/'
+            elif ships == 'Freki':
+                ship = '/ship/32207/'
+            elif ships == 'Imp':
+                ship = '/ship/35779'
+            elif ships == 'Malice':
+                ship = '/ship/3516/'
+            elif ships == 'Mimir':
+                ship = '/ship/32209/'
+            elif ships == 'Moracha':
+                ship = '/ship/33395/'
+            elif ships == 'Raven State Issue':
+                ship = '/ship/26840/'
+            elif ships == 'Tempest Tribal Issue':
+                ship = '/ship/26842/'
+            elif ships == 'Utu':
+                ship = '/ship/2834/'
+            elif ships == 'Vangel':
+                ship = '/ship/3518/'
+            elif ships == 'Whiptail':
+                ship = '/ship/33673/'
+
 
 
             elif ships == 'Please Select             ':
@@ -65368,7 +67670,7 @@ class allSoloDeathsShipConShip(Frame):
         label = Label(self, width=50, text="All Solo Deaths By Consteltion with ship")
         label.grid(row=1, column=0, padx=10, pady=10)
 
-        label = Label(self, wraplengt=250, text="Please Input the Constelation e.g 'TA-A7V'")
+        label = Label(self, wraplength=250, text="Please Input the Constelation e.g 'TA-A7V'")
         label.grid(row=4, column=0, padx=10, pady=10) 
 
         inputAKCS = Entry(self, font=('Helvetica',10))
@@ -65414,6 +67716,7 @@ class allSoloDeathsShipConShip(Frame):
             "Industrial Command",
             "Industrial",
             "Exhumers & Bardges",
+            "Alliance Tournament",
         ]
 
 
@@ -66135,6 +68438,14 @@ class allSoloDeathsShipAllShip(Frame):
                 drop2.config(width=18)
                 drop2.grid(row=7, column=0, padx=10, pady=10)
 
+            elif clickedRS.get() == "Alliance Tournament":
+                clickedRss = StringVar()
+                clickedRss.set(option40[0])
+                drop2 = OptionMenu(self, clickedRss, *option40, command=chosen)
+                drop2.config(width=18)
+                drop2.grid(row=7, column=0, padx=10, pady=10)
+
+
         def myClickC():
 
             error = 0
@@ -66730,6 +69041,45 @@ class allSoloDeathsShipAllShip(Frame):
             elif ships == 'Retriever':
                 ship = '/ship/17478/'
 
+            elif ships == 'Tiamat':
+                ship = '/ship/48635/'
+            elif ships == 'Hydra':
+                ship = '/ship/48636/' 
+            elif ships == 'Adrestia':
+                ship = '/ship/2836/'
+            elif ships == 'Caedes':
+                ship = '/ship/42246/'
+            elif ships == 'Cambion':
+                ship = '/ship/32788/'
+            elif ships == 'Chameleon':
+                ship = '/ship/33675/'
+            elif ships == 'Chremoas':
+                ship = '/ship/33397/'
+            elif ships == 'Etana':
+                ship = '/ship/32790/'
+            elif ships == 'Fiend':
+                ship = '/ship/35781/'
+            elif ships == 'Freki':
+                ship = '/ship/32207/'
+            elif ships == 'Imp':
+                ship = '/ship/35779'
+            elif ships == 'Malice':
+                ship = '/ship/3516/'
+            elif ships == 'Mimir':
+                ship = '/ship/32209/'
+            elif ships == 'Moracha':
+                ship = '/ship/33395/'
+            elif ships == 'Raven State Issue':
+                ship = '/ship/26840/'
+            elif ships == 'Tempest Tribal Issue':
+                ship = '/ship/26842/'
+            elif ships == 'Utu':
+                ship = '/ship/2834/'
+            elif ships == 'Vangel':
+                ship = '/ship/3518/'
+            elif ships == 'Whiptail':
+                ship = '/ship/33673/'
+
             elif ships == 'Please Select             ':
                  messagebox.showerror("Oops", "Please Select a Ship")
 
@@ -66780,6 +69130,7 @@ class allSoloDeathsShipAllShip(Frame):
             "Industrial Command",
             "Industrial",
             "Exhumers & Bardges",
+            "Alliance Tournament",
         ]
 
 
@@ -66917,7 +69268,7 @@ class allCorpNoShip(Frame):
         label = Label(self, width=50, text="All by Corp with No Ship")
         label.grid(row=1, column=0, padx=10, pady=10)
 
-        label = Label(self, wraplengt=250, text="Please Input the Corp Name")
+        label = Label(self, wraplength=250, text="Please Input the Corp Name")
         label.grid(row=4, column=0, padx=10, pady=10)
 
         inputAKCS = Entry(self, font=('Helvetica',10))
@@ -67634,6 +69985,14 @@ class allCorpShip(Frame):
                 drop2.config(width=18)
                 drop2.grid(row=7, column=0, padx=10, pady=10)
 
+            elif clickedRS.get() == "Alliance Tournament":
+                clickedRss = StringVar()
+                clickedRss.set(option40[0])
+                drop2 = OptionMenu(self, clickedRss, *option40, command=chosen)
+                drop2.config(width=18)
+                drop2.grid(row=7, column=0, padx=10, pady=10)
+
+
         def myClickRNS():
 
             error = 0
@@ -68262,6 +70621,45 @@ class allCorpShip(Frame):
             elif ships == 'Retriever':
                 ship = '/ship/17478/'
 
+            elif ships == 'Tiamat':
+                ship = '/ship/48635/'
+            elif ships == 'Hydra':
+                ship = '/ship/48636/' 
+            elif ships == 'Adrestia':
+                ship = '/ship/2836/'
+            elif ships == 'Caedes':
+                ship = '/ship/42246/'
+            elif ships == 'Cambion':
+                ship = '/ship/32788/'
+            elif ships == 'Chameleon':
+                ship = '/ship/33675/'
+            elif ships == 'Chremoas':
+                ship = '/ship/33397/'
+            elif ships == 'Etana':
+                ship = '/ship/32790/'
+            elif ships == 'Fiend':
+                ship = '/ship/35781/'
+            elif ships == 'Freki':
+                ship = '/ship/32207/'
+            elif ships == 'Imp':
+                ship = '/ship/35779'
+            elif ships == 'Malice':
+                ship = '/ship/3516/'
+            elif ships == 'Mimir':
+                ship = '/ship/32209/'
+            elif ships == 'Moracha':
+                ship = '/ship/33395/'
+            elif ships == 'Raven State Issue':
+                ship = '/ship/26840/'
+            elif ships == 'Tempest Tribal Issue':
+                ship = '/ship/26842/'
+            elif ships == 'Utu':
+                ship = '/ship/2834/'
+            elif ships == 'Vangel':
+                ship = '/ship/3518/'
+            elif ships == 'Whiptail':
+                ship = '/ship/33673/'
+
             elif ships == 'Please Select             ':
                  messagebox.showerror("Oops", "Please Select a Ship")
 
@@ -68271,7 +70669,7 @@ class allCorpShip(Frame):
         label = Label(self, width=50, text="All for Corp with Ship")
         label.grid(row=1, column=0, padx=10, pady=10)
 
-        label = Label(self, wraplengt=250, text="Please Input the Corp Name")
+        label = Label(self, wraplength=250, text="Please Input the Corp Name")
         label.grid(row=4, column=0, padx=10, pady=10)
 
         inputAKCS = Entry(self, font=('Helvetica',10))
@@ -68317,6 +70715,7 @@ class allCorpShip(Frame):
             "Industrial Command",
             "Industrial",
             "Exhumers & Bardges",
+            "Alliance Tournament",
         ]
 
 
@@ -68399,7 +70798,7 @@ class allAllianceNoShip(Frame):
         label = Label(self, width=50, text="All Aliance No Ship")
         label.grid(row=1, column=0, padx=10, pady=10)
 
-        label = Label(self, wraplengt=250, text="Please Input the Alliance Name")
+        label = Label(self, wraplength=250, text="Please Input the Alliance Name")
         label.grid(row=4, column=0, padx=10, pady=10)
 
         inputAKCS = Entry(self, font=('Helvetica',10))
@@ -69116,6 +71515,14 @@ class allAllianceShip(Frame):
                 drop2.config(width=18)
                 drop2.grid(row=7, column=0, padx=10, pady=10)
 
+            elif clickedRS.get() == "Alliance Tournament":
+                clickedRss = StringVar()
+                clickedRss.set(option40[0])
+                drop2 = OptionMenu(self, clickedRss, *option40, command=chosen)
+                drop2.config(width=18)
+                drop2.grid(row=7, column=0, padx=10, pady=10)
+
+
         def myClickRNS():
 
             error = 0
@@ -69743,6 +72150,45 @@ class allAllianceShip(Frame):
             elif ships == 'Retriever':
                 ship = '/ship/17478/'
 
+            elif ships == 'Tiamat':
+                ship = '/ship/48635/'
+            elif ships == 'Hydra':
+                ship = '/ship/48636/' 
+            elif ships == 'Adrestia':
+                ship = '/ship/2836/'
+            elif ships == 'Caedes':
+                ship = '/ship/42246/'
+            elif ships == 'Cambion':
+                ship = '/ship/32788/'
+            elif ships == 'Chameleon':
+                ship = '/ship/33675/'
+            elif ships == 'Chremoas':
+                ship = '/ship/33397/'
+            elif ships == 'Etana':
+                ship = '/ship/32790/'
+            elif ships == 'Fiend':
+                ship = '/ship/35781/'
+            elif ships == 'Freki':
+                ship = '/ship/32207/'
+            elif ships == 'Imp':
+                ship = '/ship/35779'
+            elif ships == 'Malice':
+                ship = '/ship/3516/'
+            elif ships == 'Mimir':
+                ship = '/ship/32209/'
+            elif ships == 'Moracha':
+                ship = '/ship/33395/'
+            elif ships == 'Raven State Issue':
+                ship = '/ship/26840/'
+            elif ships == 'Tempest Tribal Issue':
+                ship = '/ship/26842/'
+            elif ships == 'Utu':
+                ship = '/ship/2834/'
+            elif ships == 'Vangel':
+                ship = '/ship/3518/'
+            elif ships == 'Whiptail':
+                ship = '/ship/33673/'
+
             elif ships == 'Please Select             ':
                  messagebox.showerror("Oops", "Please Select a Ship")
 
@@ -69752,7 +72198,7 @@ class allAllianceShip(Frame):
         label = Label(self, width=50, text="All Aliance with Ship")
         label.grid(row=1, column=0, padx=10, pady=10)
 
-        label = Label(self, wraplengt=250, text="Please Input the Alliance Name")
+        label = Label(self, wraplength=250, text="Please Input the Alliance Name")
         label.grid(row=4, column=0, padx=10, pady=10)
 
         inputAKCS = Entry(self, font=('Helvetica',10))
@@ -69798,6 +72244,7 @@ class allAllianceShip(Frame):
             "Industrial Command",
             "Industrial",
             "Exhumers & Bardges",
+            "Alliance Tournament",
         ]
 
 
@@ -69879,7 +72326,7 @@ class allRegionNoShip(Frame):
         label = Label(self, width=50, text="All By Region No Ship")
         label.grid(row=1, column=0, padx=10, pady=10)
 
-        label = Label(self, wraplengt=250, text="Please Input the Region e.g 'Syndicate'")
+        label = Label(self, wraplength=250, text="Please Input the Region e.g 'Syndicate'")
         label.grid(row=4, column=0, padx=10, pady=10)
 
         inputAKCS = Entry(self, font=('Helvetica',10))
@@ -70596,6 +73043,14 @@ class allRegionShip(Frame):
                 drop2.config(width=18)
                 drop2.grid(row=7, column=0, padx=10, pady=10)
 
+            elif clickedRS.get() == "Alliance Tournament":
+                clickedRss = StringVar()
+                clickedRss.set(option40[0])
+                drop2 = OptionMenu(self, clickedRss, *option40, command=chosen)
+                drop2.config(width=18)
+                drop2.grid(row=7, column=0, padx=10, pady=10)
+
+
 
         def myClickRNS():
 
@@ -71224,6 +73679,45 @@ class allRegionShip(Frame):
             elif ships == 'Retriever':
                 ship = '/ship/17478/'
 
+            elif ships == 'Tiamat':
+                ship = '/ship/48635/'
+            elif ships == 'Hydra':
+                ship = '/ship/48636/' 
+            elif ships == 'Adrestia':
+                ship = '/ship/2836/'
+            elif ships == 'Caedes':
+                ship = '/ship/42246/'
+            elif ships == 'Cambion':
+                ship = '/ship/32788/'
+            elif ships == 'Chameleon':
+                ship = '/ship/33675/'
+            elif ships == 'Chremoas':
+                ship = '/ship/33397/'
+            elif ships == 'Etana':
+                ship = '/ship/32790/'
+            elif ships == 'Fiend':
+                ship = '/ship/35781/'
+            elif ships == 'Freki':
+                ship = '/ship/32207/'
+            elif ships == 'Imp':
+                ship = '/ship/35779'
+            elif ships == 'Malice':
+                ship = '/ship/3516/'
+            elif ships == 'Mimir':
+                ship = '/ship/32209/'
+            elif ships == 'Moracha':
+                ship = '/ship/33395/'
+            elif ships == 'Raven State Issue':
+                ship = '/ship/26840/'
+            elif ships == 'Tempest Tribal Issue':
+                ship = '/ship/26842/'
+            elif ships == 'Utu':
+                ship = '/ship/2834/'
+            elif ships == 'Vangel':
+                ship = '/ship/3518/'
+            elif ships == 'Whiptail':
+                ship = '/ship/33673/'
+
 
             elif ships == 'Please Select             ':
                  messagebox.showerror("Oops", "Please Select a Ship")
@@ -71235,7 +73729,7 @@ class allRegionShip(Frame):
         label = Label(self, width=50, text="All By Region With Ship")
         label.grid(row=1, column=0, padx=10, pady=10)
 
-        label = Label(self, wraplengt=250, text="Please Input the Region e.g 'Syndicate'")
+        label = Label(self, wraplength=250, text="Please Input the Region e.g 'Syndicate'")
         label.grid(row=4, column=0, padx=10, pady=10) 
 
         inputAKCS = Entry(self, font=('Helvetica',10))
@@ -71281,6 +73775,7 @@ class allRegionShip(Frame):
             "Industrial Command",
             "Industrial",
             "Exhumers & Bardges",
+            "Alliance Tournament",
         ]
 
 
@@ -71409,13 +73904,13 @@ class allCharacterRegNoShip(Frame):
         label = Label(self, width=50, text="All for Character By Region No Ship")
         label.grid(row=1, column=0, padx=10, pady=10)
 
-        label = Label(self, wraplengt=250, text="Please Input or Paste the Character Name")
+        label = Label(self, wraplength=250, text="Please Input or Paste the Character Name")
         label.grid(row=2, column=0, padx=10, pady=10)
 
         inputAKCC = Entry(self, font=('Helvetica',10))
         inputAKCC.grid(row=3, column=0, padx=10, pady=10) 
 
-        label = Label(self, wraplengt=250, text="Please Input the Region e.g 'Syndicate'")
+        label = Label(self, wraplength=250, text="Please Input the Region e.g 'Syndicate'")
         label.grid(row=4, column=0, padx=10, pady=10)
 
         inputAKCS = Entry(self, font=('Helvetica',10))
@@ -72132,6 +74627,14 @@ class allCharacterRegShip(Frame):
                 drop2.config(width=18)
                 drop2.grid(row=7, column=0, padx=10, pady=10)
 
+            elif clickedRS.get() == "Alliance Tournament":
+                clickedRss = StringVar()
+                clickedRss.set(option40[0])
+                drop2 = OptionMenu(self, clickedRss, *option40, command=chosen)
+                drop2.config(width=18)
+                drop2.grid(row=7, column=0, padx=10, pady=10)
+
+
 
         def myClickRNS():
             error = 0
@@ -72788,6 +75291,45 @@ class allCharacterRegShip(Frame):
             elif ships == 'Retriever':
                 ship = '/ship/17478/'
 
+            elif ships == 'Tiamat':
+                ship = '/ship/48635/'
+            elif ships == 'Hydra':
+                ship = '/ship/48636/' 
+            elif ships == 'Adrestia':
+                ship = '/ship/2836/'
+            elif ships == 'Caedes':
+                ship = '/ship/42246/'
+            elif ships == 'Cambion':
+                ship = '/ship/32788/'
+            elif ships == 'Chameleon':
+                ship = '/ship/33675/'
+            elif ships == 'Chremoas':
+                ship = '/ship/33397/'
+            elif ships == 'Etana':
+                ship = '/ship/32790/'
+            elif ships == 'Fiend':
+                ship = '/ship/35781/'
+            elif ships == 'Freki':
+                ship = '/ship/32207/'
+            elif ships == 'Imp':
+                ship = '/ship/35779'
+            elif ships == 'Malice':
+                ship = '/ship/3516/'
+            elif ships == 'Mimir':
+                ship = '/ship/32209/'
+            elif ships == 'Moracha':
+                ship = '/ship/33395/'
+            elif ships == 'Raven State Issue':
+                ship = '/ship/26840/'
+            elif ships == 'Tempest Tribal Issue':
+                ship = '/ship/26842/'
+            elif ships == 'Utu':
+                ship = '/ship/2834/'
+            elif ships == 'Vangel':
+                ship = '/ship/3518/'
+            elif ships == 'Whiptail':
+                ship = '/ship/33673/'
+
 
 
             elif ships == 'Please Select             ':
@@ -72800,13 +75342,13 @@ class allCharacterRegShip(Frame):
         label = Label(self, width=50, text="All for Character By Region With Ship")
         label.grid(row=1, column=0, padx=10, pady=10)
 
-        label = Label(self, wraplengt=250, text="Please Input or Paste the Character Name")
+        label = Label(self, wraplength=250, text="Please Input or Paste the Character Name")
         label.grid(row=2, column=0, padx=10, pady=10) 
 
         inputAKCC = Entry(self, font=('Helvetica',10))
         inputAKCC.grid(row=3, column=0, padx=10, pady=10) 
 
-        label = Label(self, wraplengt=250, text="Please Input the Region e.g 'Syndicate'")
+        label = Label(self, wraplength=250, text="Please Input the Region e.g 'Syndicate'")
         label.grid(row=4, column=0, padx=10, pady=10) 
 
         inputAKCS = Entry(self, font=('Helvetica',10))
@@ -72852,6 +75394,7 @@ class allCharacterRegShip(Frame):
             "Industrial Command",
             "Industrial",
             "Exhumers & Bardges",
+            "Alliance Tournament",
         ]
 
 
@@ -72961,13 +75504,13 @@ class allCharacterConNoShip(Frame):
         label = Label(self, width=50, text="All Character By Consteltion Without Ship")
         label.grid(row=1, column=0, padx=10, pady=10)
 
-        label = Label(self, wraplengt=250, text="Please Input or Paste the Character Name")
+        label = Label(self, wraplength=250, text="Please Input or Paste the Character Name")
         label.grid(row=2, column=0, padx=10, pady=10)
 
         inputAKCC = Entry(self, font=('Helvetica',10))
         inputAKCC.grid(row=3, column=0, padx=10, pady=10) 
 
-        label = Label(self, wraplengt=250, text="Please Input the Constelation e.g 'TA-A7V'")
+        label = Label(self, wraplength=250, text="Please Input the Constelation e.g 'TA-A7V'")
         label.grid(row=4, column=0, padx=10, pady=10)
 
         inputAKCS = Entry(self, font=('Helvetica',10))
@@ -73684,6 +76227,14 @@ class allCharacterConShip(Frame):
                 drop2.config(width=18)
                 drop2.grid(row=7, column=0, padx=10, pady=10)
 
+            elif clickedRS.get() == "Alliance Tournament":
+                clickedRss = StringVar()
+                clickedRss.set(option40[0])
+                drop2 = OptionMenu(self, clickedRss, *option40, command=chosen)
+                drop2.config(width=18)
+                drop2.grid(row=7, column=0, padx=10, pady=10)
+
+
         def myClickCNS():
             error = 0
             while error == 0:
@@ -74339,6 +76890,45 @@ class allCharacterConShip(Frame):
             elif ships == 'Retriever':
                 ship = '/ship/17478/'
 
+            elif ships == 'Tiamat':
+                ship = '/ship/48635/'
+            elif ships == 'Hydra':
+                ship = '/ship/48636/' 
+            elif ships == 'Adrestia':
+                ship = '/ship/2836/'
+            elif ships == 'Caedes':
+                ship = '/ship/42246/'
+            elif ships == 'Cambion':
+                ship = '/ship/32788/'
+            elif ships == 'Chameleon':
+                ship = '/ship/33675/'
+            elif ships == 'Chremoas':
+                ship = '/ship/33397/'
+            elif ships == 'Etana':
+                ship = '/ship/32790/'
+            elif ships == 'Fiend':
+                ship = '/ship/35781/'
+            elif ships == 'Freki':
+                ship = '/ship/32207/'
+            elif ships == 'Imp':
+                ship = '/ship/35779'
+            elif ships == 'Malice':
+                ship = '/ship/3516/'
+            elif ships == 'Mimir':
+                ship = '/ship/32209/'
+            elif ships == 'Moracha':
+                ship = '/ship/33395/'
+            elif ships == 'Raven State Issue':
+                ship = '/ship/26840/'
+            elif ships == 'Tempest Tribal Issue':
+                ship = '/ship/26842/'
+            elif ships == 'Utu':
+                ship = '/ship/2834/'
+            elif ships == 'Vangel':
+                ship = '/ship/3518/'
+            elif ships == 'Whiptail':
+                ship = '/ship/33673/'
+
 
 
             elif ships == 'Please Select             ':
@@ -74351,13 +76941,13 @@ class allCharacterConShip(Frame):
         label = Label(self, width=50, text="All Character By Consteltion with ship")
         label.grid(row=1, column=0, padx=10, pady=10)
 
-        label = Label(self, wraplengt=250, text="Please Input or Paste the Character Name")
+        label = Label(self, wraplength=250, text="Please Input or Paste the Character Name")
         label.grid(row=2, column=0, padx=10, pady=10) 
 
         inputAKCC = Entry(self, font=('Helvetica',10))
         inputAKCC.grid(row=3, column=0, padx=10, pady=10) 
 
-        label = Label(self, wraplengt=250, text="Please Input the Constelation e.g 'TA-A7V'")
+        label = Label(self, wraplength=250, text="Please Input the Constelation e.g 'TA-A7V'")
         label.grid(row=4, column=0, padx=10, pady=10) 
 
         inputAKCS = Entry(self, font=('Helvetica',10))
@@ -74403,6 +76993,7 @@ class allCharacterConShip(Frame):
             "Industrial Command",
             "Industrial",
             "Exhumers & Bardges",
+            "Alliance Tournament",
         ]
 
 
@@ -74480,7 +77071,7 @@ class allCharacterAllNoShip(Frame):
         label = Label(self, width=50, text="All Character, No Ship")
         label.grid(row=1, column=0, padx=10, pady=10)
 
-        label = Label(self, wraplengt=250, text="Please Input or Paste the Character Name")
+        label = Label(self, wraplength=250, text="Please Input or Paste the Character Name")
         label.grid(row=2, column=0, padx=10, pady=10)
 
         inputAKCC = Entry(self, font=('Helvetica',10))
@@ -75197,6 +77788,14 @@ class allCharacterAllShip(Frame):
                 drop2.config(width=18)
                 drop2.grid(row=7, column=0, padx=10, pady=10)
 
+            elif clickedRS.get() == "Alliance Tournament":
+                clickedRss = StringVar()
+                clickedRss.set(option40[0])
+                drop2 = OptionMenu(self, clickedRss, *option40, command=chosen)
+                drop2.config(width=18)
+                drop2.grid(row=7, column=0, padx=10, pady=10)
+
+
         def myClickC():
 
             error = 0
@@ -75821,6 +78420,45 @@ class allCharacterAllShip(Frame):
             elif ships == 'Retriever':
                 ship = '/ship/17478/'
 
+            elif ships == 'Tiamat':
+                ship = '/ship/48635/'
+            elif ships == 'Hydra':
+                ship = '/ship/48636/' 
+            elif ships == 'Adrestia':
+                ship = '/ship/2836/'
+            elif ships == 'Caedes':
+                ship = '/ship/42246/'
+            elif ships == 'Cambion':
+                ship = '/ship/32788/'
+            elif ships == 'Chameleon':
+                ship = '/ship/33675/'
+            elif ships == 'Chremoas':
+                ship = '/ship/33397/'
+            elif ships == 'Etana':
+                ship = '/ship/32790/'
+            elif ships == 'Fiend':
+                ship = '/ship/35781/'
+            elif ships == 'Freki':
+                ship = '/ship/32207/'
+            elif ships == 'Imp':
+                ship = '/ship/35779'
+            elif ships == 'Malice':
+                ship = '/ship/3516/'
+            elif ships == 'Mimir':
+                ship = '/ship/32209/'
+            elif ships == 'Moracha':
+                ship = '/ship/33395/'
+            elif ships == 'Raven State Issue':
+                ship = '/ship/26840/'
+            elif ships == 'Tempest Tribal Issue':
+                ship = '/ship/26842/'
+            elif ships == 'Utu':
+                ship = '/ship/2834/'
+            elif ships == 'Vangel':
+                ship = '/ship/3518/'
+            elif ships == 'Whiptail':
+                ship = '/ship/33673/'
+
             elif ships == 'Please Select             ':
                  messagebox.showerror("Oops", "Please Select a Ship")
 
@@ -75831,7 +78469,7 @@ class allCharacterAllShip(Frame):
         label = Label(self, width=50, text="All Character By System With Ships -----")
         label.grid(row=1, column=0, padx=10, pady=10) 
 
-        label = Label(self, wraplengt=250, text="Please Input or Paste the Character Name")
+        label = Label(self, wraplength=250, text="Please Input or Paste the Character Name")
         label.grid(row=2, column=0, padx=10, pady=10) 
 
         inputAKCC = Entry(self, font=('Helvetica',10))
@@ -75877,6 +78515,7 @@ class allCharacterAllShip(Frame):
             "Industrial Command",
             "Industrial",
             "Exhumers & Bardges",
+            "Alliance Tournament",
         ]
 
 
@@ -76598,6 +79237,14 @@ class allCharacterSysShip(Frame):
                 drop2.config(width=18)
                 drop2.grid(row=7, column=0, padx=10, pady=10)
 
+            elif clickedRS.get() == "Alliance Tournament":
+                clickedRss = StringVar()
+                clickedRss.set(option40[0])
+                drop2 = OptionMenu(self, clickedRss, *option40, command=chosen)
+                drop2.config(width=18)
+                drop2.grid(row=7, column=0, padx=10, pady=10)
+
+
         def myClickCSS():
 
             error = 0
@@ -77254,6 +79901,45 @@ class allCharacterSysShip(Frame):
             elif ships == 'Retriever':
                 ship = '/ship/17478/'
 
+            elif ships == 'Tiamat':
+                ship = '/ship/48635/'
+            elif ships == 'Hydra':
+                ship = '/ship/48636/' 
+            elif ships == 'Adrestia':
+                ship = '/ship/2836/'
+            elif ships == 'Caedes':
+                ship = '/ship/42246/'
+            elif ships == 'Cambion':
+                ship = '/ship/32788/'
+            elif ships == 'Chameleon':
+                ship = '/ship/33675/'
+            elif ships == 'Chremoas':
+                ship = '/ship/33397/'
+            elif ships == 'Etana':
+                ship = '/ship/32790/'
+            elif ships == 'Fiend':
+                ship = '/ship/35781/'
+            elif ships == 'Freki':
+                ship = '/ship/32207/'
+            elif ships == 'Imp':
+                ship = '/ship/35779'
+            elif ships == 'Malice':
+                ship = '/ship/3516/'
+            elif ships == 'Mimir':
+                ship = '/ship/32209/'
+            elif ships == 'Moracha':
+                ship = '/ship/33395/'
+            elif ships == 'Raven State Issue':
+                ship = '/ship/26840/'
+            elif ships == 'Tempest Tribal Issue':
+                ship = '/ship/26842/'
+            elif ships == 'Utu':
+                ship = '/ship/2834/'
+            elif ships == 'Vangel':
+                ship = '/ship/3518/'
+            elif ships == 'Whiptail':
+                ship = '/ship/33673/'
+
 
 
             elif ships == 'Please Select             ':
@@ -77266,13 +79952,13 @@ class allCharacterSysShip(Frame):
         label = Label(self, width=50, text="Character By System With Ships -----")
         label.grid(row=1, column=0, padx=10, pady=10) 
 
-        label = Label(self, wraplengt=250, text="Please Input or Paste the Character Name")
+        label = Label(self, wraplength=250, text="Please Input or Paste the Character Name")
         label.grid(row=2, column=0, padx=10, pady=10) 
 
         inputAKCC = Entry(self, font=('Helvetica',10))
         inputAKCC.grid(row=3, column=0, padx=10, pady=10) 
 
-        label = Label(self, wraplengt=250, text="Please Input the System e.g 'Y9G-KS'")
+        label = Label(self, wraplength=250, text="Please Input the System e.g 'Y9G-KS'")
         label.grid(row=4, column=0, padx=10, pady=10) 
 
         inputAKCS = Entry(self, font=('Helvetica',10))
@@ -77318,6 +80004,7 @@ class allCharacterSysShip(Frame):
             "Industrial Command",
             "Industrial",
             "Exhumers & Bardges",
+            "Alliance Tournament",
         ]
 
         clickedRS = StringVar()
@@ -77406,13 +80093,13 @@ class allCharacterSysNoShip(Frame):
         label = Label(self, width=50, text="All Character By System Without Ships -----")
         label.grid(row=1, column=0, padx=10, pady=10)
 
-        label = Label(self, wraplengt=250, text="Please Input or Paste the Character Name")
+        label = Label(self, wraplength=250, text="Please Input or Paste the Character Name")
         label.grid(row=2, column=0, padx=10, pady=10)
 
         inputAKCC = Entry(self, font=('Helvetica',10))
         inputAKCC.grid(row=3, column=0, padx=10, pady=10) 
 
-        label = Label(self, wraplengt=250, text="Please Input the System e.g 'Y9G-KS'")
+        label = Label(self, wraplength=250, text="Please Input the System e.g 'Y9G-KS'")
         label.grid(row=4, column=0, padx=10, pady=10)
 
         inputAKCS = Entry(self, font=('Helvetica',10))
@@ -78156,6 +80843,14 @@ class allShipSysShip(Frame):
                 drop2.config(width=18)
                 drop2.grid(row=7, column=0, padx=10, pady=10)
 
+            elif clickedRS.get() == "Alliance Tournament":
+                clickedRss = StringVar()
+                clickedRss.set(option40[0])
+                drop2 = OptionMenu(self, clickedRss, *option40, command=chosen)
+                drop2.config(width=18)
+                drop2.grid(row=7, column=0, padx=10, pady=10)
+
+
         def myClickCSS():
 
             error = 0
@@ -78782,6 +81477,45 @@ class allShipSysShip(Frame):
             elif ships == 'Retriever':
                 ship = '/ship/17478/'
 
+            elif ships == 'Tiamat':
+                ship = '/ship/48635/'
+            elif ships == 'Hydra':
+                ship = '/ship/48636/' 
+            elif ships == 'Adrestia':
+                ship = '/ship/2836/'
+            elif ships == 'Caedes':
+                ship = '/ship/42246/'
+            elif ships == 'Cambion':
+                ship = '/ship/32788/'
+            elif ships == 'Chameleon':
+                ship = '/ship/33675/'
+            elif ships == 'Chremoas':
+                ship = '/ship/33397/'
+            elif ships == 'Etana':
+                ship = '/ship/32790/'
+            elif ships == 'Fiend':
+                ship = '/ship/35781/'
+            elif ships == 'Freki':
+                ship = '/ship/32207/'
+            elif ships == 'Imp':
+                ship = '/ship/35779'
+            elif ships == 'Malice':
+                ship = '/ship/3516/'
+            elif ships == 'Mimir':
+                ship = '/ship/32209/'
+            elif ships == 'Moracha':
+                ship = '/ship/33395/'
+            elif ships == 'Raven State Issue':
+                ship = '/ship/26840/'
+            elif ships == 'Tempest Tribal Issue':
+                ship = '/ship/26842/'
+            elif ships == 'Utu':
+                ship = '/ship/2834/'
+            elif ships == 'Vangel':
+                ship = '/ship/3518/'
+            elif ships == 'Whiptail':
+                ship = '/ship/33673/'
+
 
             elif ships == 'Please Select             ':
                  messagebox.showerror("Oops", "Please Select a Ship")
@@ -78793,7 +81527,7 @@ class allShipSysShip(Frame):
         label = Label(self, width=50, text="All in System With Ships -----")
         label.grid(row=1, column=0, padx=10, pady=10) 
 
-        label = Label(self, wraplengt=250, text="Please Input the System e.g 'Y9G-KS'")
+        label = Label(self, wraplength=250, text="Please Input the System e.g 'Y9G-KS'")
         label.grid(row=4, column=0, padx=10, pady=10) 
 
         inputAKCS = Entry(self, font=('Helvetica',10))
@@ -78839,6 +81573,7 @@ class allShipSysShip(Frame):
             "Industrial Command",
             "Industrial",
             "Exhumers & Bardges",
+            "Alliance Tournament",
         ]
 
         clickedRS = StringVar()
@@ -79559,6 +82294,14 @@ class allShipRegShip(Frame):
                 drop2.config(width=18)
                 drop2.grid(row=7, column=0, padx=10, pady=10)
 
+            elif clickedRS.get() == "Alliance Tournament":
+                clickedRss = StringVar()
+                clickedRss.set(option40[0])
+                drop2 = OptionMenu(self, clickedRss, *option40, command=chosen)
+                drop2.config(width=18)
+                drop2.grid(row=7, column=0, padx=10, pady=10)
+
+
 
         def myClickRNS():
             error = 0
@@ -80186,6 +82929,45 @@ class allShipRegShip(Frame):
             elif ships == 'Retriever':
                 ship = '/ship/17478/'
 
+            elif ships == 'Tiamat':
+                ship = '/ship/48635/'
+            elif ships == 'Hydra':
+                ship = '/ship/48636/' 
+            elif ships == 'Adrestia':
+                ship = '/ship/2836/'
+            elif ships == 'Caedes':
+                ship = '/ship/42246/'
+            elif ships == 'Cambion':
+                ship = '/ship/32788/'
+            elif ships == 'Chameleon':
+                ship = '/ship/33675/'
+            elif ships == 'Chremoas':
+                ship = '/ship/33397/'
+            elif ships == 'Etana':
+                ship = '/ship/32790/'
+            elif ships == 'Fiend':
+                ship = '/ship/35781/'
+            elif ships == 'Freki':
+                ship = '/ship/32207/'
+            elif ships == 'Imp':
+                ship = '/ship/35779'
+            elif ships == 'Malice':
+                ship = '/ship/3516/'
+            elif ships == 'Mimir':
+                ship = '/ship/32209/'
+            elif ships == 'Moracha':
+                ship = '/ship/33395/'
+            elif ships == 'Raven State Issue':
+                ship = '/ship/26840/'
+            elif ships == 'Tempest Tribal Issue':
+                ship = '/ship/26842/'
+            elif ships == 'Utu':
+                ship = '/ship/2834/'
+            elif ships == 'Vangel':
+                ship = '/ship/3518/'
+            elif ships == 'Whiptail':
+                ship = '/ship/33673/'
+
 
             elif ships == 'Please Select             ':
                  messagebox.showerror("Oops", "Please Select a Ship")
@@ -80197,7 +82979,7 @@ class allShipRegShip(Frame):
         label = Label(self, width=50, text="All By Region With Ship")
         label.grid(row=1, column=0, padx=10, pady=10)
 
-        label = Label(self, wraplengt=250, text="Please Input the Region e.g 'Syndicate'")
+        label = Label(self, wraplength=250, text="Please Input the Region e.g 'Syndicate'")
         label.grid(row=4, column=0, padx=10, pady=10) 
 
         inputAKCS = Entry(self, font=('Helvetica',10))
@@ -80243,6 +83025,7 @@ class allShipRegShip(Frame):
             "Industrial Command",
             "Industrial",
             "Exhumers & Bardges",
+            "Alliance Tournament",
         ]
 
         clickedRS = StringVar()
@@ -80963,6 +83746,14 @@ class allShipConShip(Frame):
                 drop2.config(width=18)
                 drop2.grid(row=7, column=0, padx=10, pady=10)
 
+            elif clickedRS.get() == "Alliance Tournament":
+                clickedRss = StringVar()
+                clickedRss.set(option40[0])
+                drop2 = OptionMenu(self, clickedRss, *option40, command=chosen)
+                drop2.config(width=18)
+                drop2.grid(row=7, column=0, padx=10, pady=10)
+
+
         def myClickCNS():
             error = 0
             
@@ -81589,6 +84380,45 @@ class allShipConShip(Frame):
             elif ships == 'Retriever':
                 ship = '/ship/17478/'
 
+            elif ships == 'Tiamat':
+                ship = '/ship/48635/'
+            elif ships == 'Hydra':
+                ship = '/ship/48636/' 
+            elif ships == 'Adrestia':
+                ship = '/ship/2836/'
+            elif ships == 'Caedes':
+                ship = '/ship/42246/'
+            elif ships == 'Cambion':
+                ship = '/ship/32788/'
+            elif ships == 'Chameleon':
+                ship = '/ship/33675/'
+            elif ships == 'Chremoas':
+                ship = '/ship/33397/'
+            elif ships == 'Etana':
+                ship = '/ship/32790/'
+            elif ships == 'Fiend':
+                ship = '/ship/35781/'
+            elif ships == 'Freki':
+                ship = '/ship/32207/'
+            elif ships == 'Imp':
+                ship = '/ship/35779'
+            elif ships == 'Malice':
+                ship = '/ship/3516/'
+            elif ships == 'Mimir':
+                ship = '/ship/32209/'
+            elif ships == 'Moracha':
+                ship = '/ship/33395/'
+            elif ships == 'Raven State Issue':
+                ship = '/ship/26840/'
+            elif ships == 'Tempest Tribal Issue':
+                ship = '/ship/26842/'
+            elif ships == 'Utu':
+                ship = '/ship/2834/'
+            elif ships == 'Vangel':
+                ship = '/ship/3518/'
+            elif ships == 'Whiptail':
+                ship = '/ship/33673/'
+
 
 
             elif ships == 'Please Select             ':
@@ -81601,7 +84431,7 @@ class allShipConShip(Frame):
         label = Label(self, width=50, text="All By Consteltion with ship")
         label.grid(row=1, column=0, padx=10, pady=10)
 
-        label = Label(self, wraplengt=250, text="Please Input the Constelation e.g 'TA-A7V'")
+        label = Label(self, wraplength=250, text="Please Input the Constelation e.g 'TA-A7V'")
         label.grid(row=4, column=0, padx=10, pady=10) 
 
         inputAKCS = Entry(self, font=('Helvetica',10))
@@ -81647,6 +84477,7 @@ class allShipConShip(Frame):
             "Industrial Command",
             "Industrial",
             "Exhumers & Bardges",
+            "Alliance Tournament",
         ]
 
 
@@ -82368,6 +85199,14 @@ class allShipAllShip(Frame):
                 drop2.config(width=18)
                 drop2.grid(row=7, column=0, padx=10, pady=10)
 
+            elif clickedRS.get() == "Alliance Tournament":
+                clickedRss = StringVar()
+                clickedRss.set(option40[0])
+                drop2 = OptionMenu(self, clickedRss, *option40, command=chosen)
+                drop2.config(width=18)
+                drop2.grid(row=7, column=0, padx=10, pady=10)
+
+
         def myClickC():
 
             error = 0
@@ -82963,6 +85802,45 @@ class allShipAllShip(Frame):
             elif ships == 'Retriever':
                 ship = '/ship/17478/'
 
+            elif ships == 'Tiamat':
+                ship = '/ship/48635/'
+            elif ships == 'Hydra':
+                ship = '/ship/48636/' 
+            elif ships == 'Adrestia':
+                ship = '/ship/2836/'
+            elif ships == 'Caedes':
+                ship = '/ship/42246/'
+            elif ships == 'Cambion':
+                ship = '/ship/32788/'
+            elif ships == 'Chameleon':
+                ship = '/ship/33675/'
+            elif ships == 'Chremoas':
+                ship = '/ship/33397/'
+            elif ships == 'Etana':
+                ship = '/ship/32790/'
+            elif ships == 'Fiend':
+                ship = '/ship/35781/'
+            elif ships == 'Freki':
+                ship = '/ship/32207/'
+            elif ships == 'Imp':
+                ship = '/ship/35779'
+            elif ships == 'Malice':
+                ship = '/ship/3516/'
+            elif ships == 'Mimir':
+                ship = '/ship/32209/'
+            elif ships == 'Moracha':
+                ship = '/ship/33395/'
+            elif ships == 'Raven State Issue':
+                ship = '/ship/26840/'
+            elif ships == 'Tempest Tribal Issue':
+                ship = '/ship/26842/'
+            elif ships == 'Utu':
+                ship = '/ship/2834/'
+            elif ships == 'Vangel':
+                ship = '/ship/3518/'
+            elif ships == 'Whiptail':
+                ship = '/ship/33673/'
+
             elif ships == 'Please Select             ':
                  messagebox.showerror("Oops", "Please Select a Ship")
 
@@ -83013,6 +85891,7 @@ class allShipAllShip(Frame):
             "Industrial Command",
             "Industrial",
             "Exhumers & Bardges",
+            "Alliance Tournament",
         ]
 
 
@@ -83136,7 +86015,7 @@ class JumpRanges(Frame):
         inputJRF = Entry(self, font=('Helvetica',10))
         inputJRF.grid(row=7, column=0, padx=10, pady=0) 
 
-        label = Label(self, wraplengt=250, text="Please Input The 'To' Location")
+        label = Label(self, wraplength=250, text="Please Input The 'To' Location")
         label.grid(row=8, column=0, padx=10, pady=0)
 
         inputJRT = Entry(self, font=('Helvetica',10))
@@ -83277,7 +86156,7 @@ class CharacterAssociation(Frame):
                 url = "https://zkillboard.com" + killlatest
                 webbrowser.open_new(url)
 
-        label = Label(self, width=50, text="Character Association")
+        label = Label(self, wraplength=250, width=50, text="Character Association\n Find from the last 250 kills from each character if they have on a similar kill")
         label.grid(row=5, column=0, padx=10, pady=10)
 
         label = Label(self, text="Please Input The First Character Name")
