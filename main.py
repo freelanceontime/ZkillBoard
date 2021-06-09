@@ -434,7 +434,7 @@ class NotByShipC(Frame):
                     from bs4 import BeautifulSoup
                     soup = BeautifulSoup(page.content, 'html.parser', on_duplicate_attribute='ignore')
 
-                    element = soup.find_all('a')[39]
+                    element = soup.find_all('a')[38]
                     constellationID = (element.get('href'))
 
                     print(constellationID)
@@ -955,7 +955,7 @@ class ChooseShipC(Frame):
                     from bs4 import BeautifulSoup
                     soup = BeautifulSoup(page.content, 'html.parser', on_duplicate_attribute='ignore')
 
-                    element = soup.find_all('a')[39]
+                    element = soup.find_all('a')[38]
                     constellationID = (element.get('href'))
 
                     print(constellationID)
@@ -1354,7 +1354,7 @@ class NotByShipCNoJump(Frame):
                     from bs4 import BeautifulSoup
                     soup = BeautifulSoup(page.content, 'html.parser', on_duplicate_attribute='ignore')
 
-                    element = soup.find_all('a')[39]
+                    element = soup.find_all('a')[38]
                     constellationID = (element.get('href'))
 
                     print(constellationID)
@@ -1733,7 +1733,7 @@ class ChooseShipCNoJump(Frame):
                     from bs4 import BeautifulSoup
                     soup = BeautifulSoup(page.content, 'html.parser', on_duplicate_attribute='ignore')
 
-                    element = soup.find_all('a')[39]
+                    element = soup.find_all('a')[38]
                     constellationID = (element.get('href'))
 
                     print(constellationID)
@@ -2419,7 +2419,6 @@ class allKillsCorpShip(Frame):
             "Tiamat",
             "Hydra",      
             "Adrestia",
-            "Aliastra Catalyst",
             "Caedes",
             "Cambion",
             "Chameleon",
@@ -2436,7 +2435,7 @@ class allKillsCorpShip(Frame):
             "Utu",
             "Vangel",
             "Whiptail",
-        ]
+        ]  
 
         def chosen(event):
             myLabel = Label(self, text=clickedRss.get())
@@ -5823,7 +5822,6 @@ class allKillsRegionShip(Frame):
                 drop2.config(width=18)
                 drop2.grid(row=7, column=0, padx=10, pady=10)
 
-
         def myClickRNS():
 
             error = 0
@@ -6617,7 +6615,7 @@ class allKillsCharacterRegNoShip(Frame):
                     from bs4 import BeautifulSoup
                     soup = BeautifulSoup(page.content, 'html.parser', on_duplicate_attribute='ignore')
 
-                    element = soup.find_all('a')[39]
+                    element = soup.find_all('a')[40]
                     characterID = (element.get('href'))
 
                     print(characterID)
@@ -7442,7 +7440,7 @@ class allKillsCharacterRegShip(Frame):
                     from bs4 import BeautifulSoup
                     soup = BeautifulSoup(page.content, 'html.parser', on_duplicate_attribute='ignore')
 
-                    element = soup.find_all('a')[39]
+                    element = soup.find_all('a')[40]
                     characterID = (element.get('href'))
 
                     print(characterID)
@@ -8238,7 +8236,7 @@ class allKillsCharacterConNoShip(Frame):
                     from bs4 import BeautifulSoup
                     soup = BeautifulSoup(page.content, 'html.parser', on_duplicate_attribute='ignore')
 
-                    element = soup.find_all('a')[39]
+                    element = soup.find_all('a')[40]
                     characterID = (element.get('href'))
 
                     print(characterID)
@@ -8270,7 +8268,7 @@ class allKillsCharacterConNoShip(Frame):
                     from bs4 import BeautifulSoup
                     soup = BeautifulSoup(page.content, 'html.parser', on_duplicate_attribute='ignore')
 
-                    element = soup.find_all('a')[39]
+                    element = soup.find_all('a')[38]
                     constellationID = (element.get('href'))
 
                     print(constellationID)
@@ -8767,7 +8765,7 @@ class allKillsCharacterConShip(Frame):
             "Utu",
             "Vangel",
             "Whiptail",
-        ]
+        ]  
 
         def chosen(event):
             myLabel = Label(self, text=clickedRss.get())
@@ -9063,7 +9061,7 @@ class allKillsCharacterConShip(Frame):
                     from bs4 import BeautifulSoup
                     soup = BeautifulSoup(page.content, 'html.parser', on_duplicate_attribute='ignore')
 
-                    element = soup.find_all('a')[39]
+                    element = soup.find_all('a')[40]
                     characterID = (element.get('href'))
 
                     print(characterID)
@@ -9095,7 +9093,7 @@ class allKillsCharacterConShip(Frame):
                     from bs4 import BeautifulSoup
                     soup = BeautifulSoup(page.content, 'html.parser', on_duplicate_attribute='ignore')
 
-                    element = soup.find_all('a')[39]
+                    element = soup.find_all('a')[38]
                     constellationID = (element.get('href'))
 
                     print(constellationID)
@@ -9859,7 +9857,7 @@ class allKillsCharacterAllNoShip(Frame):
                     from bs4 import BeautifulSoup
                     soup = BeautifulSoup(page.content, 'html.parser', on_duplicate_attribute='ignore')
 
-                    element = soup.find_all('a')[39]
+                    element = soup.find_all('a')[40]
                     characterID = (element.get('href'))
 
                     print(characterID)
@@ -10350,7 +10348,7 @@ class allKillsCharacterAllShip(Frame):
             "Utu",
             "Vangel",
             "Whiptail",
-        ]
+        ]  
 
         def chosen(event):
             myLabel = Label(self, text=clickedRss.get())
@@ -10647,7 +10645,7 @@ class allKillsCharacterAllShip(Frame):
                     from bs4 import BeautifulSoup
                     soup = BeautifulSoup(page.content, 'html.parser', on_duplicate_attribute='ignore')
 
-                    element = soup.find_all('a')[39]
+                    element = soup.find_all('a')[40]
                     characterID = (element.get('href'))
 
                     print(characterID)
@@ -12099,7 +12097,6 @@ class allKillsCharacterSysShip(Frame):
                 drop2.grid(row=7, column=0, padx=10, pady=10)
 
 
-
             elif clickedRS.get() == "Alliance Tournament":
                 clickedRss = StringVar()
                 clickedRss.set(option40[0])
@@ -12120,7 +12117,7 @@ class allKillsCharacterSysShip(Frame):
                     from bs4 import BeautifulSoup
                     soup = BeautifulSoup(page.content, 'html.parser', on_duplicate_attribute='ignore')
 
-                    element = soup.find_all('a')[39]
+                    element = soup.find_all('a')[40]
                     characterID = (element.get('href'))
 
                     print(characterID)
@@ -12897,7 +12894,7 @@ class allKillsCharacterSysNoShip(Frame):
                     from bs4 import BeautifulSoup
                     soup = BeautifulSoup(page.content, 'html.parser', on_duplicate_attribute='ignore')
 
-                    element = soup.find_all('a')[39]
+                    element = soup.find_all('a')[40]
                     characterID = (element.get('href'))
 
                     print(characterID)
@@ -14928,7 +14925,7 @@ class allKillsShipRegShip(Frame):
             "Utu",
             "Vangel",
             "Whiptail",
-        ]
+        ] 
 
         def chosen(event):
             myLabel = Label(self, text=clickedRss.get())
@@ -16702,7 +16699,7 @@ class allKillsShipConShip(Frame):
                     from bs4 import BeautifulSoup
                     soup = BeautifulSoup(page.content, 'html.parser', on_duplicate_attribute='ignore')
 
-                    element = soup.find_all('a')[39]
+                    element = soup.find_all('a')[38]
                     constellationID = (element.get('href'))
 
                     print(constellationID)
@@ -17858,7 +17855,6 @@ class allKillsShipAllShip(Frame):
             "Retriever",           
         ]
 
-
         option40 = [  
             "Please Select             ", 
             "Tiamat",
@@ -17880,7 +17876,7 @@ class allKillsShipAllShip(Frame):
             "Utu",
             "Vangel",
             "Whiptail",
-        ]
+        ] 
 
         def chosen(event):
             myLabel = Label(self, text=clickedRss.get())
@@ -18154,8 +18150,6 @@ class allKillsShipAllShip(Frame):
                 drop2 = OptionMenu(self, clickedRss, *option39, command=chosen)
                 drop2.config(width=18)
                 drop2.grid(row=7, column=0, padx=10, pady=10)
-
-
 
             elif clickedRS.get() == "Alliance Tournament":
                 clickedRss = StringVar()
@@ -19430,6 +19424,29 @@ class allLossesCorpShip(Frame):
             "Procurer",
             "Retriever",           
         ]
+
+        option40 = [  
+            "Please Select             ", 
+            "Tiamat",
+            "Hydra",      
+            "Adrestia",
+            "Caedes",
+            "Cambion",
+            "Chameleon",
+            "Chremoas",
+            "Etana",
+            "Fiend",
+            "Freki",
+            "Imp",
+            "Malice",
+            "Mimir",
+            "Moracha",
+            "Raven State Issue",
+            "Tempest Tribal Issue",
+            "Utu",
+            "Vangel",
+            "Whiptail",
+        ] 
 
         def chosen(event):
             myLabel = Label(self, text=clickedRss.get())
@@ -20962,6 +20979,29 @@ class allLossesAllianceShip(Frame):
             "Retriever",           
         ]
 
+        option40 = [  
+            "Please Select             ", 
+            "Tiamat",
+            "Hydra",      
+            "Adrestia",
+            "Caedes",
+            "Cambion",
+            "Chameleon",
+            "Chremoas",
+            "Etana",
+            "Fiend",
+            "Freki",
+            "Imp",
+            "Malice",
+            "Mimir",
+            "Moracha",
+            "Raven State Issue",
+            "Tempest Tribal Issue",
+            "Utu",
+            "Vangel",
+            "Whiptail",
+        ] 
+
         def chosen(event):
             myLabel = Label(self, text=clickedRss.get())
             return clickedRss.get()
@@ -22490,6 +22530,30 @@ class allLossesRegionShip(Frame):
             "Retriever",           
         ]
 
+        option40 = [  
+            "Please Select             ", 
+            "Tiamat",
+            "Hydra",      
+            "Adrestia",
+            "Caedes",
+            "Cambion",
+            "Chameleon",
+            "Chremoas",
+            "Etana",
+            "Fiend",
+            "Freki",
+            "Imp",
+            "Malice",
+            "Mimir",
+            "Moracha",
+            "Raven State Issue",
+            "Tempest Tribal Issue",
+            "Utu",
+            "Vangel",
+            "Whiptail",
+        ] 
+
+
         def chosen(event):
             myLabel = Label(self, text=clickedRss.get())
             return clickedRss.get()
@@ -23566,7 +23630,7 @@ class allLossesCharacterRegNoShip(Frame):
                     from bs4 import BeautifulSoup
                     soup = BeautifulSoup(page.content, 'html.parser', on_duplicate_attribute='ignore')
 
-                    element = soup.find_all('a')[39]
+                    element = soup.find_all('a')[40]
                     characterID = (element.get('href'))
 
                     print(characterID)
@@ -24074,6 +24138,29 @@ class allLossesCharacterRegShip(Frame):
             "Retriever",           
         ]
 
+        option40 = [  
+            "Please Select             ", 
+            "Tiamat",
+            "Hydra",      
+            "Adrestia",
+            "Caedes",
+            "Cambion",
+            "Chameleon",
+            "Chremoas",
+            "Etana",
+            "Fiend",
+            "Freki",
+            "Imp",
+            "Malice",
+            "Mimir",
+            "Moracha",
+            "Raven State Issue",
+            "Tempest Tribal Issue",
+            "Utu",
+            "Vangel",
+            "Whiptail",
+        ] 
+
         def chosen(event):
             myLabel = Label(self, text=clickedRss.get())
             return clickedRss.get()
@@ -24368,7 +24455,7 @@ class allLossesCharacterRegShip(Frame):
                     from bs4 import BeautifulSoup
                     soup = BeautifulSoup(page.content, 'html.parser', on_duplicate_attribute='ignore')
 
-                    element = soup.find_all('a')[39]
+                    element = soup.find_all('a')[40]
                     characterID = (element.get('href'))
 
                     print(characterID)
@@ -25166,7 +25253,7 @@ class allLossesCharacterConNoShip(Frame):
                     from bs4 import BeautifulSoup
                     soup = BeautifulSoup(page.content, 'html.parser', on_duplicate_attribute='ignore')
 
-                    element = soup.find_all('a')[39]
+                    element = soup.find_all('a')[40]
                     characterID = (element.get('href'))
 
                     print(characterID)
@@ -25198,7 +25285,7 @@ class allLossesCharacterConNoShip(Frame):
                     from bs4 import BeautifulSoup
                     soup = BeautifulSoup(page.content, 'html.parser', on_duplicate_attribute='ignore')
 
-                    element = soup.find_all('a')[39]
+                    element = soup.find_all('a')[38]
                     constellationID = (element.get('href'))
 
                     print(constellationID)
@@ -25674,6 +25761,29 @@ class allLossesCharacterConShip(Frame):
             "Retriever",           
         ]
 
+        option40 = [  
+            "Please Select             ", 
+            "Tiamat",
+            "Hydra",      
+            "Adrestia",
+            "Caedes",
+            "Cambion",
+            "Chameleon",
+            "Chremoas",
+            "Etana",
+            "Fiend",
+            "Freki",
+            "Imp",
+            "Malice",
+            "Mimir",
+            "Moracha",
+            "Raven State Issue",
+            "Tempest Tribal Issue",
+            "Utu",
+            "Vangel",
+            "Whiptail",
+        ] 
+
         def chosen(event):
             myLabel = Label(self, text=clickedRss.get())
             return clickedRss.get()
@@ -25967,7 +26077,7 @@ class allLossesCharacterConShip(Frame):
                     from bs4 import BeautifulSoup
                     soup = BeautifulSoup(page.content, 'html.parser', on_duplicate_attribute='ignore')
 
-                    element = soup.find_all('a')[39]
+                    element = soup.find_all('a')[40]
                     characterID = (element.get('href'))
 
                     print(characterID)
@@ -25999,7 +26109,7 @@ class allLossesCharacterConShip(Frame):
                     from bs4 import BeautifulSoup
                     soup = BeautifulSoup(page.content, 'html.parser', on_duplicate_attribute='ignore')
 
-                    element = soup.find_all('a')[39]
+                    element = soup.find_all('a')[38]
                     constellationID = (element.get('href'))
 
                     print(constellationID)
@@ -26765,7 +26875,7 @@ class allLossesCharacterAllNoShip(Frame):
                     from bs4 import BeautifulSoup
                     soup = BeautifulSoup(page.content, 'html.parser', on_duplicate_attribute='ignore')
 
-                    element = soup.find_all('a')[39]
+                    element = soup.find_all('a')[40]
                     characterID = (element.get('href'))
 
                     print(characterID)
@@ -27235,6 +27345,29 @@ class allLossesCharacterAllShip(Frame):
             "Retriever",           
         ]
 
+        option40 = [  
+            "Please Select             ", 
+            "Tiamat",
+            "Hydra",      
+            "Adrestia",
+            "Caedes",
+            "Cambion",
+            "Chameleon",
+            "Chremoas",
+            "Etana",
+            "Fiend",
+            "Freki",
+            "Imp",
+            "Malice",
+            "Mimir",
+            "Moracha",
+            "Raven State Issue",
+            "Tempest Tribal Issue",
+            "Utu",
+            "Vangel",
+            "Whiptail",
+        ] 
+
         def chosen(event):
             myLabel = Label(self, text=clickedRss.get())
             return clickedRss.get()
@@ -27529,7 +27662,7 @@ class allLossesCharacterAllShip(Frame):
                     from bs4 import BeautifulSoup
                     soup = BeautifulSoup(page.content, 'html.parser', on_duplicate_attribute='ignore')
 
-                    element = soup.find_all('a')[39]
+                    element = soup.find_all('a')[40]
                     characterID = (element.get('href'))
 
                     print(characterID)
@@ -28684,6 +28817,29 @@ class allLossesCharacterSysShip(Frame):
             "Retriever",           
         ]
 
+        option40 = [  
+            "Please Select             ", 
+            "Tiamat",
+            "Hydra",      
+            "Adrestia",
+            "Caedes",
+            "Cambion",
+            "Chameleon",
+            "Chremoas",
+            "Etana",
+            "Fiend",
+            "Freki",
+            "Imp",
+            "Malice",
+            "Mimir",
+            "Moracha",
+            "Raven State Issue",
+            "Tempest Tribal Issue",
+            "Utu",
+            "Vangel",
+            "Whiptail",
+        ] 
+
         def chosen(event):
             myLabel = Label(self, text=clickedRss.get())
             return clickedRss.get()
@@ -28978,7 +29134,7 @@ class allLossesCharacterSysShip(Frame):
                     from bs4 import BeautifulSoup
                     soup = BeautifulSoup(page.content, 'html.parser', on_duplicate_attribute='ignore')
 
-                    element = soup.find_all('a')[39]
+                    element = soup.find_all('a')[40]
                     characterID = (element.get('href'))
 
                     print(characterID)
@@ -29757,7 +29913,7 @@ class allLossesCharacterSysNoShip(Frame):
                     from bs4 import BeautifulSoup
                     soup = BeautifulSoup(page.content, 'html.parser', on_duplicate_attribute='ignore')
 
-                    element = soup.find_all('a')[39]
+                    element = soup.find_all('a')[40]
                     characterID = (element.get('href'))
 
                     print(characterID)
@@ -30290,6 +30446,29 @@ class allLossesShipSysShip(Frame):
             "Procurer",
             "Retriever",           
         ]
+
+        option40 = [  
+            "Please Select             ", 
+            "Tiamat",
+            "Hydra",      
+            "Adrestia",
+            "Caedes",
+            "Cambion",
+            "Chameleon",
+            "Chremoas",
+            "Etana",
+            "Fiend",
+            "Freki",
+            "Imp",
+            "Malice",
+            "Mimir",
+            "Moracha",
+            "Raven State Issue",
+            "Tempest Tribal Issue",
+            "Utu",
+            "Vangel",
+            "Whiptail",
+        ] 
 
         def chosen(event):
             myLabel = Label(self, text=clickedRss.get())
@@ -31742,6 +31921,29 @@ class allLossesShipRegShip(Frame):
             "Procurer",
             "Retriever",           
         ]
+
+        option40 = [  
+            "Please Select             ", 
+            "Tiamat",
+            "Hydra",      
+            "Adrestia",
+            "Caedes",
+            "Cambion",
+            "Chameleon",
+            "Chremoas",
+            "Etana",
+            "Fiend",
+            "Freki",
+            "Imp",
+            "Malice",
+            "Mimir",
+            "Moracha",
+            "Raven State Issue",
+            "Tempest Tribal Issue",
+            "Utu",
+            "Vangel",
+            "Whiptail",
+        ] 
 
         def chosen(event):
             myLabel = Label(self, text=clickedRss.get())
@@ -33197,6 +33399,30 @@ class allLossesShipConShip(Frame):
             "Retriever",           
         ]
 
+        option40 = [  
+            "Please Select             ", 
+            "Tiamat",
+            "Hydra",      
+            "Adrestia",
+            "Caedes",
+            "Cambion",
+            "Chameleon",
+            "Chremoas",
+            "Etana",
+            "Fiend",
+            "Freki",
+            "Imp",
+            "Malice",
+            "Mimir",
+            "Moracha",
+            "Raven State Issue",
+            "Tempest Tribal Issue",
+            "Utu",
+            "Vangel",
+            "Whiptail",
+        ] 
+
+
         def chosen(event):
             myLabel = Label(self, text=clickedRss.get())
             return clickedRss.get()
@@ -33493,7 +33719,7 @@ class allLossesShipConShip(Frame):
                     from bs4 import BeautifulSoup
                     soup = BeautifulSoup(page.content, 'html.parser', on_duplicate_attribute='ignore')
 
-                    element = soup.find_all('a')[39]
+                    element = soup.find_all('a')[38]
                     constellationID = (element.get('href'))
 
                     print(constellationID)
@@ -34649,6 +34875,29 @@ class allLossesShipAllShip(Frame):
             "Procurer",
             "Retriever",           
         ]
+
+        option40 = [  
+            "Please Select             ", 
+            "Tiamat",
+            "Hydra",      
+            "Adrestia",
+            "Caedes",
+            "Cambion",
+            "Chameleon",
+            "Chremoas",
+            "Etana",
+            "Fiend",
+            "Freki",
+            "Imp",
+            "Malice",
+            "Mimir",
+            "Moracha",
+            "Raven State Issue",
+            "Tempest Tribal Issue",
+            "Utu",
+            "Vangel",
+            "Whiptail",
+        ] 
 
         def chosen(event):
             myLabel = Label(self, text=clickedRss.get())
@@ -36197,6 +36446,29 @@ class allSoloKillsCorpShip(Frame):
             "Retriever",           
         ]
 
+        option40 = [  
+            "Please Select             ", 
+            "Tiamat",
+            "Hydra",      
+            "Adrestia",
+            "Caedes",
+            "Cambion",
+            "Chameleon",
+            "Chremoas",
+            "Etana",
+            "Fiend",
+            "Freki",
+            "Imp",
+            "Malice",
+            "Mimir",
+            "Moracha",
+            "Raven State Issue",
+            "Tempest Tribal Issue",
+            "Utu",
+            "Vangel",
+            "Whiptail",
+        ] 
+
         def chosen(event):
             myLabel = Label(self, text=clickedRss.get())
             return clickedRss.get()
@@ -37728,6 +38000,29 @@ class allSoloKillsAllianceShip(Frame):
             "Retriever",           
         ]
 
+        option40 = [  
+            "Please Select             ", 
+            "Tiamat",
+            "Hydra",      
+            "Adrestia",
+            "Caedes",
+            "Cambion",
+            "Chameleon",
+            "Chremoas",
+            "Etana",
+            "Fiend",
+            "Freki",
+            "Imp",
+            "Malice",
+            "Mimir",
+            "Moracha",
+            "Raven State Issue",
+            "Tempest Tribal Issue",
+            "Utu",
+            "Vangel",
+            "Whiptail",
+        ] 
+
         def chosen(event):
             myLabel = Label(self, text=clickedRss.get())
             return clickedRss.get()
@@ -39255,6 +39550,29 @@ class allSoloKillsRegionShip(Frame):
             "Retriever",           
         ]
 
+        option40 = [  
+            "Please Select             ", 
+            "Tiamat",
+            "Hydra",      
+            "Adrestia",
+            "Caedes",
+            "Cambion",
+            "Chameleon",
+            "Chremoas",
+            "Etana",
+            "Fiend",
+            "Freki",
+            "Imp",
+            "Malice",
+            "Mimir",
+            "Moracha",
+            "Raven State Issue",
+            "Tempest Tribal Issue",
+            "Utu",
+            "Vangel",
+            "Whiptail",
+        ] 
+
         def chosen(event):
             myLabel = Label(self, text=clickedRss.get())
             return clickedRss.get()
@@ -40331,7 +40649,7 @@ class allSoloKillsCharacterRegNoShip(Frame):
                     from bs4 import BeautifulSoup
                     soup = BeautifulSoup(page.content, 'html.parser', on_duplicate_attribute='ignore')
 
-                    element = soup.find_all('a')[39]
+                    element = soup.find_all('a')[40]
                     characterID = (element.get('href'))
 
                     print(characterID)
@@ -40839,6 +41157,29 @@ class allSoloKillsCharacterRegShip(Frame):
             "Retriever",           
         ]
 
+        option40 = [  
+            "Please Select             ", 
+            "Tiamat",
+            "Hydra",      
+            "Adrestia",
+            "Caedes",
+            "Cambion",
+            "Chameleon",
+            "Chremoas",
+            "Etana",
+            "Fiend",
+            "Freki",
+            "Imp",
+            "Malice",
+            "Mimir",
+            "Moracha",
+            "Raven State Issue",
+            "Tempest Tribal Issue",
+            "Utu",
+            "Vangel",
+            "Whiptail",
+        ] 
+
         def chosen(event):
             myLabel = Label(self, text=clickedRss.get())
             return clickedRss.get()
@@ -41133,7 +41474,7 @@ class allSoloKillsCharacterRegShip(Frame):
                     from bs4 import BeautifulSoup
                     soup = BeautifulSoup(page.content, 'html.parser', on_duplicate_attribute='ignore')
 
-                    element = soup.find_all('a')[39]
+                    element = soup.find_all('a')[40]
                     characterID = (element.get('href'))
 
                     print(characterID)
@@ -41931,7 +42272,7 @@ class allSoloKillsCharacterConNoShip(Frame):
                     from bs4 import BeautifulSoup
                     soup = BeautifulSoup(page.content, 'html.parser', on_duplicate_attribute='ignore')
 
-                    element = soup.find_all('a')[39]
+                    element = soup.find_all('a')[40]
                     characterID = (element.get('href'))
 
                     print(characterID)
@@ -41963,7 +42304,7 @@ class allSoloKillsCharacterConNoShip(Frame):
                     from bs4 import BeautifulSoup
                     soup = BeautifulSoup(page.content, 'html.parser', on_duplicate_attribute='ignore')
 
-                    element = soup.find_all('a')[39]
+                    element = soup.find_all('a')[38]
                     constellationID = (element.get('href'))
 
                     print(constellationID)
@@ -42439,6 +42780,29 @@ class allSoloKillsCharacterConShip(Frame):
             "Retriever",           
         ]
 
+        option40 = [  
+            "Please Select             ", 
+            "Tiamat",
+            "Hydra",      
+            "Adrestia",
+            "Caedes",
+            "Cambion",
+            "Chameleon",
+            "Chremoas",
+            "Etana",
+            "Fiend",
+            "Freki",
+            "Imp",
+            "Malice",
+            "Mimir",
+            "Moracha",
+            "Raven State Issue",
+            "Tempest Tribal Issue",
+            "Utu",
+            "Vangel",
+            "Whiptail",
+        ] 
+
         def chosen(event):
             myLabel = Label(self, text=clickedRss.get())
             return clickedRss.get()
@@ -42732,7 +43096,7 @@ class allSoloKillsCharacterConShip(Frame):
                     from bs4 import BeautifulSoup
                     soup = BeautifulSoup(page.content, 'html.parser', on_duplicate_attribute='ignore')
 
-                    element = soup.find_all('a')[39]
+                    element = soup.find_all('a')[40]
                     characterID = (element.get('href'))
 
                     print(characterID)
@@ -42764,7 +43128,7 @@ class allSoloKillsCharacterConShip(Frame):
                     from bs4 import BeautifulSoup
                     soup = BeautifulSoup(page.content, 'html.parser', on_duplicate_attribute='ignore')
 
-                    element = soup.find_all('a')[39]
+                    element = soup.find_all('a')[38]
                     constellationID = (element.get('href'))
 
                     print(constellationID)
@@ -43530,7 +43894,7 @@ class allSoloKillsCharacterAllNoShip(Frame):
                     from bs4 import BeautifulSoup
                     soup = BeautifulSoup(page.content, 'html.parser', on_duplicate_attribute='ignore')
 
-                    element = soup.find_all('a')[39]
+                    element = soup.find_all('a')[40]
                     characterID = (element.get('href'))
 
                     print(characterID)
@@ -44000,6 +44364,29 @@ class allSoloKillsCharacterAllShip(Frame):
             "Retriever",           
         ]
 
+        option40 = [  
+            "Please Select             ", 
+            "Tiamat",
+            "Hydra",      
+            "Adrestia",
+            "Caedes",
+            "Cambion",
+            "Chameleon",
+            "Chremoas",
+            "Etana",
+            "Fiend",
+            "Freki",
+            "Imp",
+            "Malice",
+            "Mimir",
+            "Moracha",
+            "Raven State Issue",
+            "Tempest Tribal Issue",
+            "Utu",
+            "Vangel",
+            "Whiptail",
+        ] 
+
         def chosen(event):
             myLabel = Label(self, text=clickedRss.get())
             return clickedRss.get()
@@ -44294,7 +44681,7 @@ class allSoloKillsCharacterAllShip(Frame):
                     from bs4 import BeautifulSoup
                     soup = BeautifulSoup(page.content, 'html.parser', on_duplicate_attribute='ignore')
 
-                    element = soup.find_all('a')[39]
+                    element = soup.find_all('a')[40]
                     characterID = (element.get('href'))
 
                     print(characterID)
@@ -45449,6 +45836,29 @@ class allSoloKillsCharacterSysShip(Frame):
             "Retriever",           
         ]
 
+        option40 = [  
+            "Please Select             ", 
+            "Tiamat",
+            "Hydra",      
+            "Adrestia",
+            "Caedes",
+            "Cambion",
+            "Chameleon",
+            "Chremoas",
+            "Etana",
+            "Fiend",
+            "Freki",
+            "Imp",
+            "Malice",
+            "Mimir",
+            "Moracha",
+            "Raven State Issue",
+            "Tempest Tribal Issue",
+            "Utu",
+            "Vangel",
+            "Whiptail",
+        ] 
+
         def chosen(event):
             myLabel = Label(self, text=clickedRss.get())
             return clickedRss.get()
@@ -45743,7 +46153,7 @@ class allSoloKillsCharacterSysShip(Frame):
                     from bs4 import BeautifulSoup
                     soup = BeautifulSoup(page.content, 'html.parser', on_duplicate_attribute='ignore')
 
-                    element = soup.find_all('a')[39]
+                    element = soup.find_all('a')[40]
                     characterID = (element.get('href'))
 
                     print(characterID)
@@ -46522,7 +46932,7 @@ class allSoloKillsCharacterSysNoShip(Frame):
                     from bs4 import BeautifulSoup
                     soup = BeautifulSoup(page.content, 'html.parser', on_duplicate_attribute='ignore')
 
-                    element = soup.find_all('a')[39]
+                    element = soup.find_all('a')[40]
                     characterID = (element.get('href'))
 
                     print(characterID)
@@ -47055,6 +47465,29 @@ class allSoloKillsShipSysShip(Frame):
             "Procurer",
             "Retriever",           
         ]
+
+        option40 = [  
+            "Please Select             ", 
+            "Tiamat",
+            "Hydra",      
+            "Adrestia",
+            "Caedes",
+            "Cambion",
+            "Chameleon",
+            "Chremoas",
+            "Etana",
+            "Fiend",
+            "Freki",
+            "Imp",
+            "Malice",
+            "Mimir",
+            "Moracha",
+            "Raven State Issue",
+            "Tempest Tribal Issue",
+            "Utu",
+            "Vangel",
+            "Whiptail",
+        ] 
 
         def chosen(event):
             myLabel = Label(self, text=clickedRss.get())
@@ -48507,6 +48940,29 @@ class allSoloKillsShipRegShip(Frame):
             "Procurer",
             "Retriever",           
         ]
+
+        option40 = [  
+            "Please Select             ", 
+            "Tiamat",
+            "Hydra",      
+            "Adrestia",
+            "Caedes",
+            "Cambion",
+            "Chameleon",
+            "Chremoas",
+            "Etana",
+            "Fiend",
+            "Freki",
+            "Imp",
+            "Malice",
+            "Mimir",
+            "Moracha",
+            "Raven State Issue",
+            "Tempest Tribal Issue",
+            "Utu",
+            "Vangel",
+            "Whiptail",
+        ] 
 
         def chosen(event):
             myLabel = Label(self, text=clickedRss.get())
@@ -49961,6 +50417,29 @@ class allSoloKillsShipConShip(Frame):
             "Retriever",           
         ]
 
+        option40 = [  
+            "Please Select             ", 
+            "Tiamat",
+            "Hydra",      
+            "Adrestia",
+            "Caedes",
+            "Cambion",
+            "Chameleon",
+            "Chremoas",
+            "Etana",
+            "Fiend",
+            "Freki",
+            "Imp",
+            "Malice",
+            "Mimir",
+            "Moracha",
+            "Raven State Issue",
+            "Tempest Tribal Issue",
+            "Utu",
+            "Vangel",
+            "Whiptail",
+        ] 
+
         def chosen(event):
             myLabel = Label(self, text=clickedRss.get())
             return clickedRss.get()
@@ -50257,7 +50736,7 @@ class allSoloKillsShipConShip(Frame):
                     from bs4 import BeautifulSoup
                     soup = BeautifulSoup(page.content, 'html.parser', on_duplicate_attribute='ignore')
 
-                    element = soup.find_all('a')[39]
+                    element = soup.find_all('a')[38]
                     constellationID = (element.get('href'))
 
                     print(constellationID)
@@ -51413,6 +51892,29 @@ class allSoloKillsShipAllShip(Frame):
             "Procurer",
             "Retriever",           
         ]
+
+        option40 = [  
+            "Please Select             ", 
+            "Tiamat",
+            "Hydra",      
+            "Adrestia",
+            "Caedes",
+            "Cambion",
+            "Chameleon",
+            "Chremoas",
+            "Etana",
+            "Fiend",
+            "Freki",
+            "Imp",
+            "Malice",
+            "Mimir",
+            "Moracha",
+            "Raven State Issue",
+            "Tempest Tribal Issue",
+            "Utu",
+            "Vangel",
+            "Whiptail",
+        ] 
 
         def chosen(event):
             myLabel = Label(self, text=clickedRss.get())
@@ -52961,6 +53463,29 @@ class allSoloDeathsCorpShip(Frame):
             "Retriever",           
         ]
 
+        option40 = [  
+            "Please Select             ", 
+            "Tiamat",
+            "Hydra",      
+            "Adrestia",
+            "Caedes",
+            "Cambion",
+            "Chameleon",
+            "Chremoas",
+            "Etana",
+            "Fiend",
+            "Freki",
+            "Imp",
+            "Malice",
+            "Mimir",
+            "Moracha",
+            "Raven State Issue",
+            "Tempest Tribal Issue",
+            "Utu",
+            "Vangel",
+            "Whiptail",
+        ] 
+
         def chosen(event):
             myLabel = Label(self, text=clickedRss.get())
             return clickedRss.get()
@@ -54492,6 +55017,29 @@ class allSoloDeathsAllianceShip(Frame):
             "Retriever",           
         ]
 
+        option40 = [  
+            "Please Select             ", 
+            "Tiamat",
+            "Hydra",      
+            "Adrestia",
+            "Caedes",
+            "Cambion",
+            "Chameleon",
+            "Chremoas",
+            "Etana",
+            "Fiend",
+            "Freki",
+            "Imp",
+            "Malice",
+            "Mimir",
+            "Moracha",
+            "Raven State Issue",
+            "Tempest Tribal Issue",
+            "Utu",
+            "Vangel",
+            "Whiptail",
+        ] 
+
         def chosen(event):
             myLabel = Label(self, text=clickedRss.get())
             return clickedRss.get()
@@ -56019,6 +56567,29 @@ class allSoloDeathsRegionShip(Frame):
             "Retriever",           
         ]
 
+        option40 = [  
+            "Please Select             ", 
+            "Tiamat",
+            "Hydra",      
+            "Adrestia",
+            "Caedes",
+            "Cambion",
+            "Chameleon",
+            "Chremoas",
+            "Etana",
+            "Fiend",
+            "Freki",
+            "Imp",
+            "Malice",
+            "Mimir",
+            "Moracha",
+            "Raven State Issue",
+            "Tempest Tribal Issue",
+            "Utu",
+            "Vangel",
+            "Whiptail",
+        ] 
+
         def chosen(event):
             myLabel = Label(self, text=clickedRss.get())
             return clickedRss.get()
@@ -57095,7 +57666,7 @@ class allSoloDeathsCharacterRegNoShip(Frame):
                     from bs4 import BeautifulSoup
                     soup = BeautifulSoup(page.content, 'html.parser', on_duplicate_attribute='ignore')
 
-                    element = soup.find_all('a')[39]
+                    element = soup.find_all('a')[40]
                     characterID = (element.get('href'))
 
                     print(characterID)
@@ -57603,6 +58174,29 @@ class allSoloDeathsCharacterRegShip(Frame):
             "Retriever",           
         ]
 
+        option40 = [  
+            "Please Select             ", 
+            "Tiamat",
+            "Hydra",      
+            "Adrestia",
+            "Caedes",
+            "Cambion",
+            "Chameleon",
+            "Chremoas",
+            "Etana",
+            "Fiend",
+            "Freki",
+            "Imp",
+            "Malice",
+            "Mimir",
+            "Moracha",
+            "Raven State Issue",
+            "Tempest Tribal Issue",
+            "Utu",
+            "Vangel",
+            "Whiptail",
+        ] 
+
         def chosen(event):
             myLabel = Label(self, text=clickedRss.get())
             return clickedRss.get()
@@ -57897,7 +58491,7 @@ class allSoloDeathsCharacterRegShip(Frame):
                     from bs4 import BeautifulSoup
                     soup = BeautifulSoup(page.content, 'html.parser', on_duplicate_attribute='ignore')
 
-                    element = soup.find_all('a')[39]
+                    element = soup.find_all('a')[40]
                     characterID = (element.get('href'))
 
                     print(characterID)
@@ -58695,7 +59289,7 @@ class allSoloDeathsCharacterConNoShip(Frame):
                     from bs4 import BeautifulSoup
                     soup = BeautifulSoup(page.content, 'html.parser', on_duplicate_attribute='ignore')
 
-                    element = soup.find_all('a')[39]
+                    element = soup.find_all('a')[40]
                     characterID = (element.get('href'))
 
                     print(characterID)
@@ -58727,7 +59321,7 @@ class allSoloDeathsCharacterConNoShip(Frame):
                     from bs4 import BeautifulSoup
                     soup = BeautifulSoup(page.content, 'html.parser', on_duplicate_attribute='ignore')
 
-                    element = soup.find_all('a')[39]
+                    element = soup.find_all('a')[38]
                     constellationID = (element.get('href'))
 
                     print(constellationID)
@@ -59203,6 +59797,29 @@ class allSoloDeathsCharacterConShip(Frame):
             "Retriever",           
         ]
 
+        option40 = [  
+            "Please Select             ", 
+            "Tiamat",
+            "Hydra",      
+            "Adrestia",
+            "Caedes",
+            "Cambion",
+            "Chameleon",
+            "Chremoas",
+            "Etana",
+            "Fiend",
+            "Freki",
+            "Imp",
+            "Malice",
+            "Mimir",
+            "Moracha",
+            "Raven State Issue",
+            "Tempest Tribal Issue",
+            "Utu",
+            "Vangel",
+            "Whiptail",
+        ]  
+
         def chosen(event):
             myLabel = Label(self, text=clickedRss.get())
             return clickedRss.get()
@@ -59496,7 +60113,7 @@ class allSoloDeathsCharacterConShip(Frame):
                     from bs4 import BeautifulSoup
                     soup = BeautifulSoup(page.content, 'html.parser', on_duplicate_attribute='ignore')
 
-                    element = soup.find_all('a')[39]
+                    element = soup.find_all('a')[40]
                     characterID = (element.get('href'))
 
                     print(characterID)
@@ -59528,7 +60145,7 @@ class allSoloDeathsCharacterConShip(Frame):
                     from bs4 import BeautifulSoup
                     soup = BeautifulSoup(page.content, 'html.parser', on_duplicate_attribute='ignore')
 
-                    element = soup.find_all('a')[39]
+                    element = soup.find_all('a')[38]
                     constellationID = (element.get('href'))
 
                     print(constellationID)
@@ -60294,7 +60911,7 @@ class allSoloDeathsCharacterAllNoShip(Frame):
                     from bs4 import BeautifulSoup
                     soup = BeautifulSoup(page.content, 'html.parser', on_duplicate_attribute='ignore')
 
-                    element = soup.find_all('a')[39]
+                    element = soup.find_all('a')[40]
                     characterID = (element.get('href'))
 
                     print(characterID)
@@ -60764,6 +61381,29 @@ class allSoloDeathsCharacterAllShip(Frame):
             "Retriever",           
         ]
 
+        option40 = [  
+            "Please Select             ", 
+            "Tiamat",
+            "Hydra",      
+            "Adrestia",
+            "Caedes",
+            "Cambion",
+            "Chameleon",
+            "Chremoas",
+            "Etana",
+            "Fiend",
+            "Freki",
+            "Imp",
+            "Malice",
+            "Mimir",
+            "Moracha",
+            "Raven State Issue",
+            "Tempest Tribal Issue",
+            "Utu",
+            "Vangel",
+            "Whiptail",
+        ] 
+
         def chosen(event):
             myLabel = Label(self, text=clickedRss.get())
             return clickedRss.get()
@@ -61058,7 +61698,7 @@ class allSoloDeathsCharacterAllShip(Frame):
                     from bs4 import BeautifulSoup
                     soup = BeautifulSoup(page.content, 'html.parser', on_duplicate_attribute='ignore')
 
-                    element = soup.find_all('a')[39]
+                    element = soup.find_all('a')[40]
                     characterID = (element.get('href'))
 
                     print(characterID)
@@ -62213,6 +62853,29 @@ class allSoloDeathsCharacterSysShip(Frame):
             "Retriever",           
         ]
 
+        option40 = [  
+            "Please Select             ", 
+            "Tiamat",
+            "Hydra",      
+            "Adrestia",
+            "Caedes",
+            "Cambion",
+            "Chameleon",
+            "Chremoas",
+            "Etana",
+            "Fiend",
+            "Freki",
+            "Imp",
+            "Malice",
+            "Mimir",
+            "Moracha",
+            "Raven State Issue",
+            "Tempest Tribal Issue",
+            "Utu",
+            "Vangel",
+            "Whiptail",
+        ] 
+
         def chosen(event):
             myLabel = Label(self, text=clickedRss.get())
             return clickedRss.get()
@@ -62507,7 +63170,7 @@ class allSoloDeathsCharacterSysShip(Frame):
                     from bs4 import BeautifulSoup
                     soup = BeautifulSoup(page.content, 'html.parser', on_duplicate_attribute='ignore')
 
-                    element = soup.find_all('a')[39]
+                    element = soup.find_all('a')[40]
                     characterID = (element.get('href'))
 
                     print(characterID)
@@ -63286,7 +63949,7 @@ class allSoloDeathsCharacterSysNoShip(Frame):
                     from bs4 import BeautifulSoup
                     soup = BeautifulSoup(page.content, 'html.parser', on_duplicate_attribute='ignore')
 
-                    element = soup.find_all('a')[39]
+                    element = soup.find_all('a')[40]
                     characterID = (element.get('href'))
 
                     print(characterID)
@@ -63819,6 +64482,29 @@ class allSoloDeathsShipSysShip(Frame):
             "Procurer",
             "Retriever",           
         ]
+
+        option40 = [  
+            "Please Select             ", 
+            "Tiamat",
+            "Hydra",      
+            "Adrestia",
+            "Caedes",
+            "Cambion",
+            "Chameleon",
+            "Chremoas",
+            "Etana",
+            "Fiend",
+            "Freki",
+            "Imp",
+            "Malice",
+            "Mimir",
+            "Moracha",
+            "Raven State Issue",
+            "Tempest Tribal Issue",
+            "Utu",
+            "Vangel",
+            "Whiptail",
+        ] 
 
         def chosen(event):
             myLabel = Label(self, text=clickedRss.get())
@@ -65270,6 +65956,29 @@ class allSoloDeathsShipRegShip(Frame):
             "Procurer",
             "Retriever",           
         ]
+
+        option40 = [  
+            "Please Select             ", 
+            "Tiamat",
+            "Hydra",      
+            "Adrestia",
+            "Caedes",
+            "Cambion",
+            "Chameleon",
+            "Chremoas",
+            "Etana",
+            "Fiend",
+            "Freki",
+            "Imp",
+            "Malice",
+            "Mimir",
+            "Moracha",
+            "Raven State Issue",
+            "Tempest Tribal Issue",
+            "Utu",
+            "Vangel",
+            "Whiptail",
+        ] 
 
         def chosen(event):
             myLabel = Label(self, text=clickedRss.get())
@@ -66724,6 +67433,29 @@ class allSoloDeathsShipConShip(Frame):
             "Retriever",           
         ]
 
+        option40 = [  
+            "Please Select             ", 
+            "Tiamat",
+            "Hydra",      
+            "Adrestia",
+            "Caedes",
+            "Cambion",
+            "Chameleon",
+            "Chremoas",
+            "Etana",
+            "Fiend",
+            "Freki",
+            "Imp",
+            "Malice",
+            "Mimir",
+            "Moracha",
+            "Raven State Issue",
+            "Tempest Tribal Issue",
+            "Utu",
+            "Vangel",
+            "Whiptail",
+        ] 
+
         def chosen(event):
             myLabel = Label(self, text=clickedRss.get())
             return clickedRss.get()
@@ -67020,7 +67752,7 @@ class allSoloDeathsShipConShip(Frame):
                     from bs4 import BeautifulSoup
                     soup = BeautifulSoup(page.content, 'html.parser', on_duplicate_attribute='ignore')
 
-                    element = soup.find_all('a')[39]
+                    element = soup.find_all('a')[38]
                     constellationID = (element.get('href'))
 
                     print(constellationID)
@@ -68176,6 +68908,29 @@ class allSoloDeathsShipAllShip(Frame):
             "Procurer",
             "Retriever",           
         ]
+
+        option40 = [  
+            "Please Select             ", 
+            "Tiamat",
+            "Hydra",      
+            "Adrestia",
+            "Caedes",
+            "Cambion",
+            "Chameleon",
+            "Chremoas",
+            "Etana",
+            "Fiend",
+            "Freki",
+            "Imp",
+            "Malice",
+            "Mimir",
+            "Moracha",
+            "Raven State Issue",
+            "Tempest Tribal Issue",
+            "Utu",
+            "Vangel",
+            "Whiptail",
+        ] 
 
         def chosen(event):
             myLabel = Label(self, text=clickedRss.get())
@@ -69724,6 +70479,29 @@ class allCorpShip(Frame):
             "Retriever",           
         ]
 
+        option40 = [  
+            "Please Select             ", 
+            "Tiamat",
+            "Hydra",      
+            "Adrestia",
+            "Caedes",
+            "Cambion",
+            "Chameleon",
+            "Chremoas",
+            "Etana",
+            "Fiend",
+            "Freki",
+            "Imp",
+            "Malice",
+            "Mimir",
+            "Moracha",
+            "Raven State Issue",
+            "Tempest Tribal Issue",
+            "Utu",
+            "Vangel",
+            "Whiptail",
+        ] 
+
         def chosen(event):
             myLabel = Label(self, text=clickedRss.get())
             return clickedRss.get()
@@ -71255,6 +72033,29 @@ class allAllianceShip(Frame):
             "Retriever",           
         ]
 
+        option40 = [  
+            "Please Select             ", 
+            "Tiamat",
+            "Hydra",      
+            "Adrestia",
+            "Caedes",
+            "Cambion",
+            "Chameleon",
+            "Chremoas",
+            "Etana",
+            "Fiend",
+            "Freki",
+            "Imp",
+            "Malice",
+            "Mimir",
+            "Moracha",
+            "Raven State Issue",
+            "Tempest Tribal Issue",
+            "Utu",
+            "Vangel",
+            "Whiptail",
+        ] 
+
         def chosen(event):
             myLabel = Label(self, text=clickedRss.get())
             return clickedRss.get()
@@ -72782,6 +73583,29 @@ class allRegionShip(Frame):
             "Retriever",           
         ]
 
+        option40 = [  
+            "Please Select             ", 
+            "Tiamat",
+            "Hydra",      
+            "Adrestia",
+            "Caedes",
+            "Cambion",
+            "Chameleon",
+            "Chremoas",
+            "Etana",
+            "Fiend",
+            "Freki",
+            "Imp",
+            "Malice",
+            "Mimir",
+            "Moracha",
+            "Raven State Issue",
+            "Tempest Tribal Issue",
+            "Utu",
+            "Vangel",
+            "Whiptail",
+        ] 
+
         def chosen(event):
             myLabel = Label(self, text=clickedRss.get())
             return clickedRss.get()
@@ -73858,7 +74682,7 @@ class allCharacterRegNoShip(Frame):
                     from bs4 import BeautifulSoup
                     soup = BeautifulSoup(page.content, 'html.parser', on_duplicate_attribute='ignore')
 
-                    element = soup.find_all('a')[39]
+                    element = soup.find_all('a')[40]
                     characterID = (element.get('href'))
 
                     print(characterID)
@@ -74366,6 +75190,29 @@ class allCharacterRegShip(Frame):
             "Retriever",           
         ]
 
+        option40 = [  
+            "Please Select             ", 
+            "Tiamat",
+            "Hydra",      
+            "Adrestia",
+            "Caedes",
+            "Cambion",
+            "Chameleon",
+            "Chremoas",
+            "Etana",
+            "Fiend",
+            "Freki",
+            "Imp",
+            "Malice",
+            "Mimir",
+            "Moracha",
+            "Raven State Issue",
+            "Tempest Tribal Issue",
+            "Utu",
+            "Vangel",
+            "Whiptail",
+        ] 
+
         def chosen(event):
             myLabel = Label(self, text=clickedRss.get())
             return clickedRss.get()
@@ -74660,7 +75507,7 @@ class allCharacterRegShip(Frame):
                     from bs4 import BeautifulSoup
                     soup = BeautifulSoup(page.content, 'html.parser', on_duplicate_attribute='ignore')
 
-                    element = soup.find_all('a')[39]
+                    element = soup.find_all('a')[40]
                     characterID = (element.get('href'))
 
                     print(characterID)
@@ -75458,7 +76305,7 @@ class allCharacterConNoShip(Frame):
                     from bs4 import BeautifulSoup
                     soup = BeautifulSoup(page.content, 'html.parser', on_duplicate_attribute='ignore')
 
-                    element = soup.find_all('a')[39]
+                    element = soup.find_all('a')[40]
                     characterID = (element.get('href'))
 
                     print(characterID)
@@ -75490,7 +76337,7 @@ class allCharacterConNoShip(Frame):
                     from bs4 import BeautifulSoup
                     soup = BeautifulSoup(page.content, 'html.parser', on_duplicate_attribute='ignore')
 
-                    element = soup.find_all('a')[39]
+                    element = soup.find_all('a')[38]
                     constellationID = (element.get('href'))
 
                     print(constellationID)
@@ -75966,6 +76813,29 @@ class allCharacterConShip(Frame):
             "Retriever",           
         ]
 
+        option40 = [  
+            "Please Select             ", 
+            "Tiamat",
+            "Hydra",      
+            "Adrestia",
+            "Caedes",
+            "Cambion",
+            "Chameleon",
+            "Chremoas",
+            "Etana",
+            "Fiend",
+            "Freki",
+            "Imp",
+            "Malice",
+            "Mimir",
+            "Moracha",
+            "Raven State Issue",
+            "Tempest Tribal Issue",
+            "Utu",
+            "Vangel",
+            "Whiptail",
+        ] 
+
         def chosen(event):
             myLabel = Label(self, text=clickedRss.get())
             return clickedRss.get()
@@ -76259,7 +77129,7 @@ class allCharacterConShip(Frame):
                     from bs4 import BeautifulSoup
                     soup = BeautifulSoup(page.content, 'html.parser', on_duplicate_attribute='ignore')
 
-                    element = soup.find_all('a')[39]
+                    element = soup.find_all('a')[40]
                     characterID = (element.get('href'))
 
                     print(characterID)
@@ -76291,7 +77161,7 @@ class allCharacterConShip(Frame):
                     from bs4 import BeautifulSoup
                     soup = BeautifulSoup(page.content, 'html.parser', on_duplicate_attribute='ignore')
 
-                    element = soup.find_all('a')[39]
+                    element = soup.find_all('a')[38]
                     constellationID = (element.get('href'))
 
                     print(constellationID)
@@ -77057,7 +77927,7 @@ class allCharacterAllNoShip(Frame):
                     from bs4 import BeautifulSoup
                     soup = BeautifulSoup(page.content, 'html.parser', on_duplicate_attribute='ignore')
 
-                    element = soup.find_all('a')[39]
+                    element = soup.find_all('a')[40]
                     characterID = (element.get('href'))
 
                     print(characterID)
@@ -77527,6 +78397,29 @@ class allCharacterAllShip(Frame):
             "Retriever",           
         ]
 
+        option40 = [  
+            "Please Select             ", 
+            "Tiamat",
+            "Hydra",      
+            "Adrestia",
+            "Caedes",
+            "Cambion",
+            "Chameleon",
+            "Chremoas",
+            "Etana",
+            "Fiend",
+            "Freki",
+            "Imp",
+            "Malice",
+            "Mimir",
+            "Moracha",
+            "Raven State Issue",
+            "Tempest Tribal Issue",
+            "Utu",
+            "Vangel",
+            "Whiptail",
+        ] 
+
         def chosen(event):
             myLabel = Label(self, text=clickedRss.get())
             return clickedRss.get()
@@ -77821,7 +78714,7 @@ class allCharacterAllShip(Frame):
                     from bs4 import BeautifulSoup
                     soup = BeautifulSoup(page.content, 'html.parser', on_duplicate_attribute='ignore')
 
-                    element = soup.find_all('a')[39]
+                    element = soup.find_all('a')[40]
                     characterID = (element.get('href'))
 
                     print(characterID)
@@ -78976,6 +79869,29 @@ class allCharacterSysShip(Frame):
             "Retriever",           
         ]
 
+        option40 = [  
+            "Please Select             ", 
+            "Tiamat",
+            "Hydra",      
+            "Adrestia",
+            "Caedes",
+            "Cambion",
+            "Chameleon",
+            "Chremoas",
+            "Etana",
+            "Fiend",
+            "Freki",
+            "Imp",
+            "Malice",
+            "Mimir",
+            "Moracha",
+            "Raven State Issue",
+            "Tempest Tribal Issue",
+            "Utu",
+            "Vangel",
+            "Whiptail",
+        ] 
+
         def chosen(event):
             myLabel = Label(self, text=clickedRss.get())
             return clickedRss.get()
@@ -79270,7 +80186,7 @@ class allCharacterSysShip(Frame):
                     from bs4 import BeautifulSoup
                     soup = BeautifulSoup(page.content, 'html.parser', on_duplicate_attribute='ignore')
 
-                    element = soup.find_all('a')[39]
+                    element = soup.find_all('a')[40]
                     characterID = (element.get('href'))
 
                     print(characterID)
@@ -80048,7 +80964,7 @@ class allCharacterSysNoShip(Frame):
                     from bs4 import BeautifulSoup
                     soup = BeautifulSoup(page.content, 'html.parser', on_duplicate_attribute='ignore')
 
-                    element = soup.find_all('a')[39]
+                    element = soup.find_all('a')[40]
                     characterID = (element.get('href'))
 
                     print(characterID)
@@ -80581,6 +81497,29 @@ class allShipSysShip(Frame):
             "Procurer",
             "Retriever",           
         ]
+
+        option40 = [  
+            "Please Select             ", 
+            "Tiamat",
+            "Hydra",      
+            "Adrestia",
+            "Caedes",
+            "Cambion",
+            "Chameleon",
+            "Chremoas",
+            "Etana",
+            "Fiend",
+            "Freki",
+            "Imp",
+            "Malice",
+            "Mimir",
+            "Moracha",
+            "Raven State Issue",
+            "Tempest Tribal Issue",
+            "Utu",
+            "Vangel",
+            "Whiptail",
+        ] 
 
         def chosen(event):
             myLabel = Label(self, text=clickedRss.get())
@@ -82032,6 +82971,30 @@ class allShipRegShip(Frame):
             "Procurer",
             "Retriever",           
         ]
+
+        option40 = [  
+            "Please Select             ", 
+            "Tiamat",
+            "Hydra",      
+            "Adrestia",
+            "Caedes",
+            "Cambion",
+            "Chameleon",
+            "Chremoas",
+            "Etana",
+            "Fiend",
+            "Freki",
+            "Imp",
+            "Malice",
+            "Mimir",
+            "Moracha",
+            "Raven State Issue",
+            "Tempest Tribal Issue",
+            "Utu",
+            "Vangel",
+            "Whiptail",
+        ] 
+
 
         def chosen(event):
             myLabel = Label(self, text=clickedRss.get())
@@ -83485,6 +84448,29 @@ class allShipConShip(Frame):
             "Retriever",           
         ]
 
+        option40 = [  
+            "Please Select             ", 
+            "Tiamat",
+            "Hydra",      
+            "Adrestia",
+            "Caedes",
+            "Cambion",
+            "Chameleon",
+            "Chremoas",
+            "Etana",
+            "Fiend",
+            "Freki",
+            "Imp",
+            "Malice",
+            "Mimir",
+            "Moracha",
+            "Raven State Issue",
+            "Tempest Tribal Issue",
+            "Utu",
+            "Vangel",
+            "Whiptail",
+        ] 
+
         def chosen(event):
             myLabel = Label(self, text=clickedRss.get())
             return clickedRss.get()
@@ -83781,7 +84767,7 @@ class allShipConShip(Frame):
                     from bs4 import BeautifulSoup
                     soup = BeautifulSoup(page.content, 'html.parser', on_duplicate_attribute='ignore')
 
-                    element = soup.find_all('a')[39]
+                    element = soup.find_all('a')[38]
                     constellationID = (element.get('href'))
 
                     print(constellationID)
@@ -84938,6 +85924,29 @@ class allShipAllShip(Frame):
             "Retriever",           
         ]
 
+        option40 = [  
+            "Please Select             ", 
+            "Tiamat",
+            "Hydra",      
+            "Adrestia",
+            "Caedes",
+            "Cambion",
+            "Chameleon",
+            "Chremoas",
+            "Etana",
+            "Fiend",
+            "Freki",
+            "Imp",
+            "Malice",
+            "Mimir",
+            "Moracha",
+            "Raven State Issue",
+            "Tempest Tribal Issue",
+            "Utu",
+            "Vangel",
+            "Whiptail",
+        ] 
+
         def chosen(event):
             myLabel = Label(self, text=clickedRss.get())
             return clickedRss.get()
@@ -85856,7 +86865,7 @@ class allShipAllShip(Frame):
             elif ships == 'Please Select             ':
                  messagebox.showerror("Oops", "Please Select a Ship")
 
-            url = "https://zkillboard.com" + ship + '.' + "/solo/losses"
+            url = "https://zkillboard.com" + ship
 
             webbrowser.open_new(url)
 
@@ -86058,7 +87067,7 @@ class CharacterAssociation(Frame):
                     from bs4 import BeautifulSoup
                     soup = BeautifulSoup(page.content, 'html.parser', on_duplicate_attribute='ignore')
 
-                    element = soup.find_all('a')[39]
+                    element = soup.find_all('a')[40]
                     characterID = (element.get('href'))
 
                     print(characterID)
@@ -86088,7 +87097,7 @@ class CharacterAssociation(Frame):
                     from bs4 import BeautifulSoup
                     soup2 = BeautifulSoup(page2.content, 'html.parser', on_duplicate_attribute='ignore')
 
-                    element2 = soup2.find_all('a')[39]
+                    element2 = soup2.find_all('a')[40]
                     characterID2 = (element2.get('href'))
 
                     print(characterID2)
@@ -86168,7 +87177,7 @@ class CharacterAssociation(Frame):
                 url = "https://zkillboard.com" + killlatest
                 webbrowser.open_new(url)
 
-        label = Label(self, wraplength=250, width=50, text="Character Association\n Find from the last 250 kills from each character if they have on a similar kill")
+        label = Label(self, wraplength=250, width=50, text="Character Association\n Find from the last 250 kills from each character if they have been on a similar kill")
         label.grid(row=5, column=0, padx=10, pady=10)
 
         label = Label(self, text="Please Input The First Character Name")
